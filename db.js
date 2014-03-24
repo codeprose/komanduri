@@ -35,7 +35,7 @@
     var demoCategories = [
         { key: 'Esophagus', items: [
             {
-                text: "RFA for Barrett's Esophagus",
+                title: "RFA for Barrett's Esophagus",
                 id: 'esophagus',
                 links: [
                     { url: 'http://www.sciencedirect.com/science/article/pii/S0016510713026266' },
@@ -111,7 +111,7 @@
         { key: 'Small Intestine', items: [] },
         { key: 'Colon', items: [
             {
-                text: 'EMR for Complex Polyps',
+                title: 'EMR for Complex Polyps',
                 id: 'polyps',
                 links: [
                         { url: 'http://www.sciencedirect.com/science/article/pii/S1542356513014547' },
@@ -140,7 +140,7 @@
         { key: 'Biliary', items: [] },
         { key: 'Pancreas', items: [
             {
-                text: 'Difficult ERCP',
+                title: 'Difficult ERCP',
                 id: 'ercp',
                 links: [
                     { url: 'http://www.sciencedirect.com/science/article/pii/S0016510713023523' },

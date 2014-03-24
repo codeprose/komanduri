@@ -28,13 +28,13 @@
         </div>-->
     <div id="category-tile-container">
         <div data-bind="foreach: [
-            { category: 'Esophagus', color: 'red', action: '#category' },
-            { category: 'Stomach', color: 'blue', action: '#category' },
-            { category: 'Small Intestine', color: 'yellow', action: '#category' },
-            { category: 'Colon', color: 'green', action: '#category' },
-            { category: 'Biliary', color: 'black', action: '#category' },
-            { category: 'Pancreas', color: 'orange', action: '#category' },
-            { category: 'Miscellaneous', color: 'gray', action: '#category' }]">
+            { category: 'Esophagus', color: 'red', action: '#category/0' },
+            { category: 'Stomach', color: 'blue', action: '#category/1' },
+            { category: 'Small Intestine', color: 'yellow', action: '#category/2' },
+            { category: 'Colon', color: 'green', action: '#category/3' },
+            { category: 'Biliary', color: 'black', action: '#category/4' },
+            { category: 'Pancreas', color: 'orange', action: '#category/5' },
+            { category: 'Miscellaneous', color: 'gray', action: '#category/6' }]">
             <div class="category-tile" data-bind="dxAction: action, text: category, attr: { style: 'background-color: ' + color + ';' }"></div>
         </div>        
     </div>

@@ -1,7 +1,12 @@
 ﻿<div data-options="dxView: { name: 'category', title: 'Category' }">
-    <div id="home-nav-list" data-bind="dxPivot: { dataSource: MyApp.db.pivotCategories }">
+    <div id="home-nav-list" data-bind="dxPivot: { dataSource: procedures  }">
         <div data-options="dxTemplate: { name: 'item' }">
-            poop
+            <div data-bind="dxScrollView: {}">
+                <h2>Images</h2>
+                <div data-bind="foreach: photos">
+                    <img data-bind="attr: { src: String($data) }" style="max-width: 100%" />
+                </div>                
+            </div>
         </div>
     </div>
 </div>
