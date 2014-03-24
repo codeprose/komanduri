@@ -1,1 +1,14 @@
-﻿
+﻿.dx-theme-ios.dx-version-major-5 .dx-pivottabs .dx-pivottabs-tab, .dx-theme-ios.dx-version-major-6 .dx-pivottabs .dx-pivottabs-tab, .dx-theme-ios.dx-version-major-5 .dx-pivottabs .dx-pivottabs-ghosttab, .dx-theme-ios.dx-version-major-6 .dx-pivottabs .dx-pivottabs-ghosttab
+{
+    font-size: 28px;
+}
+
+.dx-theme-ios.dx-version-major-5 .dx-pivottabs, .dx-theme-ios.dx-version-major-6 .dx-pivottabs
+{
+    height: 76px;
+}
+
+.dx-theme-ios.dx-version-major-5 .dx-pivot .dx-pivot-itemcontainer, .dx-theme-ios.dx-version-major-6 .dx-pivot .dx-pivot-itemcontainer
+{
+    top: 76px;
+}
