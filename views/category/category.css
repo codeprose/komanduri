@@ -12,3 +12,18 @@
 {
     top: 76px;
 }
+
+.dx-theme-ios.dx-version-major-7 .dx-pivottabs .dx-pivottabs-tab, .dx-theme-ios.dx-version-major-5 .dx-pivottabs .dx-pivottabs-ghosttab
+{
+    font-size: 28px;
+}
+
+.dx-theme-ios.dx-version-major-7 .dx-pivottabs
+{
+    height: 76px;
+}
+
+.dx-theme-ios.dx-version-major-7 .dx-pivot .dx-pivot-itemcontainer
+{
+    top: 76px;
+}
