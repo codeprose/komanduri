@@ -132,7 +132,7 @@
                 videos: [
                     ],
                 guidelines: [
-                        { name: 'ASGE Colon EMR Talk (pdf)', url: '/content/procedures/ercp/guidelines/ASGE%20Colon%20EMR%20Talk.pdf' }
+                        //{ name: 'ASGE Colon EMR Talk (pdf)', url: '/content/procedures/ercp/guidelines/ASGE%20Colon%20EMR%20Talk.pdf' }
                     ]
             }
         ]
@@ -160,7 +160,7 @@
                 ],
                 videos: [],
                 guidelines: [
-                    { name: 'Chicago Live SK ERCP 2012 (pdf)', url: '/content/procedures/ercp/guidelines/Chicago%20Live%20SK%20ERCP%202012.pdf' }
+                    //{ name: 'Chicago Live SK ERCP 2012 (pdf)', url: '/content/procedures/ercp/guidelines/Chicago%20Live%20SK%20ERCP%202012.pdf' }
                 ]
             }
         ]
