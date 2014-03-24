@@ -1,0 +1,18 @@
+﻿#category-tile-container {
+    height: 100%;
+    width: 100%;
+}
+
+.category-tile {
+    height: 23%;
+    width: 50%;
+    float: left;
+    
+      
+}
+
+#category-tile-container > * {
+    color: white;
+    font-family: Century Gothic, sans-serif;
+    font-size: 1.3em;
+}

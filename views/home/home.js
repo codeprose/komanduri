@@ -10,6 +10,14 @@
             },
 
             viewShown: function (args) {
+                // This won't respond to the rotation event
+                var tilesHeight = $('#category-tile-container').height();
+                if (tilesHeight) {
+                    $('.category-tile').height(tilesHeight / 4);
+                } else {
+                    $('.category-tile').css('height', '25%');
+                }
+
                 // This shouldn't be necessary, but I think something
                 // crazy is going on. Removing this will cause the library 
                 // list to act wonky
