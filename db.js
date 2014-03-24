@@ -59,10 +59,10 @@
                     { sources:
                         {
                             mp4: 'https://dl.dropboxusercontent.com/s/xq57ukw5l0jdlt7/AVM-RFA-2.mp4',
-                            ogg: 'https://dl.dropboxusercontent.com/s/5x28hmlc4jqrx4y/AVM-RFA-2.ogg', 
+                            ogg: 'https://dl.dropboxusercontent.com/s/5x28hmlc4jqrx4y/AVM-RFA-2.ogg',
                             webm: 'https://dl.dropboxusercontent.com/s/ue3693xnhllsv1l/AVM-RFA-2.webm'
                         },
-                        fallback: 'https://www.dropbox.com/s/xq57ukw5l0jdlt7/AVM-RFA-2.mp4' 
+                        fallback: 'https://www.dropbox.com/s/xq57ukw5l0jdlt7/AVM-RFA-2.mp4'
                     }
                 ],
                 guidelines: [
@@ -102,7 +102,7 @@
                     'https://dl.dropboxusercontent.com/s/vde5sq6jsdfixnt/Slide34.jpg',
                     'https://dl.dropboxusercontent.com/s/y7uwyh7x7arx84j/Slide35.jpg',
                     'https://dl.dropboxusercontent.com/s/64hqkkoo099k9te/Slide36.jpg'
-                    //{ name: 'EET 2014 (pdf)', url: '/content/procedures/esophagus/guidelines/EET%202014.pdf' }
+                //{ name: 'EET 2014 (pdf)', url: '/content/procedures/esophagus/guidelines/EET%202014.pdf' }
                 ]
             }
         ]
@@ -197,6 +197,27 @@
         }
     ];
 
+    var pivotCategories = [
+        {
+            title: "RFA for Barrett's Esophagus"
+        },
+        {
+            title: "EMR for Complex Polyps"
+        },
+        {
+            title: "Difficult ERCP"
+        },
+        {
+            title: "Enteral and Esophageal Stenting"
+        },
+        {
+            title: "GI Bleed"
+        },
+        {
+            title: "Barrett's Endotherapy"
+        }
+    ];
+
     var getProcedureById = function (procedureId) {
         for (var groupIndex = 0; groupIndex < MyApp.db.demoCategories.length; groupIndex++) {
             for (var itemIndex = 0; itemIndex < MyApp.db.demoCategories[groupIndex].items.length; itemIndex++) {
@@ -215,13 +236,14 @@
         ryansLibrary: favorites,
         categories: new DevExpress.data.ArrayStore(categories),
         demoCategories: demoCategories,
+        pivotCategories: pivotCategories,
         getProcedureById: getProcedureById,
 
         addImageToFavorites: function (imageUrl) {
             favorites[1].items.push(imageUrl);
             favorites[1].items.apply();
         },
-        
+
         addVideoToFavorites: function (videoUrl) {
             favorites[2].items.push(videoUrl);
             favorites[2].items.apply();

@@ -1,4 +1,5 @@
 ﻿<div class="view-container" data-options="dxView: { name: 'library', title: 'My Library' }">
+    <div data-bind="dxAction: '#category'">poop</div>
     <div data-bind="dxList: { dataSource: listSource, grouped: true }">
         <div data-options="dxTemplate: { name: 'item' }">
             <div data-bind="if: (itemName === 'procedures' && data().length !== 0)">
