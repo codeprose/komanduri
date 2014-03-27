@@ -42,6 +42,3 @@ $(function() {
     MyApp.app.router.register(":view/:id", { view: "category", id: null });
     MyApp.app.navigate();
 });
-
-//Globalize.culture(navigator.language || navigator.browserLanguage);
-//Globalize.culture("fr");
