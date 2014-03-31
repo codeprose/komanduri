@@ -5,6 +5,8 @@
 
         return {
             procedures: category.items,
+            categoryName: category.key,
+            categoryColor: params.color,
 
             viewShown: function() {
                 $('.m-carousel').carousel();

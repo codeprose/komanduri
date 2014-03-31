@@ -39,6 +39,6 @@ $(function() {
     MyApp.app.router.register(":view", { view: "settings" });
     MyApp.app.router.register(":view/:id", { view: "procedure", id: null });
     MyApp.app.router.register(":view/:id", { view: "images", id: null });
-    MyApp.app.router.register(":view/:id", { view: "category", id: null });
+    MyApp.app.router.register(":view/:id/:color", { view: "category", id: null, color: null });
     MyApp.app.navigate();
 });
