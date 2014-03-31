@@ -5,9 +5,9 @@
         if ($tile.hasClass('category-tile')) {
             var tilesHeight = $('#category-tile-container').height();
             if (tilesHeight) {
-                $tile.height(tilesHeight / 4);
+                $tile.height(tilesHeight / 3);
             } else {
-                $tile.css('height', '25%');
+                $tile.css('height', '33.3%');
             }            
         }
     });

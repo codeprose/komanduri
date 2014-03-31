@@ -4,8 +4,17 @@
     background-color: transparent;
 }
 
+.category-tile-image-container {
+    height: 100%;
+}
+
+.category-tile-image-container img {
+    max-height: 100%;
+}
+
 .category-tile-content {
     width: auto;
+    height: 90%;
     border: 3px solid black;
     margin: 4px;
 
