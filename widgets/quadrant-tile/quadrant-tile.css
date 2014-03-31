@@ -11,6 +11,7 @@
 .quadrant-tile-image-container img {
     display: block;
     max-height: 100%;
+    max-width: 95%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -36,6 +37,11 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
 
     overflow: auto;
+}
+
+.quadrant-tile-image-container-container {
+    height: 90%;
+    display: table;
 }
 
 .quadrant-tile-header-text {
