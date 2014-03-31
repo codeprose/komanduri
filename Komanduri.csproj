@@ -156,6 +156,9 @@
     <Content Include="views\procedure\procedure.css" />
     <Content Include="views\procedure\procedure.html" />
     <Content Include="views\procedure\procedure.js" />
+    <Content Include="views\quadrant\quadrant.css" />
+    <Content Include="views\quadrant\quadrant.html" />
+    <Content Include="views\quadrant\quadrant.js" />
     <Content Include="views\settings\settings.css" />
     <Content Include="views\settings\settings.html" />
     <Content Include="views\settings\settings.js" />
@@ -177,6 +180,9 @@
     <Content Include="widgets\category-tile\category-tile.js" />
     <Content Include="widgets\procedure-card\procedure-card.css" />
     <Content Include="widgets\procedure-card\procedure-card.html" />
+    <Content Include="widgets\quadrant-tile\quadrant-tile.css" />
+    <Content Include="widgets\quadrant-tile\quadrant-tile.html" />
+    <Content Include="widgets\quadrant-tile\quadrant-tile.js" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -6,9 +6,7 @@
         <div class="m-carousel-inner">
             <!-- ko foreach: procedures -->
             <div class="m-item">
-                <div class="m-card-light">
-                    <div data-bind="procedure-card: {}"></div>
-                </div>
+                <div data-bind="procedure-card: { procedure: $data }"></div>
             </div>
             <!-- /ko -->              
         </div>
