@@ -168,6 +168,7 @@
     <Content Include="widgets\category-tile\category-tile.css" />
     <Content Include="widgets\category-tile\category-tile.html" />
     <Content Include="widgets\category-tile\category-tile.js" />
+    <Content Include="widgets\procedure-card\procedure-card.css" />
     <Content Include="widgets\procedure-card\procedure-card.html" />
   </ItemGroup>
   <ItemGroup>

@@ -1,0 +1,34 @@
+﻿.procedure-card {
+    overflow: auto;
+}
+
+.procedure-card-footer {
+    width: 100%;
+    background-color: transparent;
+}
+
+.procedure-card-footer-button-container {
+    float: left;
+    width: 33.3%;
+}
+
+.procedure-card-footer-button {
+    border: 1px solid black;
+    width: auto;
+    
+    margin: 2px;
+
+    background-color: gray;
+}
+
+.procedure-card-image {
+    margin: 2px;
+    border: 1px solid black;
+
+    width: auto;
+}
+
+.procedure-card-image-container {
+    max-width: 100%;
+    background-color: transparent;
+}
