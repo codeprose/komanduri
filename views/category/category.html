@@ -2,13 +2,17 @@
     <div class="category-header-container">
         <div class="category-header" data-bind="text: categoryName, attr: { style: 'background-color: ' + categoryColor + ';' }"></div>        
     </div>
-    <div class="m-carousel m-center m-scaled m-fade-out">
-        <div class="m-carousel-inner">
-            <!-- ko foreach: procedures -->
-            <div class="m-item">
-                <div data-bind="procedure-card: { procedure: $data }"></div>
-            </div>
-            <!-- /ko -->              
-        </div>
+    <div class="carousel-container-container">
+        <div class="carousel-container">
+            <div class="m-carousel m-center m-scaled m-fade-out">
+                <div class="m-carousel-inner">
+                    <!-- ko foreach: procedures -->
+                    <div class="m-item">
+                        <div data-bind="procedure-card: { procedure: $data }"></div>
+                    </div>
+                    <!-- /ko -->              
+                </div>
+            </div>        
+        </div>        
     </div>
 </div>
