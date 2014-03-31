@@ -4,7 +4,11 @@
         var category = MyApp.db.demoCategories[params.id];
 
         return {
-            procedures: category.items
+            procedures: category.items,
+
+            viewShown: function() {
+                $('.m-carousel').carousel();
+            }
         };
     };
 });

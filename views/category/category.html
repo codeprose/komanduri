@@ -1,27 +1,13 @@
 ﻿<div data-options="dxView: { name: 'category', title: 'Category' }">
-    <div id="home-nav-list" data-bind="dxPivot: { dataSource: procedures  }">
-        <div data-options="dxTemplate: { name: 'item' }">
-            <div data-bind="dxScrollView: {}">
-                <h2>Images</h2>
-                <div data-bind="foreach: photos">
-                    <img data-bind="attr: { src: String($data) }" style="max-width: 100%" />
-                </div>      
-                <hr />
-                <h2>Videos</h2>
-                <div data-bind="foreach: videos">
-                    <video controls style="max-width: 100%">
-                        <source type="video/mp4" data-bind="attr: { src: $data.sources.mp4 }">
-                        <source type="video/ogg" data-bind="attr: { src: $data.sources.ogg }">
-                        <source type="video/webm" data-bind="attr: { src: $data.sources.webm }">              
-                        <p>Video is not supported by this device. View the original content <a data-bind="attr: { href: $data.fallback }">here</a>.</p>
-                    </video>
+    <div class="m-carousel m-center m-scaled m-fade-out">
+        <div class="m-carousel-inner">
+            <!-- ko foreach: procedures -->
+            <div class="m-item">
+                <div class="m-card-light">
+                    <div data-bind="procedure-card: {}"></div>
                 </div>
-                <hr />
-                <h2>Guidelines</h2>
-                <div data-bind="foreach: guidelines">
-                    <img data-bind="attr: { src: String($data) }" style="max-width: 100%" />
-                </div>          
             </div>
+            <!-- /ko -->              
         </div>
     </div>
 </div>
