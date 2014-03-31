@@ -69,12 +69,14 @@
     <Content Include="db.js" />
     <Content Include="img\logo.png" />
     <Content Include="index.js" />
+    <Content Include="js\codeprose-widget-setup.js" />
     <Content Include="js\dx.phonejs.js" />
     <Content Include="js\fastclick.js" />
     <Content Include="js\globalize.min.js" />
     <Content Include="js\jquery-1.10.2.min.js" />
     <Content Include="js\jquery-2.0.3.min.js" />
     <Content Include="js\knockout-3.0.0.js" />
+    <Content Include="js\koExternalTemplateEngine_all.min.js" />
     <Content Include="js\localization\globalize.culture.fr.js" />
     <Content Include="js\localization\localization.default.js" />
     <Content Include="js\localization\localization.fr.js" />
@@ -160,6 +162,12 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
+    <Content Include="widgets\category-container\category-container.css" />
+    <Content Include="widgets\category-container\category-container.html" />
+    <Content Include="widgets\category-container\category-container.js" />
+    <Content Include="widgets\category-tile\category-tile.css" />
+    <Content Include="widgets\category-tile\category-tile.html" />
+    <Content Include="widgets\category-tile\category-tile.js" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
