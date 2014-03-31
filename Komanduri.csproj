@@ -60,7 +60,14 @@
     <Content Include="css\dx.ios.default.css" />
     <Content Include="css\dx.tizen.black.css" />
     <Content Include="css\dx.win8.black.css" />
+    <Content Include="font\flaticon.css" />
+    <Content Include="font\flaticon.html" />
+    <Content Include="font\flaticon.svg" />
     <Content Include="icon.png" />
+    <Content Include="img\images-button-original.png" />
+    <Content Include="img\play-button-original.png" />
+    <Content Include="img\ppt-button-original.png" />
+    <Content Include="img\references-button-original.png" />
     <Content Include="index.css" />
     <Content Include="index.html" />
     <Content Include="config.xml">
@@ -175,14 +182,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="font\flaticon.eot" />
+    <None Include="font\flaticon.ttf" />
+    <None Include="font\flaticon.woff" />
     <None Include="js\jquery-2.0.3.min.map" />
     <None Include="res\screen\tizen\README.md" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="content\procedures\ercp\" />
-    <Folder Include="content\procedures\esophagus\" />
-    <Folder Include="content\procedures\polyps\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
   <ProjectExtensions>
