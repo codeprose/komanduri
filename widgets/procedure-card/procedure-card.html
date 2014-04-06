@@ -1,7 +1,7 @@
 ﻿<div class="procedure-card">
     <div class="procedure-card-image-container">
         <div class="procedure-card-image" data-bind="dxAction: '#quadrant/' + procedure.id">
-            <img src="http://placehold.it/200x200" />            
+            <img data-bind="attr: { src: procedure.image }" />
         </div>
     </div>
     <div class="procedure-card-footer">

@@ -37,6 +37,7 @@
             {
                 title: "RFA for Barrett's Esophagus",
                 id: 'esophagus',
+                image: '/img/procedure-icons/rfa_for_barretts.png',
                 links: [
                     { url: 'http://www.sciencedirect.com/science/article/pii/S0016510713026266' },
                     { url: 'http://www.sciencedirect.com/science/article/pii/S0016508513015965' },
@@ -110,6 +111,7 @@
                     {
                     title: "Another RFA for Barrett's Esophagus",
                     id: 'esophagus2',
+                    image: 'http://placehold.it/200x200',
                     links: [
                             { url: 'http://www.sciencedirect.com/science/article/pii/S0016510713026266' },
                             { url: 'http://www.sciencedirect.com/science/article/pii/S0016508513015965' },
@@ -182,6 +184,7 @@
         {
             title: "Yet Another Barrett's",
             id: 'esophagus3',
+            image: 'http://placehold.it/200x200',
             links: [
                             { url: 'http://www.sciencedirect.com/science/article/pii/S0016510713026266' },
                             { url: 'http://www.sciencedirect.com/science/article/pii/S0016508513015965' },
