@@ -67,6 +67,12 @@
     <Content Include="img\images-button-original.png" />
     <Content Include="img\play-button-original.png" />
     <Content Include="img\ppt-button-original.png" />
+    <Content Include="img\procedure-icons\biliary.jpg" />
+    <Content Include="img\procedure-icons\colon.jpg" />
+    <Content Include="img\procedure-icons\esophagus.png" />
+    <Content Include="img\procedure-icons\pancreas.jpg" />
+    <Content Include="img\procedure-icons\small_intestine.jpg" />
+    <Content Include="img\procedure-icons\stomach.jpg" />
     <Content Include="img\references-button-original.png" />
     <Content Include="index.css" />
     <Content Include="index.html" />
