@@ -8,7 +8,7 @@
                 $tile.height(tilesHeight / 3);
             } else {
                 $tile.css('height', '33.3%');
-            }            
+            }
         }
     });
 })(jQuery);
