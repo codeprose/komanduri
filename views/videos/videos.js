@@ -1,13 +1,15 @@
 ﻿(function () {
     MyApp.videos = function (params) {
-        var procedure = params.id;
+        var procedure = MyApp.db.getProcedureById(params.id);
 
         return {
-            videos: MyApp.db.getProcedureById(procedure).videos,
+            procedure: procedure,
+            videos: procedure.videos,
             addImage: function (selectedImageIndex, clickEvent) {
                 MyApp.db.addVideoToFavorites(clickEvent.model);
                 $(clickEvent.element).hide();
-            }            
+            },
+            title: ko.observable(procedure.title)            
         };
     };
 })();

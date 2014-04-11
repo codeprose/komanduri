@@ -172,17 +172,21 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
+    <Content Include="widgets\carousel\carousel.css" />
+    <Content Include="widgets\carousel\carousel.html" />
     <Content Include="widgets\category-container\category-container.css" />
     <Content Include="widgets\category-container\category-container.html" />
     <Content Include="widgets\category-container\category-container.js" />
     <Content Include="widgets\category-tile\category-tile.css" />
     <Content Include="widgets\category-tile\category-tile.html" />
     <Content Include="widgets\category-tile\category-tile.js" />
+    <Content Include="widgets\image-card\image-card.html" />
     <Content Include="widgets\procedure-card\procedure-card.css" />
     <Content Include="widgets\procedure-card\procedure-card.html" />
     <Content Include="widgets\quadrant-tile\quadrant-tile.css" />
     <Content Include="widgets\quadrant-tile\quadrant-tile.html" />
     <Content Include="widgets\quadrant-tile\quadrant-tile.js" />
+    <Content Include="widgets\video-card\video-card.html" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />

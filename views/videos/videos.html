@@ -1,15 +1,22 @@
-﻿<div data-options="dxView: { name: 'videos', title: 'VIDEOS' }">
-    <div style="height: 90%">
-        <div id="video-gallery" data-bind="dxGallery: { dataSource: videos, height: '100%', width: '100%' }">
-            <div data-options="dxTemplate: { name: 'item' }">
-                <div class="super-impose add-to-library-button" data-bind="dxButton: { icon: 'favorites', text: 'Add to Favorites', clickAction: function(clickEvent) { $parent.addVideo($('#video-gallery').dxGallery('instance').option('selectedIndex'), clickEvent); } }"></div>
-                <video controls>
-                    <source type="video/mp4" data-bind="attr: { src: $data.sources.mp4 }">
-                    <source type="video/ogg" data-bind="attr: { src: $data.sources.ogg }">
-                    <source type="video/webm" data-bind="attr: { src: $data.sources.webm }">              
-                    <p>Video is not supported by this device. View the original content <a data-bind="attr: { href: $data.fallback }">here</a>.</p>
-                </video>
-            </div>
-        </div>        
+﻿<div data-options="dxView: { name: 'videos' }">
+    <div>VIDEOS VIEW</div>
+    <div data-bind="carousel: { 
+                        items: JSON.stringify(procedure.videos), 
+                        widget: 'video-card', 
+                        widgetUrl: 'widgets/video-card'
+                    }, 'container-options': { 'full-height': true }">
     </div>
+    <!--    <div style="height: 90%">
+                <div id="video-gallery" data-bind="dxGallery: { dataSource: videos, height: '100%', width: '100%' }">
+                    <div data-options="dxTemplate: { name: 'item' }">
+                        <div class="super-impose add-to-library-button" data-bind="dxButton: { icon: 'favorites', text: 'Add to Favorites', clickAction: function(clickEvent) { $parent.addVideo($('#video-gallery').dxGallery('instance').option('selectedIndex'), clickEvent); } }"></div>
+                        <video controls>
+                            <source type="video/mp4" data-bind="attr: { src: $data.sources.mp4 }">
+                            <source type="video/ogg" data-bind="attr: { src: $data.sources.ogg }">
+                            <source type="video/webm" data-bind="attr: { src: $data.sources.webm }">              
+                            <p>Video is not supported by this device. View the original content <a data-bind="attr: { href: $data.fallback }">here</a>.</p>
+                        </video>
+                    </div>
+                </div>        
+            </div>-->
 </div>
