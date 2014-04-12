@@ -1,22 +1,47 @@
-﻿<div data-options="dxView: { name: 'videos' }">
-    <div>VIDEOS VIEW</div>
-    <div data-bind="carousel: { 
-                        items: JSON.stringify(procedure.videos), 
-                        widget: 'video-card', 
-                        widgetUrl: 'widgets/video-card'
-                    }, 'container-options': { 'full-height': true }">
+﻿<div data-options="dxView: { name: 'videos', title: 'Videos' }">
+    <div class="category-header-container">
+        <div class="category-header" data-bind="text: 'Videos', attr: { style: 'background-color: ' + 'gray' + ';' }"></div>        
     </div>
-    <!--    <div style="height: 90%">
-                <div id="video-gallery" data-bind="dxGallery: { dataSource: videos, height: '100%', width: '100%' }">
-                    <div data-options="dxTemplate: { name: 'item' }">
-                        <div class="super-impose add-to-library-button" data-bind="dxButton: { icon: 'favorites', text: 'Add to Favorites', clickAction: function(clickEvent) { $parent.addVideo($('#video-gallery').dxGallery('instance').option('selectedIndex'), clickEvent); } }"></div>
-                        <video controls>
-                            <source type="video/mp4" data-bind="attr: { src: $data.sources.mp4 }">
-                            <source type="video/ogg" data-bind="attr: { src: $data.sources.ogg }">
-                            <source type="video/webm" data-bind="attr: { src: $data.sources.webm }">              
-                            <p>Video is not supported by this device. View the original content <a data-bind="attr: { href: $data.fallback }">here</a>.</p>
-                        </video>
+    <div class="carousel-container-container">
+        <div class="carousel-container">
+            <div class="m-carousel m-center m-scaled m-fade-out">
+                <div class="m-carousel-inner">
+                    <!-- ko foreach: videos -->
+                    <div class="m-item">
+                        <div class="video-card">
+                            <div class="video-card-image-container">
+                                <div class="video-card-image">
+                                    <img src="http://placehold.it/20x20"/>
+                                    <!--<video controls>
+                                            <source type="video/mp4" data-bind="attr: { src: $data.sources.mp4 }">
+                                            <source type="video/ogg" data-bind="attr: { src: $data.sources.ogg }">
+                                            <source type="video/webm" data-bind="attr: { src: $data.sources.webm }">              
+                                            <p>Video is not supported by this device. View the original content <a data-bind="attr: { href: $data.fallback }">here</a>.</p>
+                                        </video>-->
+                                </div>
+                            </div>
+                            <div class="video-card-footer">
+                                <div class="video-card-footer-button-container">
+                                    <div class="video-card-footer-button">
+                                        <i class="flaticon-youtube12"></i>
+                                    </div>            
+                                </div>
+                                <div class="video-card-footer-button-container">
+                                    <div class="video-card-footer-button">
+                                        <i class="flaticon-like3"></i>
+                                    </div>            
+                                </div>
+                                <div class="video-card-footer-button-container">
+                                    <div class="video-card-footer-button">
+                                        <i class="flaticon-framework"></i>
+                                    </div>            
+                                </div>
+                            </div>
+                        </div>                        
                     </div>
-                </div>        
-            </div>-->
+                    <!-- /ko -->              
+                </div>
+            </div>        
+        </div>        
+    </div>
 </div>
