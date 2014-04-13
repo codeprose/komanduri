@@ -32,11 +32,6 @@
     width: 100%;
 }
 
-.video-card video {
-    height: 200px;
-    width: 200px;
-}
-
 .video-card-image {
     margin: 2px;
     border: 1px solid black;
@@ -47,4 +42,9 @@
 .video-card-image-container {
     max-width: 100%;
     background-color: transparent;
+}
+
+.video-card video {
+    height: 200px;
+    width: 200px;
 }
