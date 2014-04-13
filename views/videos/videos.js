@@ -9,7 +9,11 @@
                 MyApp.db.addVideoToFavorites(clickEvent.model);
                 $(clickEvent.element).hide();
             },
-            title: ko.observable(procedure.title)            
+            title: ko.observable(procedure.title),
+
+            viewShown: function () {
+                $('#video-carousel').carousel();
+            }            
         };
     };
 })();

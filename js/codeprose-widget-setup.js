@@ -11,14 +11,16 @@
                         window.codeprose.widgetBehaviors = window.codeprose.widgetBehaviors || {};
                         window.codeprose.widgetBehaviors[widgetName] = window.codeprose.widgetBehaviors[widgetName] || { afterRender: function() {} };
 
-                        var widgetBindings = allBindings()[widgetName];
-                        var containerOptions = allBindings()['container-options'] || { 'full-height': false };
+                        var newValueAccessor = function() {
+                            return {
+                                name: widgetName,
+                                templateUrl: widgetLocation,
+                                data: valueAccessor(),
+                                afterRender: window.codeprose.widgetBehaviors[widgetName].afterRender
+                            };
+                        };
 
-                        var bindableTemplate = $('<div />', { "data-bind": "template: { name: '" + widgetName + "', templateUrl: '" + widgetLocation + "', data: " + JSON.stringify(widgetBindings) + ", afterRender: window.codeprose.widgetBehaviors['" + widgetName + "'].afterRender }" });
-                        if (containerOptions['full-height']) {
-                            bindableTemplate.addClass('dx-full-height');
-                        }
-                        $(element).html(bindableTemplate);
+                        ko.bindingHandlers.template.init(element, newValueAccessor, allBindings, viewModel, bindingContext);
                     } catch (e) {
                         var error = new Error('Widget binding exception.');
                         error.OriginalException = e;
@@ -29,6 +31,25 @@
                     // This will be called once when the binding is first applied to an element,
                     // and again whenever the associated observable changes value.
                     // Update the DOM element based on the supplied values here.
+                    try {
+                        window.codeprose.widgetBehaviors = window.codeprose.widgetBehaviors || {};
+                        window.codeprose.widgetBehaviors[widgetName] = window.codeprose.widgetBehaviors[widgetName] || { afterRender: function () { } };
+
+                        var newValueAccessor = function () {
+                            return {
+                                name: widgetName,
+                                templateUrl: widgetLocation,
+                                data: valueAccessor(),
+                                afterRender: window.codeprose.widgetBehaviors[widgetName].afterRender
+                            };
+                        };
+
+                        ko.bindingHandlers.template.update(element, newValueAccessor, allBindings, viewModel, bindingContext);
+                    } catch (e) {
+                        var error = new Error('Widget binding exception.');
+                        error.OriginalException = e;
+                        console.log(error);
+                    }
                 }
             };
         },

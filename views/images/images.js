@@ -1,12 +1,14 @@
 ﻿(function () {
     MyApp.images = function (params) {
-        var procedure = params.id;
+        var procedure = MyApp.db.getProcedureById(params.id);
 
         return {
-            photos: MyApp.db.getProcedureById(procedure).photos,
-            addImage: function (selectedImageIndex, clickEvent) {
-                MyApp.db.addImageToFavorites(clickEvent.model);
-                $(clickEvent.element).hide();
+            procedure: procedure,
+            images: procedure.photos,
+            title: ko.observable(procedure.title),
+
+            viewShown: function () {
+                $('#image-carousel').carousel();
             }
         };
     };

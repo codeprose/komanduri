@@ -1,6 +1,29 @@
-﻿<video controls>
-    <source type="video/mp4" data-bind="attr: { src: eval(video).sources.mp4 }">
-    <source type="video/ogg" data-bind="attr: { src: eval(video).sources.ogg }">
-    <source type="video/webm" data-bind="attr: { src: eval(video).sources.webm }">              
-    <p>Video is not supported by this device. View the original content <a data-bind="attr: { href: eval(video).fallback }">here</a>.</p>
-</video>
+﻿<div class="video-card">
+    <div class="video-card-image-container">
+        <div class="video-card-image">
+            <video>
+                    <source type="video/mp4" data-bind="attr: { src: sources.mp4 }">
+                    <source type="video/ogg" data-bind="attr: { src: sources.ogg }">
+                    <source type="video/webm" data-bind="attr: { src: sources.webm }">              
+                    <p>Video is not supported by this device. View the original content <a data-bind="attr: { href: fallback }">here</a>.</p>
+                </video>
+        </div>
+    </div>
+    <div class="video-card-footer">
+        <div class="video-card-footer-button-container">
+            <div class="video-card-footer-button" data-bind="dxAction: function () { $('.m-active').find('video').get(0).play(); }">
+                <i class="flaticon-youtube12"></i>
+            </div>            
+        </div>
+        <div class="video-card-footer-button-container">
+            <div class="video-card-footer-button">
+                <i class="flaticon-like3"></i>
+            </div>            
+        </div>
+        <div class="video-card-footer-button-container">
+            <div class="video-card-footer-button" data-bind="dxAction: function (){ if (screenfull.enabled) { screenfull.request($('.m-active').find('video').get(0)); } }">
+                <i class="flaticon-framework"></i>
+            </div>            
+        </div>
+    </div>
+</div>

@@ -10,7 +10,7 @@
             categoryColor: params.color,
 
             viewShown: function() {
-                $('.m-carousel').carousel();
+                $('#category-carousel').carousel();
             }
         };
     };

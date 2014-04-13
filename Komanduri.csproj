@@ -94,6 +94,7 @@
     <Content Include="js\localization\globalize.culture.fr.js" />
     <Content Include="js\localization\localization.default.js" />
     <Content Include="js\localization\localization.fr.js" />
+    <Content Include="js\screenfull.min.js" />
     <Content Include="layouts\Navbar\NavbarLayout.css" />
     <Content Include="layouts\Navbar\NavbarLayout.html" />
     <Content Include="layouts\Navbar\NavbarLayout.js" />
@@ -187,12 +188,14 @@
     <Content Include="widgets\category-tile\category-tile.css" />
     <Content Include="widgets\category-tile\category-tile.html" />
     <Content Include="widgets\category-tile\category-tile.js" />
+    <Content Include="widgets\image-card\image-card.css" />
     <Content Include="widgets\image-card\image-card.html" />
     <Content Include="widgets\procedure-card\procedure-card.css" />
     <Content Include="widgets\procedure-card\procedure-card.html" />
     <Content Include="widgets\quadrant-tile\quadrant-tile.css" />
     <Content Include="widgets\quadrant-tile\quadrant-tile.html" />
     <Content Include="widgets\quadrant-tile\quadrant-tile.js" />
+    <Content Include="widgets\video-card\video-card.css" />
     <Content Include="widgets\video-card\video-card.html" />
   </ItemGroup>
   <ItemGroup>
