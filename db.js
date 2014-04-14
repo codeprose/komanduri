@@ -278,6 +278,7 @@ var library = {
             {
                 title: 'EMR for Complex Polyps',
                 id: 'polyps',
+                image: 'http://placehold.it/200x200',
                 links: [
                         { url: 'http://www.sciencedirect.com/science/article/pii/S1542356513014547' },
                         { url: 'http://www.sciencedirect.com/science/article/pii/S0016510713001909' },
@@ -307,6 +308,7 @@ var library = {
             {
                 title: 'Difficult ERCP',
                 id: 'ercp',
+                image: 'http://placehold.it/200x200',
                 links: [
                     { url: 'http://www.sciencedirect.com/science/article/pii/S0016510713023523' },
                     { url: 'http://www.ncbi.nlm.nih.gov/pubmed/24409076' },
