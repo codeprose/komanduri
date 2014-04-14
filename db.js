@@ -8,13 +8,20 @@
         { name: "Band Ligation EMR for Barrett's w IMC", src: "VGx7h_cFrNU" }
     ];
 
-    var library = ko.observableArray([
-        { key: 'My Procedures', items: [] },
-        { key: 'Photo Gallery', items: [] },
-        { key: 'Video Gallery', items: [] },
-        { key: 'Guidelines/Algorithm/PPT Gallery', items: [] },
-        { key: 'My Links', items: [] }
-    ]);
+//    var library = ko.observableArray([
+//        { key: 'My Procedures', items: [] },
+//        { key: 'Photo Gallery', items: [] },
+//        { key: 'Video Gallery', items: [] },
+//        { key: 'Guidelines/Algorithm/PPT Gallery', items: [] },
+//        { key: 'My Links', items: [] }
+    //    ]);
+
+var library = {
+                links: ko.observableArray([]),
+                photos: ko.observableArray([]),
+                videos: ko.observableArray([]),
+                guidelines: ko.observableArray([])
+            }
 
     var favorites = [
         { key: 'procedures', items: ko.observableArray([]) },
@@ -290,7 +297,7 @@
                 videos: [
                     ],
                 guidelines: [
-                        //{ name: 'ASGE Colon EMR Talk (pdf)', url: '/content/procedures/ercp/guidelines/ASGE%20Colon%20EMR%20Talk.pdf' }
+                //{ name: 'ASGE Colon EMR Talk (pdf)', url: '/content/procedures/ercp/guidelines/ASGE%20Colon%20EMR%20Talk.pdf' }
                     ]
             }
         ]
@@ -318,7 +325,7 @@
                 ],
                 videos: [],
                 guidelines: [
-                    //{ name: 'Chicago Live SK ERCP 2012 (pdf)', url: '/content/procedures/ercp/guidelines/Chicago%20Live%20SK%20ERCP%202012.pdf' }
+                //{ name: 'Chicago Live SK ERCP 2012 (pdf)', url: '/content/procedures/ercp/guidelines/Chicago%20Live%20SK%20ERCP%202012.pdf' }
                 ]
             }
         ]
@@ -377,6 +384,10 @@
     ];
 
     var getProcedureById = function (procedureId) {
+        if (procedureId == 'library') {
+            return library;
+        }
+
         for (var groupIndex = 0; groupIndex < MyApp.db.demoCategories.length; groupIndex++) {
             for (var itemIndex = 0; itemIndex < MyApp.db.demoCategories[groupIndex].items.length; itemIndex++) {
                 var item = MyApp.db.demoCategories[groupIndex].items[itemIndex];
@@ -398,15 +409,23 @@
         getProcedureById: getProcedureById,
 
         addImageToFavorites: function (imageUrl) {
-            favorites[1].items.push(imageUrl);
-            favorites[1].items.apply();
+            library.images.push(imageUrl);
+            library.images.apply();
         },
 
         addVideoToFavorites: function (videoUrl) {
-            favorites[2].items.push(videoUrl);
-            favorites[2].items.apply();
+            library.videos.push(videoUrl);
+            library.videos.apply();
         }
     };
+
+//    window.MyApp.db.addImageToFavorites('https://dl.dropboxusercontent.com/s/uu3fogsxo828ghq/colon%20emr%201.JPEG');
+//    window.MyApp.db.addImageToFavorites('https://dl.dropboxusercontent.com/s/yhacn5w8gtgeu3z/colon%20emr%202.JPEG');
+//    window.MyApp.db.addVideoToFavorites('cwbp1I4ROe8');
+//    window.MyApp.db.addVideoToFavorites('VGx7h_cFrNU');
+//    window.MyApp.db.addVideoToFavorites('RWXLNQTH0qw');
+
+//    console.log(favorites);
 
     console.log('db initiated');
 })();

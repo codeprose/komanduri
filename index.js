@@ -23,7 +23,7 @@ $(function() {
             },
             {
                 title: "My Library",
-                action: "#library",
+                action: "#quadrant/library",
                 icon: "favorites"
             },
             {
