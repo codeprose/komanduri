@@ -41,5 +41,6 @@ $(function() {
     MyApp.app.router.register(":view/:id", { view: "images", id: null });
     MyApp.app.router.register(":view/:id", { view: "videos", id: null });
     MyApp.app.router.register(":view/:id/:color", { view: "category", id: null, color: null });
+
     MyApp.app.navigate();
 });

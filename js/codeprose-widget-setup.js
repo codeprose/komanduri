@@ -20,7 +20,7 @@
                             };
                         };
 
-                        ko.bindingHandlers.template.init(element, newValueAccessor, allBindings, viewModel, bindingContext);
+                        return ko.bindingHandlers.template.init(element, newValueAccessor, allBindings, viewModel, bindingContext);
                     } catch (e) {
                         var error = new Error('Widget binding exception.');
                         error.OriginalException = e;
