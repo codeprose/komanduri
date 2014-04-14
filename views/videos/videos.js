@@ -1,6 +1,8 @@
 ﻿(function () {
     MyApp.videos = function (params) {
+        console.log(params);
         var procedure = MyApp.db.getProcedureById(params.id);
+        console.log(procedure);
 
         return {
             procedure: procedure,
@@ -13,7 +15,7 @@
 
             viewShown: function () {
                 $('#video-carousel').carousel();
-            }            
+            }
         };
     };
 })();
