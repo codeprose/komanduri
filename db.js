@@ -44,7 +44,7 @@ var library = {
             {
                 title: "RFA for Barrett's Esophagus",
                 id: 'esophagus',
-                image: '/img/procedure-icons/rfa_for_barretts.png',
+                image: 'img/procedure-icons/rfa_for_barretts.png',
                 links: [
                     { url: 'http://www.sciencedirect.com/science/article/pii/S0016510713026266' },
                     { url: 'http://www.sciencedirect.com/science/article/pii/S0016508513015965' },
