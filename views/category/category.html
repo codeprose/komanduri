@@ -1,6 +1,9 @@
 ﻿<div id="#category-view" data-options="dxView: { name: 'category', title: 'Category' }">
     <div class="category-header-container">
-        <div class="category-header" data-bind="text: categoryName, attr: { style: 'background-color: ' + categoryColor + ';' }"></div>        
+        <div class="category-header" data-bind="attr: { style: 'background-color: ' + categoryColor + ';' }">
+            <span data-bind="text: categoryName"></span>
+            <img data-bind="attr: { src: 'img/procedure-icons/' + categoryImage }" style="float: right; width: 100px; height: 70px;" />
+        </div>        
     </div>
     <div class="carousel-container-container">
         <div class="carousel-container">

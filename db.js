@@ -40,7 +40,7 @@ var library = {
     //    7. Miscellaneous
 
     var demoCategories = [
-        { key: 'Esophagus', items: [
+        { key: 'Esophagus', image: 'esophagus.png', items: [
             {
                 title: "RFA for Barrett's Esophagus",
                 id: 'esophagus',
@@ -64,7 +64,9 @@ var library = {
                     'https://dl.dropboxusercontent.com/s/ydfscqpbbtvq8wz/JC-pre1.JPEG'
                 ],
                 videos: [
-                    { sources:
+                    {
+                        title: 'This is some video',
+                        sources:
                         {
                             mp4: 'https://dl.dropboxusercontent.com/s/xq57ukw5l0jdlt7/AVM-RFA-2.mp4',
                             ogg: 'https://dl.dropboxusercontent.com/s/5x28hmlc4jqrx4y/AVM-RFA-2.ogg',
@@ -72,7 +74,9 @@ var library = {
                         },
                         fallback: 'https://www.dropbox.com/s/xq57ukw5l0jdlt7/AVM-RFA-2.mp4'
                     },
-                    { sources:
+                    {
+                        title: 'This is some other video',
+                        sources:
                         {
                             mp4: 'https://dl.dropboxusercontent.com/s/xq57ukw5l0jdlt7/AVM-RFA-2.mp4',
                             ogg: 'https://dl.dropboxusercontent.com/s/5x28hmlc4jqrx4y/AVM-RFA-2.ogg',
@@ -80,7 +84,9 @@ var library = {
                         },
                         fallback: 'https://www.dropbox.com/s/xq57ukw5l0jdlt7/AVM-RFA-2.mp4'
                     },
-                    { sources:
+                    {
+                        title: 'This is yet another video',
+                        sources:
                         {
                             mp4: 'https://dl.dropboxusercontent.com/s/xq57ukw5l0jdlt7/AVM-RFA-2.mp4',
                             ogg: 'https://dl.dropboxusercontent.com/s/5x28hmlc4jqrx4y/AVM-RFA-2.ogg',
@@ -88,7 +94,9 @@ var library = {
                         },
                         fallback: 'https://www.dropbox.com/s/xq57ukw5l0jdlt7/AVM-RFA-2.mp4'
                     },
-                    { sources:
+                    {
+                        title: 'This is some video',
+                        sources:
                         {
                             mp4: 'https://dl.dropboxusercontent.com/s/xq57ukw5l0jdlt7/AVM-RFA-2.mp4',
                             ogg: 'https://dl.dropboxusercontent.com/s/5x28hmlc4jqrx4y/AVM-RFA-2.ogg',
@@ -96,7 +104,9 @@ var library = {
                         },
                         fallback: 'https://www.dropbox.com/s/xq57ukw5l0jdlt7/AVM-RFA-2.mp4'
                     },
-                    { sources:
+                    {
+                        title: 'This is some video',
+                        sources:
                         {
                             mp4: 'https://dl.dropboxusercontent.com/s/xq57ukw5l0jdlt7/AVM-RFA-2.mp4',
                             ogg: 'https://dl.dropboxusercontent.com/s/5x28hmlc4jqrx4y/AVM-RFA-2.ogg',
@@ -170,7 +180,9 @@ var library = {
                             'https://dl.dropboxusercontent.com/s/ydfscqpbbtvq8wz/JC-pre1.JPEG'
                         ],
                     videos: [
-                            { sources:
+                            {
+                                title: 'This is some video',
+                                sources:
                                 {
                                     mp4: 'https://dl.dropboxusercontent.com/s/xq57ukw5l0jdlt7/AVM-RFA-2.mp4',
                                     ogg: 'https://dl.dropboxusercontent.com/s/5x28hmlc4jqrx4y/AVM-RFA-2.ogg',
@@ -243,7 +255,9 @@ var library = {
                             'https://dl.dropboxusercontent.com/s/ydfscqpbbtvq8wz/JC-pre1.JPEG'
                         ],
             videos: [
-                            { sources:
+                            {
+                                title: 'This is some video',
+                                sources:
                                 {
                                     mp4: 'https://dl.dropboxusercontent.com/s/xq57ukw5l0jdlt7/AVM-RFA-2.mp4',
                                     ogg: 'https://dl.dropboxusercontent.com/s/5x28hmlc4jqrx4y/AVM-RFA-2.ogg',
@@ -296,9 +310,9 @@ var library = {
             /* END COPY */
         ]
         },
-        { key: 'Stomach', items: [] },
-        { key: 'Small Intestine', items: [] },
-        { key: 'Colon', items: [
+        { key: 'Stomach', image: 'stomach.jpg', items: [] },
+        { key: 'Small Intestine', image: 'small_intestine.jpg', items: [] },
+        { key: 'Colon', image: 'colon.jpg', items: [
             {
                 title: 'EMR for Complex Polyps',
                 id: 'polyps',
@@ -327,8 +341,8 @@ var library = {
             }
         ]
         },
-        { key: 'Biliary', items: [] },
-        { key: 'Pancreas', items: [
+        { key: 'Biliary', image: 'biliary.jpg', items: [] },
+        { key: 'Pancreas', image: 'pancreas.jpg', items: [
             {
                 title: 'Difficult ERCP',
                 id: 'ercp',

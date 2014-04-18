@@ -1,7 +1,8 @@
 ﻿<div class="video-card">
     <div class="video-card-image-container">
         <div class="video-card-image">
-            <video>
+            <div data-bind="text: title"></div>
+            <video style="display: none">
                 <source type="video/mp4" data-bind="attr: { src: sources.mp4 }">
                 <source type="video/ogg" data-bind="attr: { src: sources.ogg }">
                 <source type="video/webm" data-bind="attr: { src: sources.webm }">              
@@ -11,7 +12,7 @@
     </div>
     <div class="video-card-footer">
         <div class="video-card-footer-button-container">
-            <div class="video-card-footer-button" data-bind="dxAction: function () { $('.m-active').find('video').get(0).play(); }">
+            <div class="video-card-footer-button" data-bind="dxAction: function () { $('.m-active').find('video').get(0).css('display', 'block').play(); }">
                 <i class="flaticon-youtube12"></i>
             </div>            
         </div>
