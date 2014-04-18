@@ -1,9 +1,15 @@
 ﻿(function () {
     MyApp.guidelines = function (params) {
-        var procedure = params.id;
+        var procedure = MyApp.db.getProcedureById(params.id);
 
         return {
-            guidelines: MyApp.db.getProcedureById(procedure).guidelines
+            procedure: procedure,
+            guidelines: procedure.guidelines,
+            title: ko.observable(procedure.title),
+
+            viewShown: function () {
+                $('#guidelines-carousel').carousel();
+            }
         };
     };
 })();

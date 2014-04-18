@@ -179,14 +179,14 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="widgets\carousel\carousel.css" />
-    <Content Include="widgets\carousel\carousel.html" />
     <Content Include="widgets\category-container\category-container.css" />
     <Content Include="widgets\category-container\category-container.html" />
     <Content Include="widgets\category-container\category-container.js" />
     <Content Include="widgets\category-tile\category-tile.css" />
     <Content Include="widgets\category-tile\category-tile.html" />
     <Content Include="widgets\category-tile\category-tile.js" />
+    <Content Include="widgets\guidelines-card\guidelines-card.css" />
+    <Content Include="widgets\guidelines-card\guidelines-card.html" />
     <Content Include="widgets\image-card\image-card.css" />
     <Content Include="widgets\image-card\image-card.html" />
     <Content Include="widgets\procedure-card\procedure-card.css" />
