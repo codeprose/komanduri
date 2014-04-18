@@ -8,6 +8,7 @@
             procedures: category.items,
             categoryName: category.key,
             categoryColor: params.color,
+            categoryImage: category.image,
 
             viewShown: function() {
                 $('#category-carousel').carousel();
