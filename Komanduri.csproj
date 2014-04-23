@@ -160,9 +160,6 @@
     <Content Include="views\library\library.js" />
     <Content Include="views\links\links.css" />
     <Content Include="views\links\links.html" />
-    <Content Include="views\procedure\procedure.css" />
-    <Content Include="views\procedure\procedure.html" />
-    <Content Include="views\procedure\procedure.js" />
     <Content Include="views\quadrant\quadrant.css" />
     <Content Include="views\quadrant\quadrant.html" />
     <Content Include="views\quadrant\quadrant.js" />
