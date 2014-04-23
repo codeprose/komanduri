@@ -182,6 +182,7 @@
     <Content Include="widgets\category-container\category-container.css" />
     <Content Include="widgets\category-container\category-container.html" />
     <Content Include="widgets\category-container\category-container.js" />
+    <Content Include="widgets\procedure-header\procedure-header.html" />
     <Content Include="widgets\category-tile\category-tile.css" />
     <Content Include="widgets\category-tile\category-tile.html" />
     <Content Include="widgets\category-tile\category-tile.js" />

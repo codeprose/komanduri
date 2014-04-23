@@ -1,11 +1,5 @@
 ﻿<div data-options="dxView: { name: 'images', title: 'Images' }" style="height: 100%">
-    <div class="category-header-container">
-        <div class="category-header">
-            <img src="img/procedure-icons/rfa_for_barretts.png" style="width: 100px; height: 80px;" />
-            <div style="display: inline; width: 300px; height: 80px;" data-bind="text: 'Images'" }">
-            </div>
-        </div>
-    </div>
+    <div data-bind="procedure-header: { image: procedure.image, text: 'Images' }"></div>
     <div class="carousel-container-container">
         <div class="carousel-container">
             <div id="image-carousel" class="m-carousel m-center m-scaled m-fade-out">
