@@ -16,60 +16,24 @@
     <script type="text/javascript" src="cordova.js"></script>
     <script src="lib/jquery/jquery.js" type="text/javascript"></script>
     <script src="lib/jquerymobile/jquery.mobile-1.4.2.min.js" type="text/javascript"></script>
+    <script src="handlebars-v1.3.0.js"></script>
+    
+    <script type="text/javascript" src="data/setup.js"></script>
+    <script type="text/javascript" src="data/biliary/ercp.js"></script>
+    <script type="text/javascript" src="data/colon/emr-for-complex-polyps.js"></script>
+    <script type="text/javascript" src="data/esophagus/rfa-for-barretts.js"></script>
+    
+    <script type="text/javascript" src="menu.js"></script>
 </head>
 <body>
     <!-- Start of first page -->
     <div data-role="page" data-theme="b" id="home" class="my-page">
         <div data-role="header">
-            <h1>
-                MyScope</h1>
+            <h1>MyScope</h1>
         </div>
         <!-- /header -->
         <div role="main" class="ui-content">
-            <ul data-role="listview" data-inset="true">
-                <li><a href="#category">
-                    <img src="img/procedure-icons/esophagus.png" class="ui-li-thumb">
-                    <h2>
-                        Esophagus</h2>
-                    <p>
-                    </p>
-                </a></li>
-                <li><a href="#">
-                    <img src="img/procedure-icons/stomach.jpg" class="ui-li-thumb">
-                    <h2>
-                        Stomach</h2>
-                    <p>
-                    </p>
-                </a></li>
-                <li><a href="#">
-                    <img src="img/procedure-icons/small_intestine.jpg" class="ui-li-thumb">
-                    <h2>
-                        Small Intestine</h2>
-                    <p>
-                    </p>
-                </a></li>
-                <li><a href="#">
-                    <img src="img/procedure-icons/colon.jpg" class="ui-li-thumb">
-                    <h2>
-                        Colon</h2>
-                    <p>
-                    </p>
-                </a></li>
-                <li><a href="#">
-                    <img src="img/procedure-icons/biliary.jpg" class="ui-li-thumb">
-                    <h2>
-                        Biliary</h2>
-                    <p>
-                    </p>
-                </a></li>
-                <li><a href="#">
-                    <img src="img/procedure-icons/pancreas.jpg" class="ui-li-thumb">
-                    <h2>
-                        Pancreas</h2>
-                    <p>
-                    </p>
-                </a></li>
-            </ul>
+            <ul data-role="listview" data-inset="true"></ul>
         </div>
         <!-- /content -->
         <div data-role="footer" data-position="fixed">
@@ -441,71 +405,80 @@
         $('.m-carousel').carousel();
         $(document).on("pageshow", "#videos", function () {
             blueimp.Gallery(
-            [
+                [
+                    {
+                        title: 'Some RFA Video',
+                        type: 'video/*',
+                        poster: 'img/video_posters/rfa_sample.png',
+                        sources: [
+                            {
+                                href: 'https://dl.dropboxusercontent.com/sh/9brvca2lr1eq83g/qRlTVAIn83/esophagus/rfa-for-barretts/videos/mp4/Barrett%27s%20Esophagus%20360%20RFA%202.mp4.mp4',
+                                type: 'video/mp4'
+                            },
+                            {
+                                href: 'https://dl.dropboxusercontent.com/sh/9brvca2lr1eq83g/97ngChRTio/esophagus/rfa-for-barretts/videos/ogg/Barrett%27s%20Esophagus%20360%20RFA%202.oggtheora.ogv',
+                                type: 'video/ogg'
+                            },
+                            {
+                                href: 'https://dl.dropboxusercontent.com/sh/9brvca2lr1eq83g/RLOUMoty8x/esophagus/rfa-for-barretts/videos/webm/Barrett%27s%20Esophagus%20360%20RFA%202.webmsd.webm',
+                                type: 'video/webm'
+                            }
+                        ]
+                    },
+                    {
+                        title: 'Some Other RFA Video',
+                        type: 'video/*',
+                        poster: 'img/video_posters/rfa_sample.png',
+                        sources: [
+                            {
+                                href: 'https://dl.dropboxusercontent.com/sh/9brvca2lr1eq83g/qRlTVAIn83/esophagus/rfa-for-barretts/videos/mp4/Barrett%27s%20Esophagus%20360%20RFA%202.mp4.mp4',
+                                type: 'video/mp4'
+                            },
+                            {
+                                href: 'https://dl.dropboxusercontent.com/sh/9brvca2lr1eq83g/97ngChRTio/esophagus/rfa-for-barretts/videos/ogg/Barrett%27s%20Esophagus%20360%20RFA%202.oggtheora.ogv',
+                                type: 'video/ogg'
+                            },
+                            {
+                                href: 'https://dl.dropboxusercontent.com/sh/9brvca2lr1eq83g/RLOUMoty8x/esophagus/rfa-for-barretts/videos/webm/Barrett%27s%20Esophagus%20360%20RFA%202.webmsd.webm',
+                                type: 'video/webm'
+                            }
+                        ]
+                    },
+                    {
+                        title: 'Yet Some Other RFA Video',
+                        type: 'video/*',
+                        poster: 'img/video_posters/rfa_sample.png',
+                        sources: [
+                            {
+                                href: 'https://dl.dropboxusercontent.com/sh/9brvca2lr1eq83g/qRlTVAIn83/esophagus/rfa-for-barretts/videos/mp4/Barrett%27s%20Esophagus%20360%20RFA%202.mp4.mp4',
+                                type: 'video/mp4'
+                            },
+                            {
+                                href: 'https://dl.dropboxusercontent.com/sh/9brvca2lr1eq83g/97ngChRTio/esophagus/rfa-for-barretts/videos/ogg/Barrett%27s%20Esophagus%20360%20RFA%202.oggtheora.ogv',
+                                type: 'video/ogg'
+                            },
+                            {
+                                href: 'https://dl.dropboxusercontent.com/sh/9brvca2lr1eq83g/RLOUMoty8x/esophagus/rfa-for-barretts/videos/webm/Barrett%27s%20Esophagus%20360%20RFA%202.webmsd.webm',
+                                type: 'video/webm'
+                            }
+                        ]
+                    }
+                ],
                 {
-                    title: 'Some RFA Video',
-                    type: 'video/*',
-                    poster: 'img/video_posters/rfa_sample.png',
-                    sources: [
-                        {
-                            href: 'https://dl.dropboxusercontent.com/sh/9brvca2lr1eq83g/qRlTVAIn83/esophagus/rfa-for-barretts/videos/mp4/Barrett%27s%20Esophagus%20360%20RFA%202.mp4.mp4',
-                            type: 'video/mp4'
-                        },
-                        {
-                            href: 'https://dl.dropboxusercontent.com/sh/9brvca2lr1eq83g/97ngChRTio/esophagus/rfa-for-barretts/videos/ogg/Barrett%27s%20Esophagus%20360%20RFA%202.oggtheora.ogv',
-                            type: 'video/ogg'
-                        },
-                        {
-                            href: 'https://dl.dropboxusercontent.com/sh/9brvca2lr1eq83g/RLOUMoty8x/esophagus/rfa-for-barretts/videos/webm/Barrett%27s%20Esophagus%20360%20RFA%202.webmsd.webm',
-                            type: 'video/webm'
-                        }
-                    ]
-                },
-                {
-                    title: 'Some Other RFA Video',
-                    type: 'video/*',
-                    poster: 'img/video_posters/rfa_sample.png',
-                    sources: [
-                        {
-                            href: 'https://dl.dropboxusercontent.com/sh/9brvca2lr1eq83g/qRlTVAIn83/esophagus/rfa-for-barretts/videos/mp4/Barrett%27s%20Esophagus%20360%20RFA%202.mp4.mp4',
-                            type: 'video/mp4'
-                        },
-                        {
-                            href: 'https://dl.dropboxusercontent.com/sh/9brvca2lr1eq83g/97ngChRTio/esophagus/rfa-for-barretts/videos/ogg/Barrett%27s%20Esophagus%20360%20RFA%202.oggtheora.ogv',
-                            type: 'video/ogg'
-                        },
-                        {
-                            href: 'https://dl.dropboxusercontent.com/sh/9brvca2lr1eq83g/RLOUMoty8x/esophagus/rfa-for-barretts/videos/webm/Barrett%27s%20Esophagus%20360%20RFA%202.webmsd.webm',
-                            type: 'video/webm'
-                        }
-                    ]
-                },
-                {
-                    title: 'Yet Some Other RFA Video',
-                    type: 'video/*',
-                    poster: 'img/video_posters/rfa_sample.png',
-                    sources: [
-                        {
-                            href: 'https://dl.dropboxusercontent.com/sh/9brvca2lr1eq83g/qRlTVAIn83/esophagus/rfa-for-barretts/videos/mp4/Barrett%27s%20Esophagus%20360%20RFA%202.mp4.mp4',
-                            type: 'video/mp4'
-                        },
-                        {
-                            href: 'https://dl.dropboxusercontent.com/sh/9brvca2lr1eq83g/97ngChRTio/esophagus/rfa-for-barretts/videos/ogg/Barrett%27s%20Esophagus%20360%20RFA%202.oggtheora.ogv',
-                            type: 'video/ogg'
-                        },
-                        {
-                            href: 'https://dl.dropboxusercontent.com/sh/9brvca2lr1eq83g/RLOUMoty8x/esophagus/rfa-for-barretts/videos/webm/Barrett%27s%20Esophagus%20360%20RFA%202.webmsd.webm',
-                            type: 'video/webm'
-                        }
-                    ]
+                    container: '#video-carousel',
+                    carousel: true
                 }
-            ],
-            {
-                container: '#video-carousel',
-                carousel: true
-            }
-        );
+            );
         });
+    </script>
+    <script id="category-menu-item" type="text/x-handlebars-template">
+        <li>
+            <a href="#category">
+                <img src="{{image}}" class="ui-li-thumb">
+                <h2>{{category}}</h2>
+                <p></p>
+            </a>
+        </li>
     </script>
 </body>
 </html>
