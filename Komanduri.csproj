@@ -53,6 +53,7 @@
   <ItemGroup>
     <Content Include=".gitignore" />
     <Content Include="app.config.js" />
+    <Content Include="category-page.js" />
     <Content Include="cordova.js" />
     <Content Include="css\dx.android.holo-dark.css" />
     <Content Include="css\dx.common.css" />
@@ -93,6 +94,7 @@
     <Content Include="db.js" />
     <Content Include="img\logo.png" />
     <Content Include="index.js" />
+    <Content Include="jqm.page.params.js" />
     <Content Include="js\codeprose-widget-setup.js" />
     <Content Include="js\dx.phonejs.js" />
     <Content Include="js\fastclick.js" />
@@ -344,6 +346,7 @@
     <Content Include="lib\jquerymobile\jquery.mobile.custom.theme.min.css" />
     <Content Include="lib\jquerymobile\listview-grid.css" />
     <Content Include="lib\jquery\jquery.js" />
+    <Content Include="main.js" />
     <Content Include="menu.js" />
     <Content Include="mobify.htm" />
     <Content Include="res\icon\android\icon-36-ldpi.png" />

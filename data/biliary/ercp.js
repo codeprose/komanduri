@@ -22,6 +22,6 @@
         videos: [
         ],
         guidelines: [
-        ]     
+        ]
     });
 })();
