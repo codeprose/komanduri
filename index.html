@@ -76,8 +76,8 @@
             <div data-role="navbar" data-iconpos="bottom">
                 <ul>
                     <li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
-                    <li><a href="#" data-icon="heart">Library</a></li>
-                    <li><a href="#" data-icon="gear">Settings</a></li>
+                    <li><a href="#library" data-icon="heart">Library</a></li>
+                    <li><a href="#settings" data-icon="gear">Settings</a></li>
                 </ul>
             </div>
             <!-- /navbar -->
@@ -89,17 +89,24 @@
     <div data-role="page" id="category" data-theme="b">
         <div data-role="header">
             <h1>
-                Esophagus</h1>
+                MyScope</h1>
             <a href="./" data-shadow="false" data-iconshadow="false" data-icon="carat-l" data-iconpos="notext"
                 data-rel="back" data-ajax="false">Back</a>
         </div>
         <!-- /header -->
         <div role="main" class="ui-content">
+            <ul class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+                <li class="ui-li-has-thumb"><a class="ui-btn">
+                    <img src="img/procedure-icons/esophagus.png" class="ui-li-thumb">
+                    <h2>
+                        Esophagus</h2>
+                </a></li>
+            </ul>
             <div class="m-carousel m-center m-scaled m-fade-out">
                 <div class="m-carousel-inner">
                     <div class="m-item">
                         <div class="m-card-light">
-                            <a href="#procedure">
+                            <a href="#quadrant" style="text-decoration: none; color: black; font-weight: normal">
                                 <img src="img/procedure-icons/rfa_for_barretts.png" />
                                 <p class="m-caption">
                                     Caption #1</p>
@@ -142,8 +149,8 @@
             <div data-role="navbar" data-iconpos="bottom">
                 <ul>
                     <li><a href="#home" data-icon="home">Home</a></li>
-                    <li><a href="#" data-icon="heart">Library</a></li>
-                    <li><a href="#" data-icon="gear">Settings</a></li>
+                    <li><a href="#library" data-icon="heart">Library</a></li>
+                    <li><a href="#settings" data-icon="gear">Settings</a></li>
                 </ul>
             </div>
             <!-- /navbar -->
@@ -151,7 +158,63 @@
         <!-- /footer -->
     </div>
     <!-- /page -->
-    <div data-role="page" data-theme="b" id="procedure" class="my-page">
+    <div data-role="page" data-theme="b" id="quadrant">
+        <div data-role="header">
+            <h1>
+                Esophagus</h1>
+            <a href="./" data-shadow="false" data-iconshadow="false" data-icon="carat-l" data-iconpos="notext"
+                data-rel="back" data-ajax="false">Back</a>
+        </div>
+        <!-- /header -->
+        <div data-role="main" class="ui-content">
+            <ul class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+                <li class="ui-li-has-thumb"><a class="ui-btn">
+                    <img src="img/procedure-icons/rfa_for_barretts.png" class="ui-li-thumb">
+                    <h2>
+                        RFA for Barrett's</h2>
+                </a></li>
+            </ul>
+            <div class="ui-grid-a">
+                <div class="ui-block-a" style="padding: 4px">
+                    <a href="#videos" style="text-decoration: none">
+                        <h3 class="ui-bar ui-bar-a">
+                            Video</h3>
+                        <div class="ui-body">
+                            <img src="img/play-button-original.png" style="width: 100%" />
+                        </div>
+                    </a>
+                </div>
+                <div class="ui-block-b" style="padding: 4px">
+                    <a href="#images" style="text-decoration: none">
+                        <h3 class="ui-bar ui-bar-a">
+                            Images</h3>
+                        <div class="ui-body">
+                            <img src="img/images-button-original.png" style="width: 100%" />
+                        </div>
+                    </a>
+                </div>
+                <div class="ui-block-a" style="padding: 4px">
+                    <a href="#guidelines" style="text-decoration: none">
+                        <h3 class="ui-bar ui-bar-a">
+                            Guidelines</h3>
+                        <div class="ui-body">
+                            <img src="img/ppt-button-original.png" style="width: 100%" />
+                        </div>
+                    </a>
+                </div>
+                <div class="ui-block-b" style="padding: 4px">
+                    <a href="#references" style="text-decoration: none">
+                        <h3 class="ui-bar ui-bar-a">
+                            References</h3>
+                        <div class="ui-body">
+                            <img src="img/references-button-original.png" style="width: 100%" />
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" data-theme="b" id="videos">
         <div data-role="header">
             <h1>
                 RFA for Barrett's</h1>
@@ -160,53 +223,76 @@
         </div>
         <!-- /header -->
         <div role="main" class="ui-content">
-            <div data-role="tabs" id="tabs">
-                <div data-role="navbar">
-                    <ul>
-                        <li><a href="#one" data-ajax="false">Videos</a></li>
-                        <li><a href="#two" data-ajax="false">Images</a></li>
-                        <li><a href="#three" data-ajax="false">Guidelines</a></li>
-                        <li><a href="#four" data-ajax="false">References</a></li>
-                    </ul>
+            <ul class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+                <li class="ui-li-has-thumb"><a class="ui-btn">
+                    <img src="img/play-button-original.png" class="ui-li-thumb">
+                    <h2>
+                        Video</h2>
+                </a></li>
+            </ul>
+            <div id="video-carousel" class="blueimp-gallery blueimp-gallery-carousel">
+                <div class="slides">
                 </div>
-                <div id="one" class="ui-body-d ui-content">
-                    <h1>
-                        Videos</h1>
-                    <div id="video-carousel" class="blueimp-gallery blueimp-gallery-carousel">
-                        <div class="slides">
-                        </div>
-                        <h3 class="title">
-                        </h3>
-                        <a class="prev">‹</a> <a class="next">›</a> <a class="play-pause"></a>
-                        <ol class="indicator">
-                        </ol>
-                    </div>
+                <h3 class="title">
+                </h3>
+                <a class="prev">‹</a> <a class="next">›</a> <a class="play-pause"></a>
+                <ol class="indicator">
+                </ol>
+            </div>
+        </div>
+        <!-- /content -->
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar" data-iconpos="bottom">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+                    <li><a href="#library" data-icon="heart">Library</a></li>
+                    <li><a href="#settings" data-icon="gear">Settings</a></li>
+                </ul>
+            </div>
+            <!-- /navbar -->
+        </div>
+        <!-- /footer -->
+    </div>
+    <div data-role="page" data-theme="b" id="images">
+        <div data-role="header">
+            <h1>
+                RFA for Barrett's</h1>
+            <a href="./" data-shadow="false" data-iconshadow="false" data-icon="carat-l" data-iconpos="notext"
+                data-rel="back" data-ajax="false">Back</a>
+        </div>
+        <!-- /header -->
+        <div role="main" class="ui-content">
+            <ul class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+                <li class="ui-li-has-thumb"><a class="ui-btn">
+                    <img src="img/images-button-original.png" class="ui-li-thumb">
+                    <h2>
+                        Images</h2>
+                </a></li>
+            </ul>
+            <div>
+                <a href="#popupParis" data-rel="popup" data-position-to="window" data-transition="fade">
+                    <img class="popphoto" src="http://demos.jquerymobile.com/1.4.2/_assets/img/paris.jpg"
+                        alt="Paris, France" style="width: 30%" /></a> <a href="#popupSydney" data-rel="popup"
+                            data-position-to="window" data-transition="fade">
+                            <img class="popphoto" src="http://demos.jquerymobile.com/1.4.2/_assets/img/sydney.jpg"
+                                alt="Sydney, Australia" style="width: 30%" /></a> <a href="#popupNYC" data-rel="popup"
+                                    data-position-to="window" data-transition="fade">
+                                    <img class="popphoto" src="http://demos.jquerymobile.com/1.4.2/_assets/img/newyork.jpg"
+                                        alt="New York, USA" style="width: 30%" /></a>
+                <div data-role="popup" id="popupParis" data-overlay-theme="b" data-theme="b" data-corners="false">
+                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">
+                        Close</a><img class="popphoto" src="http://demos.jquerymobile.com/1.4.2/_assets/img/paris.jpg"
+                            style="max-height: 512px;" alt="Paris, France" />
                 </div>
-                <div id="two">
-                    <a href="#popupParis" data-rel="popup" data-position-to="window" data-transition="fade">
-                        <img class="popphoto" src="http://demos.jquerymobile.com/1.4.2/_assets/img/paris.jpg"
-                            alt="Paris, France" style="width: 30%"></a> <a href="#popupSydney" data-rel="popup"
-                                data-position-to="window" data-transition="fade">
-                                <img class="popphoto" src="http://demos.jquerymobile.com/1.4.2/_assets/img/sydney.jpg"
-                                    alt="Sydney, Australia" style="width: 30%"></a> <a href="#popupNYC" data-rel="popup"
-                                        data-position-to="window" data-transition="fade">
-                                        <img class="popphoto" src="http://demos.jquerymobile.com/1.4.2/_assets/img/newyork.jpg"
-                                            alt="New York, USA" style="width: 30%"></a>
-                    <div data-role="popup" id="popupParis" data-overlay-theme="b" data-theme="b" data-corners="false">
-                        <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">
-                            Close</a><img class="popphoto" src="http://demos.jquerymobile.com/1.4.2/_assets/img/paris.jpg"
-                                style="max-height: 512px;" alt="Paris, France">
-                    </div>
-                    <div data-role="popup" id="popupSydney" data-overlay-theme="b" data-theme="b" data-corners="false">
-                        <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">
-                            Close</a><img class="popphoto" src="http://demos.jquerymobile.com/1.4.2/_assets/img/sydney.jpg"
-                                style="max-height: 512px;" alt="Sydney, Australia">
-                    </div>
-                    <div data-role="popup" id="popupNYC" data-overlay-theme="b" data-theme="b" data-corners="false">
-                        <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">
-                            Close</a><img class="popphoto" src="http://demos.jquerymobile.com/1.4.2/_assets/img/newyork.jpg"
-                                style="max-height: 512px;" alt="New York, USA">
-                    </div>
+                <div data-role="popup" id="popupSydney" data-overlay-theme="b" data-theme="b" data-corners="false">
+                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">
+                        Close</a><img class="popphoto" src="http://demos.jquerymobile.com/1.4.2/_assets/img/sydney.jpg"
+                            style="max-height: 512px;" alt="Sydney, Australia" />
+                </div>
+                <div data-role="popup" id="popupNYC" data-overlay-theme="b" data-theme="b" data-corners="false">
+                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">
+                        Close</a><img class="popphoto" src="http://demos.jquerymobile.com/1.4.2/_assets/img/newyork.jpg"
+                            style="max-height: 512px;" alt="New York, USA" />
                 </div>
             </div>
         </div>
@@ -215,8 +301,126 @@
             <div data-role="navbar" data-iconpos="bottom">
                 <ul>
                     <li><a href="#home" data-icon="home">Home</a></li>
-                    <li><a href="#" data-icon="heart">Library</a></li>
-                    <li><a href="#" data-icon="gear">Settings</a></li>
+                    <li><a href="#library" data-icon="heart">Library</a></li>
+                    <li><a href="#settings" data-icon="gear">Settings</a></li>
+                </ul>
+            </div>
+            <!-- /navbar -->
+        </div>
+        <!-- /footer -->
+    </div>
+    <div data-role="page" data-theme="b" id="guidelines">
+        <div data-role="header">
+            <h1>
+                RFA for Barrett's</h1>
+            <a href="./" data-shadow="false" data-iconshadow="false" data-icon="carat-l" data-iconpos="notext"
+                data-rel="back" data-ajax="false">Back</a>
+        </div>
+        <!-- /header -->
+        <div role="main" class="ui-content">
+            <ul class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+                <li class="ui-li-has-thumb"><a class="ui-btn">
+                    <img src="img/ppt-button-original.png" class="ui-li-thumb">
+                    <h2>
+                        Guidelines</h2>
+                </a></li>
+            </ul>
+            <div id="Div2" class="blueimp-gallery blueimp-gallery-carousel">
+                <div class="slides">
+                </div>
+                <h3 class="title">
+                </h3>
+                <a class="prev">‹</a> <a class="next">›</a> <a class="play-pause"></a>
+                <ol class="indicator">
+                </ol>
+            </div>
+        </div>
+        <!-- /content -->
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar" data-iconpos="bottom">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+                    <li><a href="#library" data-icon="heart">Library</a></li>
+                    <li><a href="#settings" data-icon="gear">Settings</a></li>
+                </ul>
+            </div>
+            <!-- /navbar -->
+        </div>
+        <!-- /footer -->
+    </div>
+    <div data-role="page" data-theme="b" id="references">
+        <div data-role="header">
+            <h1>
+                RFA for Barrett's</h1>
+            <a href="./" data-shadow="false" data-iconshadow="false" data-icon="carat-l" data-iconpos="notext"
+                data-rel="back" data-ajax="false">Back</a>
+        </div>
+        <!-- /header -->
+        <div role="main" class="ui-content">
+            <ul class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+                <li class="ui-li-has-thumb"><a class="ui-btn">
+                    <img src="img/references-button-original.png" class="ui-li-thumb">
+                    <h2>
+                        References</h2>
+                </a></li>
+            </ul>
+            <div id="Div4" class="blueimp-gallery blueimp-gallery-carousel">
+                <div class="slides">
+                </div>
+                <h3 class="title">
+                </h3>
+                <a class="prev">‹</a> <a class="next">›</a> <a class="play-pause"></a>
+                <ol class="indicator">
+                </ol>
+            </div>
+        </div>
+        <!-- /content -->
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar" data-iconpos="bottom">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+                    <li><a href="#library" data-icon="heart">Library</a></li>
+                    <li><a href="#settings" data-icon="gear">Settings</a></li>
+                </ul>
+            </div>
+            <!-- /navbar -->
+        </div>
+        <!-- /footer -->
+    </div>
+    <div data-role="page" data-theme="b" id="library">
+        <div data-role="header">
+            <h1>
+                Library</h1>
+        </div>
+        <!-- /header -->
+        <div role="main" class="ui-content">
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar" data-iconpos="bottom">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+                    <li><a href="#library" data-icon="heart" class="ui-btn-active">Library</a></li>
+                    <li><a href="#settings" data-icon="gear">Settings</a></li>
+                </ul>
+            </div>
+            <!-- /navbar -->
+        </div>
+        <!-- /footer -->
+    </div>
+    <div data-role="page" data-theme="b" id="settings">
+        <div data-role="header">
+            <h1>
+                Settings</h1>
+        </div>
+        <!-- /header -->
+        <div role="main" class="ui-content">
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <div data-role="navbar" data-iconpos="bottom">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+                    <li><a href="#library" data-icon="heart">Library</a></li>
+                    <li><a href="#settings" data-icon="gear" class="ui-btn-active">Settings</a></li>
                 </ul>
             </div>
             <!-- /navbar -->
@@ -235,7 +439,7 @@
             document.addEventListener("deviceready", function () { navigator.splashscreen.hide(); });
         });
         $('.m-carousel').carousel();
-        $(document).on("pageshow", "#procedure", function () {
+        $(document).on("pageshow", "#videos", function () {
             blueimp.Gallery(
             [
                 {
