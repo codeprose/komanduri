@@ -8,6 +8,50 @@ https://dl.dropboxusercontent.com/s/bhpq0xvbniij053/image-6.png
 https://dl.dropboxusercontent.com/s/xys8r27uqkuz1rk/image-7.png
 https://dl.dropboxusercontent.com/s/48nxh750qyq9h94/image.png
 
+// MyScope/biliary/ercp/guidelines/chicago-live-2012
+https://dl.dropboxusercontent.com/s/5w16o51uyxgqdws/Chicago%20Live%20SK%20ERCP%202012_Page_01.png
+https://dl.dropboxusercontent.com/s/sre9g46xh6b76zx/Chicago%20Live%20SK%20ERCP%202012_Page_02.png
+https://dl.dropboxusercontent.com/s/g4cop2c1d2o1hr7/Chicago%20Live%20SK%20ERCP%202012_Page_03.png
+https://dl.dropboxusercontent.com/s/vwmjlxkdkg3r50x/Chicago%20Live%20SK%20ERCP%202012_Page_04.png
+https://dl.dropboxusercontent.com/s/e0h4jwribnavw34/Chicago%20Live%20SK%20ERCP%202012_Page_05.png
+https://dl.dropboxusercontent.com/s/w5x8hkos2c3w38a/Chicago%20Live%20SK%20ERCP%202012_Page_06.png
+https://dl.dropboxusercontent.com/s/a89y4gt1fpmy4bk/Chicago%20Live%20SK%20ERCP%202012_Page_07.png
+https://dl.dropboxusercontent.com/s/icglfcwz24p8piy/Chicago%20Live%20SK%20ERCP%202012_Page_08.png
+https://dl.dropboxusercontent.com/s/ohj0m9jkof4617d/Chicago%20Live%20SK%20ERCP%202012_Page_09.png
+https://dl.dropboxusercontent.com/s/l8a3zpjxo776o9t/Chicago%20Live%20SK%20ERCP%202012_Page_10.png
+https://dl.dropboxusercontent.com/s/54j72vhsvj3mdb7/Chicago%20Live%20SK%20ERCP%202012_Page_11.png
+https://dl.dropboxusercontent.com/s/8dyub6gxec7vz2m/Chicago%20Live%20SK%20ERCP%202012_Page_12.png
+https://dl.dropboxusercontent.com/s/3vykexs5yd945f0/Chicago%20Live%20SK%20ERCP%202012_Page_13.png
+https://dl.dropboxusercontent.com/s/bfdbn1brdd9p1pk/Chicago%20Live%20SK%20ERCP%202012_Page_14.png
+https://dl.dropboxusercontent.com/s/yoys1iaym3j8inc/Chicago%20Live%20SK%20ERCP%202012_Page_15.png
+https://dl.dropboxusercontent.com/s/nnwhm46hdomjkt3/Chicago%20Live%20SK%20ERCP%202012_Page_16.png
+https://dl.dropboxusercontent.com/s/ztbzx1w38pjtxao/Chicago%20Live%20SK%20ERCP%202012_Page_17.png
+https://dl.dropboxusercontent.com/s/0xk9n79fh0vbef2/Chicago%20Live%20SK%20ERCP%202012_Page_18.png
+https://dl.dropboxusercontent.com/s/2tqupxa7qrx8xf6/Chicago%20Live%20SK%20ERCP%202012_Page_19.png
+https://dl.dropboxusercontent.com/s/zhotk19p1p1vchb/Chicago%20Live%20SK%20ERCP%202012_Page_20.png
+https://dl.dropboxusercontent.com/s/lbm68ervaionwpk/Chicago%20Live%20SK%20ERCP%202012_Page_21.png
+https://dl.dropboxusercontent.com/s/8jgc9afwf7jh56r/Chicago%20Live%20SK%20ERCP%202012_Page_22.png
+https://dl.dropboxusercontent.com/s/w9w5f4t44aja1ou/Chicago%20Live%20SK%20ERCP%202012_Page_23.png
+
+// MyScope/biliary/ercp/videos/mp4
+https://dl.dropboxusercontent.com/s/ga3zyjb0dugat10/ERCP%20Challenges%20Giant%20Stones%20EHL.mp4.mp4
+https://dl.dropboxusercontent.com/s/j36s6y1n9h9w48m/ERCP%20diverticulum.mp4.mp4
+https://dl.dropboxusercontent.com/s/jgaik284smxne5o/EUS%20Biliary%20Rendezvous%20for%20Malignant%20Obstruction.mp4.mp4
+https://dl.dropboxusercontent.com/s/af161deslshylos/pancreatoscopy.mp4.mp4
+https://dl.dropboxusercontent.com/s/y9o7dp8d5ar891k/spyglass.mp4.mp4
+// MyScope/biliary/ercp/videos/ogg
+https://dl.dropboxusercontent.com/s/miyhqeab5iacn85/ERCP%20Challenges%20Giant%20Stones%20EHL.oggtheora.ogv
+https://dl.dropboxusercontent.com/s/ehte44mcg0is4pw/ERCP%20diverticulum.oggtheora.ogv
+https://dl.dropboxusercontent.com/s/vetvrlcdeg5hk44/EUS%20Biliary%20Rendezvous%20for%20Malignant%20Obstruction.oggtheora.ogv
+https://dl.dropboxusercontent.com/s/tnrp4o1r580p4s3/pancreatoscopy.oggtheora.ogv
+https://dl.dropboxusercontent.com/s/nc4ntg0si5xghhf/spyglass.oggtheora.ogv
+// MyScope/biliary/ercp/videos/webm
+https://dl.dropboxusercontent.com/s/3h3uqd5lnt9ojcf/ERCP%20Challenges%20Giant%20Stones%20EHL.webmsd.webm
+https://dl.dropboxusercontent.com/s/l0euiw3757gkcmu/ERCP%20diverticulum.webmsd.webm
+https://dl.dropboxusercontent.com/s/eu77ssyvfq5n9ba/EUS%20Biliary%20Rendezvous%20for%20Malignant%20Obstruction.webmsd.webm
+https://dl.dropboxusercontent.com/s/np2pv6cgm7bc6e5/pancreatoscopy.webmsd.webm
+https://dl.dropboxusercontent.com/s/tbvnblnvxm427tt/spyglass.webmsd.webm
+
 // MyScope/colon/emr-for-complex-polyps/images
 https://dl.dropboxusercontent.com/s/psbyqqp44851qcq/channel%20colon%2023.JPEG
 https://dl.dropboxusercontent.com/s/iitbw7odqebvpgb/channel%20colon%20final.JPEG
@@ -18,6 +62,69 @@ https://dl.dropboxusercontent.com/s/xiktzmlefe5h7ht/colon%20emr%20closure%20cook
 https://dl.dropboxusercontent.com/s/mp92uphzhg1a4wv/colon%20emr%20defect.JPEG
 https://dl.dropboxusercontent.com/s/g2kq4zu1vegsyw6/polyp%20jan%2014.JPEG
 https://dl.dropboxusercontent.com/s/q9f8zbo98obysyv/post%20emr%20jan%202014.JPEG
+
+// MyScope/colon/emr-for-complex-polyps/guidelines/asge-emr-talk
+https://dl.dropboxusercontent.com/s/n9549wh79bnojz2/ASGE%20Colon%20EMR%20Talk_Page_01.png
+https://dl.dropboxusercontent.com/s/elg8naciezmmngu/ASGE%20Colon%20EMR%20Talk_Page_02.png
+https://dl.dropboxusercontent.com/s/skyp2hxrxh4ofmb/ASGE%20Colon%20EMR%20Talk_Page_03.png
+https://dl.dropboxusercontent.com/s/s2ldj59rk80npuu/ASGE%20Colon%20EMR%20Talk_Page_04.png
+https://dl.dropboxusercontent.com/s/5g7lhrhvrjm1r5z/ASGE%20Colon%20EMR%20Talk_Page_05.png
+https://dl.dropboxusercontent.com/s/el77sbpflms3her/ASGE%20Colon%20EMR%20Talk_Page_06.png
+https://dl.dropboxusercontent.com/s/jsfoq4hm2812lca/ASGE%20Colon%20EMR%20Talk_Page_07.png
+https://dl.dropboxusercontent.com/s/bbrr8686imdi44c/ASGE%20Colon%20EMR%20Talk_Page_08.png
+https://dl.dropboxusercontent.com/s/ttk8n16d022a9es/ASGE%20Colon%20EMR%20Talk_Page_09.png
+https://dl.dropboxusercontent.com/s/d3iiyl68w4jc8zs/ASGE%20Colon%20EMR%20Talk_Page_10.png
+https://dl.dropboxusercontent.com/s/qnyr4fv5hxvyham/ASGE%20Colon%20EMR%20Talk_Page_11.png
+https://dl.dropboxusercontent.com/s/nr5xhflql9iiysj/ASGE%20Colon%20EMR%20Talk_Page_12.png
+https://dl.dropboxusercontent.com/s/f7lw1rcb3s3xiik/ASGE%20Colon%20EMR%20Talk_Page_13.png
+https://dl.dropboxusercontent.com/s/iusqb0361mekoju/ASGE%20Colon%20EMR%20Talk_Page_14.png
+https://dl.dropboxusercontent.com/s/obgh3v7kvdviz8l/ASGE%20Colon%20EMR%20Talk_Page_15.png
+https://dl.dropboxusercontent.com/s/q9voerzxokc2pif/ASGE%20Colon%20EMR%20Talk_Page_16.png
+https://dl.dropboxusercontent.com/s/fb8rjzk6tpdgk0q/ASGE%20Colon%20EMR%20Talk_Page_17.png
+https://dl.dropboxusercontent.com/s/6vwv129ilpb7vls/ASGE%20Colon%20EMR%20Talk_Page_18.png
+https://dl.dropboxusercontent.com/s/bku6r1lv3rnqxg3/ASGE%20Colon%20EMR%20Talk_Page_19.png
+https://dl.dropboxusercontent.com/s/8xmdhwx0oo0o6cd/ASGE%20Colon%20EMR%20Talk_Page_20.png
+https://dl.dropboxusercontent.com/s/a21wzdlywha422o/ASGE%20Colon%20EMR%20Talk_Page_21.png
+https://dl.dropboxusercontent.com/s/ivpvh0e7ip60fno/ASGE%20Colon%20EMR%20Talk_Page_22.png
+https://dl.dropboxusercontent.com/s/jzlyx1usoz0sym0/ASGE%20Colon%20EMR%20Talk_Page_23.png
+https://dl.dropboxusercontent.com/s/4y50tb43pfzezey/ASGE%20Colon%20EMR%20Talk_Page_24.png
+https://dl.dropboxusercontent.com/s/ylppxqd1ax0avwh/ASGE%20Colon%20EMR%20Talk_Page_25.png
+https://dl.dropboxusercontent.com/s/f0xf9li1fqumgwr/ASGE%20Colon%20EMR%20Talk_Page_26.png
+https://dl.dropboxusercontent.com/s/r35289f66a89pxc/ASGE%20Colon%20EMR%20Talk_Page_27.png
+https://dl.dropboxusercontent.com/s/z3cw2tft4prtnpe/ASGE%20Colon%20EMR%20Talk_Page_28.png
+https://dl.dropboxusercontent.com/s/ahlt36qb91g5my0/ASGE%20Colon%20EMR%20Talk_Page_29.png
+https://dl.dropboxusercontent.com/s/mpxkcndm8xxyyqh/ASGE%20Colon%20EMR%20Talk_Page_30.png
+https://dl.dropboxusercontent.com/s/lu0m8dhxlh0xj06/ASGE%20Colon%20EMR%20Talk_Page_31.png
+https://dl.dropboxusercontent.com/s/kpku4mq59k7l4m7/ASGE%20Colon%20EMR%20Talk_Page_32.png
+https://dl.dropboxusercontent.com/s/b09izggsw3qk51o/ASGE%20Colon%20EMR%20Talk_Page_33.png
+https://dl.dropboxusercontent.com/s/bom7kh98ty8tskc/ASGE%20Colon%20EMR%20Talk_Page_34.png
+https://dl.dropboxusercontent.com/s/63bi0k0b4c7zo2x/ASGE%20Colon%20EMR%20Talk_Page_35.png
+https://dl.dropboxusercontent.com/s/63zr1wx8g3k73kx/ASGE%20Colon%20EMR%20Talk_Page_36.png
+https://dl.dropboxusercontent.com/s/7hekkw49srzia19/ASGE%20Colon%20EMR%20Talk_Page_37.png
+https://dl.dropboxusercontent.com/s/o50lmanlaujwmvk/ASGE%20Colon%20EMR%20Talk_Page_38.png
+https://dl.dropboxusercontent.com/s/zhd52kgqi5zjap6/ASGE%20Colon%20EMR%20Talk_Page_39.png
+https://dl.dropboxusercontent.com/s/oiyuuumn7ofz5cy/ASGE%20Colon%20EMR%20Talk_Page_40.png
+https://dl.dropboxusercontent.com/s/hmdv8vn22d84mp2/ASGE%20Colon%20EMR%20Talk_Page_41.png
+https://dl.dropboxusercontent.com/s/kcc3xvx1ylvt7h6/ASGE%20Colon%20EMR%20Talk_Page_42.png
+https://dl.dropboxusercontent.com/s/l93fsw6wh58djeo/ASGE%20Colon%20EMR%20Talk_Page_43.png
+https://dl.dropboxusercontent.com/s/vx0hsb7bgf8q0mh/ASGE%20Colon%20EMR%20Talk_Page_44.png
+https://dl.dropboxusercontent.com/s/bzi3r1dso36ioh5/ASGE%20Colon%20EMR%20Talk_Page_45.png
+https://dl.dropboxusercontent.com/s/lodl45wkaf693ul/ASGE%20Colon%20EMR%20Talk_Page_46.png
+https://dl.dropboxusercontent.com/s/cpy8rd45mbjtdaa/ASGE%20Colon%20EMR%20Talk_Page_47.png
+https://dl.dropboxusercontent.com/s/mp9u61o1rczlj93/ASGE%20Colon%20EMR%20Talk_Page_48.png
+
+// MyScope/colon/emr-for-complex-polyps/videos/mp4
+https://dl.dropboxusercontent.com/s/qjqumwbqiwnpdla/Colon%20EMR%20Clip%20Closure%203.mp4.mp4
+https://dl.dropboxusercontent.com/s/62o09crzvg7oc1k/Colon%20Retro%20EMR.mp4.mp4
+https://dl.dropboxusercontent.com/s/asa4ivhv1lpry93/Flat%20Cecal%20Polyp%20EMR%202.mp4.mp4
+// MyScope/colon/emr-for-complex-polyps/videos/ogg
+https://dl.dropboxusercontent.com/s/egufmv9hmzuys9d/Colon%20EMR%20Clip%20Closure%203.oggtheora.ogv
+https://dl.dropboxusercontent.com/s/9ybv6gzh4bbmu6d/Colon%20Retro%20EMR.oggtheora.ogv
+https://dl.dropboxusercontent.com/s/qfue2ed6igs67wx/Flat%20Cecal%20Polyp%20EMR%202.oggtheora.ogv
+// MyScope/colon/emr-for-complex-polyps/videos/webm
+https://dl.dropboxusercontent.com/s/u76cxtlfw9n67wu/Colon%20EMR%20Clip%20Closure%203.webmsd.webm
+https://dl.dropboxusercontent.com/s/t3v22fepsq0h1x6/Colon%20Retro%20EMR.webmsd.webm
+https://dl.dropboxusercontent.com/s/6xqrcx9t3qy81cs/Flat%20Cecal%20Polyp%20EMR%202.webmsd.webm
 
 // MyScope/esophagus/rfa-for-barretts/images
 https://dl.dropboxusercontent.com/s/n5ov61a6qqo57ch/CRIM-NBI.JPEG
@@ -71,11 +178,29 @@ https://dl.dropboxusercontent.com/s/3zu822nvqi1q8v8/Slide35.jpg
 https://dl.dropboxusercontent.com/s/p11m4ve5jy2la91/Slide36.jpg
 
 // MyScope/esophagus/rfa-for-barretts/videos/mp4
-https://dl.dropboxusercontent.com/s/pa89ivybesqnw9e/AVM-RFA-2.mp4
+https://dl.dropboxusercontent.com/s/8l4dt8p8na4v3vv/AVM%20RFA%202.mp4.mp4
+https://dl.dropboxusercontent.com/s/kdl6703law2ew3a/Barrett%27s%20Esophagus%20360%20RFA%202.mp4.mp4
+https://dl.dropboxusercontent.com/s/ber9rdikf5ou6xj/Duette%20EMR%20Bleed%203.mp4.mp4
+https://dl.dropboxusercontent.com/s/rwys91uejaeh9bd/Focal%20RFA%20Technique%202.mp4.mp4
+https://dl.dropboxusercontent.com/s/rrgzpogmom0g43v/Gave%20%281280%20x%20720%29.mp4.mp4
+https://dl.dropboxusercontent.com/s/xvvu87be3biojjb/RFA%20SCC%202.mp4.mp4
 // MyScope/esophagus/rfa-for-barretts/videos/ogg
-https://dl.dropboxusercontent.com/s/hxaaepke4j7cm83/AVM-RFA-2.ogg
+https://dl.dropboxusercontent.com/s/nrqenn9rv509aj0/AVM%20RFA%202.oggtheora.ogv
+https://dl.dropboxusercontent.com/s/w13rkjwh89459z5/Barrett%27s%20Esophagus%20360%20RFA%202.oggtheora.ogv
+https://dl.dropboxusercontent.com/s/bjn3l0mpvfg7n9d/Duette%20EMR%20Bleed%203.oggtheora.ogv
+https://dl.dropboxusercontent.com/s/nxavsibkkgfy9y3/Focal%20RFA%20Technique%202.oggtheora.ogv
+https://dl.dropboxusercontent.com/s/3w0vq4adx5eknf4/Gave%20%281280%20x%20720%29.oggtheora.ogv
+https://dl.dropboxusercontent.com/s/f7h9wyny06kt1fd/RFA%20SCC%202.oggtheora.ogv
 // MyScope/esophagus/rfa-for-barretts/videos/webm
-https://dl.dropboxusercontent.com/s/7uamoo8qh0y1kxo/AVM-RFA-2.webm
+https://dl.dropboxusercontent.com/s/ng8pryy5sxly39r/AVM%20RFA%202.webmsd.webm
+https://dl.dropboxusercontent.com/s/63z945am29eirxa/Barrett%27s%20Esophagus%20360%20RFA%202.webmsd.webm
+https://dl.dropboxusercontent.com/s/c1mc4qr4n1ugj6t/Duette%20EMR%20Bleed%203.webmsd.webm
+https://dl.dropboxusercontent.com/s/ai6e3op72h5078j/Focal%20RFA%20Technique%202.webmsd.webm
+https://dl.dropboxusercontent.com/s/kapexl5cvrv5q4p/Gave%20%281280%20x%20720%29.webmsd.webm
+https://dl.dropboxusercontent.com/s/sp6l2a0gtd1rw40/RFA%20SCC%202.webmsd.webm
+
+
+
 
 
 
