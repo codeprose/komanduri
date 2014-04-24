@@ -9,13 +9,11 @@
     <link rel="stylesheet" href="lib/carousel/carousel-style.css" />
     <!--<link href="lib/gallery/css/demo.css" rel="stylesheet" type="text/css" />-->
     <link href="lib/gallery/css/blueimp-gallery.min.css" rel="stylesheet" type="text/css" />
-<!--    <link href="lib/gallery/css/blueimp-gallery.css" rel="stylesheet" type="text/css" />
+    <!--    <link href="lib/gallery/css/blueimp-gallery.css" rel="stylesheet" type="text/css" />
     <link href="lib/gallery/css/blueimp-gallery-indicator.css" rel="stylesheet" type="text/css" />
     <link href="lib/gallery/css/blueimp-gallery-video.css" rel="stylesheet" type="text/css" />-->
-
     <!-- This script is added by PhoneGap build -->
     <script type="text/javascript" src="cordova.js"></script>
-    
     <script src="lib/jquery/jquery.js" type="text/javascript"></script>
     <script src="lib/jquerymobile/jquery.mobile-1.4.2.min.js" type="text/javascript"></script>
 </head>
@@ -233,6 +231,9 @@
     <script src="lib/gallery/js/blueimp-gallery-indicator.js" type="text/javascript"></script>
     <script src="lib/gallery/js/blueimp-gallery-video.js" type="text/javascript"></script>-->
     <script type="text/javascript">
+        $(function () {
+            document.addEventListener("deviceready", function () { navigator.splashscreen.hide(); });
+        });
         $('.m-carousel').carousel();
         $(document).on("pageshow", "#procedure", function () {
             blueimp.Gallery(
