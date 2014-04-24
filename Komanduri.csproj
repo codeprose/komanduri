@@ -60,6 +60,10 @@
     <Content Include="css\dx.ios.default.css" />
     <Content Include="css\dx.tizen.black.css" />
     <Content Include="css\dx.win8.black.css" />
+    <Content Include="data\biliary\ercp.js" />
+    <Content Include="data\colon\emr-for-complex-polyps.js" />
+    <Content Include="data\esophagus\rfa-for-barretts.js" />
+    <Content Include="data\setup.js" />
     <Content Include="font\flaticon.css" />
     <Content Include="font\flaticon.html" />
     <Content Include="font\flaticon.svg" />
@@ -205,7 +209,11 @@
     <None Include="js\jquery-2.0.3.min.map" />
     <None Include="res\screen\tizen\README.md" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="data\pancreas\" />
+    <Folder Include="data\small-intestine\" />
+    <Folder Include="data\stomach\" />
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
   <ProjectExtensions>

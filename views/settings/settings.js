@@ -1,6 +1,6 @@
 ﻿$(function () {
     console.log('library view model initiating');
-    MyApp.settings = function (params) {
+    MyScope.settings = function (params) {
         var device = DevExpress.devices.current();
 
         var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;

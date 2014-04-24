@@ -4,7 +4,7 @@ $(function () {
     FastClick.attach(document.body);
 });
 
-window.MyApp = window.MyApp || {};
+window.MyScope = window.MyScope || {};
 
 $(function() {
     // Uncomment the line below to disable platform-specific look and feel and to use the Generic theme for all devices
@@ -12,9 +12,9 @@ $(function() {
 
     document.addEventListener("deviceready", function() { navigator.splashscreen.hide(); });
 
-    MyApp.app = new DevExpress.framework.html.HtmlApplication({
-        namespace: MyApp,
-        navigationType: MyApp.config.navigationType,
+    MyScope.app = new DevExpress.framework.html.HtmlApplication({
+        namespace: MyScope,
+        navigationType: MyScope.config.navigationType,
         navigation: [
             {
                 title: "Home",
@@ -34,13 +34,13 @@ $(function() {
         ]
     });
 
-    MyApp.app.router.register(":view", { view: "home" });
-    MyApp.app.router.register(":view", { view: "library" });
-    MyApp.app.router.register(":view", { view: "settings" });
-    MyApp.app.router.register(":view/:id", { view: "procedure", id: null });
-    MyApp.app.router.register(":view/:id", { view: "images", id: null });
-    MyApp.app.router.register(":view/:id", { view: "videos", id: null });
-    MyApp.app.router.register(":view/:id/:color", { view: "category", id: null, color: null });
+    MyScope.app.router.register(":view", { view: "home" });
+    MyScope.app.router.register(":view", { view: "library" });
+    MyScope.app.router.register(":view", { view: "settings" });
+    MyScope.app.router.register(":view/:id", { view: "procedure", id: null });
+    MyScope.app.router.register(":view/:id", { view: "images", id: null });
+    MyScope.app.router.register(":view/:id", { view: "videos", id: null });
+    MyScope.app.router.register(":view/:id/:color", { view: "category", id: null, color: null });
 
-    MyApp.app.navigate();
+    MyScope.app.navigate();
 });

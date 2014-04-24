@@ -1,6 +1,6 @@
 ﻿(function () {
-    MyApp.images = function (params) {
-        var procedure = MyApp.db.getProcedureById(params.id);
+    MyScope.images = function (params) {
+        var procedure = MyScope.db.getProcedureById(params.id);
 
         return {
             procedure: procedure,

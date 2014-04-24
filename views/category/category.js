@@ -1,7 +1,7 @@
 ﻿$(function () {
-    MyApp.category = function (params) {
+    MyScope.category = function (params) {
 
-        var category = MyApp.db.demoCategories[params.id];
+        var category = MyScope.db.categories[params.id];
 
         return {
             title: ko.observable(category.key),

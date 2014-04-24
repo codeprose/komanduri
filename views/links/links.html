@@ -3,7 +3,7 @@
     <div class="tile-link-list">
         <ul data-bind="foreach: currentProcedure.links">
             <li class="link-list-item" style="white-space: nowrap;">
-                <span data-bind="dxButton: { icon: 'favorites', clickAction: function(evt) { MyApp.db.ryansLibrary[4].items.push(evt.model); } }"></span>
+                <span data-bind="dxButton: { icon: 'favorites', clickAction: function(evt) { MyScope.db.ryansLibrary[4].items.push(evt.model); } }"></span>
                 <span>&nbsp;</span>
                 <a data-bind="attr: { href: url }, text: url"></a>
             </li>

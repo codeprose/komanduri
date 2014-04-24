@@ -1,4 +1,4 @@
-﻿window.MyApp = $.extend(true, window.MyApp, {
+﻿window.MyScope = $.extend(true, window.MyScope, {
     "config": {
         "navigationType": "navbar"
     }
