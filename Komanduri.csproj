@@ -83,6 +83,8 @@
     <Content Include="img\video_posters\rfa_sample.png" />
     <Content Include="index.css" />
     <Content Include="index.html" />
+    <Content Include="index_new.html" />
+    <Content Include="index_old.html" />
     <Content Include="index_phonejs.html" />
     <Content Include="config.xml">
       <SubType>Designer</SubType>
