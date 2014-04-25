@@ -5,6 +5,19 @@
 
         return compiled(data);
     };
+
+    window.pageParams = function($page, $prevPage, parameterNames) {
+        var data = $.mobile.pageData || $prevPage.data();
+
+        var parameters = {};
+        for (var pIndex = 0; pIndex < parameterNames.length; pIndex++) {
+            var name = parameterNames[pIndex];
+            parameters[name] = data[name];
+            $page.data(name, data[name]);
+        }
+
+        return parameters;
+    };
 })(jQuery, Handlebars);
 
 $(document).on('pageshow', '.myscope-dynamic-page', function (pageShowEvent, pageShowData) {

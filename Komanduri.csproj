@@ -350,6 +350,7 @@
     <Content Include="pages\category.js" />
     <Content Include="pages\home.js" />
     <Content Include="pages\quadrant.js" />
+    <Content Include="pages\videos.js" />
     <Content Include="res\icon\android\icon-36-ldpi.png" />
     <Content Include="res\icon\android\icon-48-mdpi.png" />
     <Content Include="res\icon\android\icon-72-hdpi.png" />

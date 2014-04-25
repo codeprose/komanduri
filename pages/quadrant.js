@@ -1,13 +1,11 @@
 ﻿$(document).on('pagebeforeshow', '#quadrant', function (event, data) {
-    var params = $.mobile.pageData || data.prevPage.data();
+    var params = pageParams($(this), data.prevPage, ['categoryIndex', 'procedureId']);
 
-    var categoryIndex = params['categoryIndex'];
-    var procedureId = params['procedureId'];
-    $(this).data('categoryIndex', categoryIndex);
-    $(this).data('procedureId', procedureId);
+    var categoryIndex = params.categoryIndex;
+    var procedureId = params.procedureId;
 
     var category = MyScope.db.categories[categoryIndex];
-    var procedure = MyScope.db.getProcedureById(procedureId);
+    var procedure = MyScope.db.getProcedureById(params.procedureId);
 
     var page = $('#quadrant');
     var pageContent = page.children('.ui-content');
@@ -16,6 +14,5 @@
 
     page.append(makeControl('footer', {}));
 
-    //page.find('.myscope-dynamic').hide();
     page.hide();
 });

@@ -27,13 +27,7 @@
     <script type="text/javascript" src="pages/home.js"></script>
     <script type="text/javascript" src="pages/category.js"></script>
     <script type="text/javascript" src="pages/quadrant.js"></script>
-    
-    <script type="text/javascript">
-        $.ajaxSetup({
-            // Disable caching of AJAX responses
-            cache: false
-        });        
-    </script>
+    <script type="text/javascript" src="pages/videos.js"></script>
 </head>
 <body>
     <!-- #home -->
@@ -48,15 +42,12 @@
     <!-- #category -->
     <div data-role="page" id="category" data-theme="b" class="myscope-dynamic-page">
         <div role="main" class="ui-content">
-            <div class="m-carousel m-center m-scaled m-fade-out">
-                <div class="m-carousel-inner">
 
-                </div>
-            </div>
         </div>
     </div>
     <!-- /#category -->
-
+    
+    <!-- #quadrant -->
     <div data-role="page" data-theme="b" id="quadrant" class="myscope-dynamic-page">
         <div data-role="main" class="ui-content">
             <div class="ui-grid-a">
@@ -99,21 +90,18 @@
             </div>
         </div>
     </div>
+    <!-- /#quadrant -->
+    
+    <!-- #videos -->
     <div data-role="page" data-theme="b" id="videos">
-        <div data-role="header">
-            <h1>
-                RFA for Barrett's</h1>
-            <a href="./" data-shadow="false" data-iconshadow="false" data-icon="carat-l" data-iconpos="notext"
-                data-rel="back" data-ajax="false">Back</a>
-        </div>
         <!-- /header -->
         <div role="main" class="ui-content">
             <ul class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
                 <li class="ui-li-has-thumb"><a class="ui-btn">
-                    <img src="img/play-button-original.png" class="ui-li-thumb">
-                    <h2>
-                        Video</h2>
-                </a></li>
+                                                <img src="img/play-button-original.png" class="ui-li-thumb">
+                                                <h2>
+                                                    Video</h2>
+                                            </a></li>
             </ul>
             <div id="video-carousel" class="blueimp-gallery blueimp-gallery-carousel">
                 <div class="slides">
@@ -125,19 +113,9 @@
                 </ol>
             </div>
         </div>
-        <!-- /content -->
-        <div data-role="footer" data-position="fixed">
-            <div data-role="navbar" data-iconpos="bottom">
-                <ul>
-                    <li><a href="#home" data-icon="home">Home</a></li>
-                    <li><a href="#library" data-icon="heart">Library</a></li>
-                    <li><a href="#settings" data-icon="gear">Settings</a></li>
-                </ul>
-            </div>
-            <!-- /navbar -->
-        </div>
-        <!-- /footer -->
     </div>
+    <!-- /#videos -->
+
     <div data-role="page" data-theme="b" id="images">
         <div data-role="header">
             <h1>
@@ -446,6 +424,13 @@
                     <p class="m-caption">{{caption}}</p>
                 </a>
             </div>
+        </div>
+    </script>
+    
+    <!-- This is the old school carousel with no items -->
+    <script id="old-carousel" type="text/x-handlebars-template">
+        <div class="m-carousel m-center m-scaled m-fade-out myscope-dynamic">
+            <div class="m-carousel-inner"></div>
         </div>
     </script>
 </body>
