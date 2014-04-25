@@ -24,79 +24,48 @@
     <script type="text/javascript" src="data/colon/emr-for-complex-polyps.js"></script>
     <script type="text/javascript" src="data/esophagus/rfa-for-barretts.js"></script>
     
-    <script type="text/javascript" src="menu.js"></script>
-    <script type="text/javascript" src="category-page.js"></script>
+    <script type="text/javascript" src="pages/home.js"></script>
+    <script type="text/javascript" src="pages/category.js"></script>
+    <script type="text/javascript" src="pages/quadrant.js"></script>
+    
+    <script type="text/javascript">
+        $.ajaxSetup({
+            // Disable caching of AJAX responses
+            cache: false
+        });        
+    </script>
 </head>
 <body>
-    <!-- Start of first page -->
+    <!-- #home -->
     <div data-role="page" data-theme="b" id="home" class="my-page">
-        <div data-role="header">
-            <h1>MyScope</h1>
-        </div>
-        <!-- /header -->
+        <div data-role="header"><h1>MyScope</h1></div>
         <div role="main" class="ui-content">
             <ul data-role="listview" data-inset="true"></ul>
         </div>
-        <!-- /content -->
-        <div data-role="footer" data-position="fixed">
-            <div data-role="navbar" data-iconpos="bottom">
-                <ul>
-                    <li><a href="#home" data-icon="home">Home</a></li>
-                    <li><a href="#library" data-icon="heart">Library</a></li>
-                    <li><a href="#settings" data-icon="gear">Settings</a></li>
-                </ul>
-            </div>
-            <!-- /navbar -->
-        </div>
-        <!-- /footer -->
     </div>
-    <!-- /page -->
-    <!-- Start of second page -->
+    <!-- /#home -->
+
+    <!-- #category -->
     <div data-role="page" id="category" data-theme="b">
-        <div data-role="header">
-            <h1>
-                MyScope</h1>
-            <a href="./" data-shadow="false" data-iconshadow="false" data-icon="carat-l" data-iconpos="notext"
-                data-rel="back" data-ajax="false">Back</a>
-        </div>
-        <!-- /header -->
-        <div role="main" class="ui-content" id="category-content">
+        <div role="main" class="ui-content">
             <div class="m-carousel m-center m-scaled m-fade-out">
                 <div class="m-carousel-inner">
 
                 </div>
             </div>
         </div>
-        <!-- /content -->
-        <div data-role="footer" data-position="fixed">
-            <div data-role="navbar" data-iconpos="bottom">
-                <ul>
-                    <li><a href="#home" data-icon="home">Home</a></li>
-                    <li><a href="#library" data-icon="heart">Library</a></li>
-                    <li><a href="#settings" data-icon="gear">Settings</a></li>
-                </ul>
-            </div>
-            <!-- /navbar -->
-        </div>
-        <!-- /footer -->
     </div>
-    <!-- /page -->
+    <!-- /#category -->
+
     <div data-role="page" data-theme="b" id="quadrant">
-        <div data-role="header">
-            <h1>
-                Esophagus</h1>
-            <a href="./" data-shadow="false" data-iconshadow="false" data-icon="carat-l" data-iconpos="notext"
-                data-rel="back" data-ajax="false">Back</a>
-        </div>
-        <!-- /header -->
         <div data-role="main" class="ui-content">
-            <ul class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+            <!--<ul class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
                 <li class="ui-li-has-thumb"><a class="ui-btn">
                     <img src="img/procedure-icons/rfa_for_barretts.png" class="ui-li-thumb">
                     <h2>
                         RFA for Barrett's</h2>
                 </a></li>
-            </ul>
+            </ul>-->
             <div class="ui-grid-a">
                 <div class="ui-block-a" style="padding: 4px">
                     <a href="#videos" style="text-decoration: none">
@@ -434,17 +403,39 @@
     
     <!-- This is a template for the category header that goes on each page -->
     <script id="category-header" type="text/x-handlebars-template">
-        <ul class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
+        <ul class="ui-listview ui-listview-inset ui-corner-all ui-shadow myscope-dynamic">
             <li class="ui-li-has-thumb"><a class="ui-btn">
                 <img src="{{image}}" class="ui-li-thumb">
                 <h2>{{category}}</h2>
             </a></li>
         </ul>        
     </script>
+    
+    <!-- This is the standard header -->
+    <script id="header" type="text/x-handlebars-template">
+        <div data-role="header" class="myscope-dynamic">
+            <h1>{{title}}</h1>
+            <a href="./{{params}}" data-shadow="false" data-iconshadow="false" data-icon="carat-l" data-iconpos="notext"
+                data-rel="back" data-ajax="false">Back</a>
+        </div>        
+    </script>
+
+    <!-- This the standard footer -->
+    <script id="footer" type="text/x-handlebars-template">
+        <div data-role="footer" data-position="fixed" class="myscope-dynamic">
+            <div data-role="navbar" data-iconpos="bottom">
+                <ul>
+                    <li><a href="#home" data-icon="home">Home</a></li>
+                    <li><a href="#library" data-icon="heart">Library</a></li>
+                    <li><a href="#settings" data-icon="gear">Settings</a></li>
+                </ul>
+            </div>
+        </div>
+    </script>
 
     <!-- This is a template for the card/button that displays on the first page for each category -->
     <script id="category-menu-item" type="text/x-handlebars-template">
-        <li>
+        <li class="myscope-dynamic">
             <a href="#category?categoryIndex={{categoryIndex}}">
                 <img src="{{image}}" class="ui-li-thumb">
                 <h2>{{category}}</h2>
@@ -455,9 +446,9 @@
     
     <!-- This is a template for the card that displays for each procedure in a given category after clicking the category on the first page -->
     <script id="procedure-card-item" type="text/x-handlebars-template">
-        <div class="m-item">
+        <div class="m-item myscope-dynamic">
             <div class="m-card-light">
-                <a href="#quadrant" style="text-decoration: none; color: black; font-weight: normal">
+                <a href="#quadrant?procedureId={{procedureId}}&categoryIndex={{categoryIndex}}" style="text-decoration: none; color: black; font-weight: normal">
                     <img src="{{image}}" />
                     <p class="m-caption">{{caption}}</p>
                 </a>

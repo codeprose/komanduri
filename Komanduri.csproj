@@ -53,7 +53,6 @@
   <ItemGroup>
     <Content Include=".gitignore" />
     <Content Include="app.config.js" />
-    <Content Include="category-page.js" />
     <Content Include="cordova.js" />
     <Content Include="css\dx.android.holo-dark.css" />
     <Content Include="css\dx.common.css" />
@@ -347,8 +346,10 @@
     <Content Include="lib\jquerymobile\listview-grid.css" />
     <Content Include="lib\jquery\jquery.js" />
     <Content Include="main.js" />
-    <Content Include="menu.js" />
     <Content Include="mobify.htm" />
+    <Content Include="pages\category.js" />
+    <Content Include="pages\home.js" />
+    <Content Include="pages\quadrant.js" />
     <Content Include="res\icon\android\icon-36-ldpi.png" />
     <Content Include="res\icon\android\icon-48-mdpi.png" />
     <Content Include="res\icon\android\icon-72-hdpi.png" />
