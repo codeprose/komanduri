@@ -15,4 +15,7 @@
     pageContent.prepend(makeControl('category-header', { category: procedure.title, image: procedure.image }));
 
     page.append(makeControl('footer', {}));
+
+    //page.find('.myscope-dynamic').hide();
+    page.hide();
 });

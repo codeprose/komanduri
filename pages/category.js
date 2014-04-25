@@ -30,14 +30,7 @@
     $('.m-carousel').carousel();
 
     page.append(makeControl('footer', {}));
-});
 
-$(document).on('pageshow', '#category, #quadrant', function (pageShowEvent, pageShowData) {
-    $(this).wrap('<div id="temporary-page-wrapper">');
-    $('#temporary-page-wrapper').page();
-    $(this).unwrap();
-});
-
-$(document).on('pagehide', '#category, #quadrant', function (pageHideEvent, pageHideData) {
-    $(this).find('.myscope-dynamic').remove();
+    //page.find('.myscope-dynamic').hide();
+    page.hide();
 });
