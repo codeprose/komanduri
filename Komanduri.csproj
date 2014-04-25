@@ -349,6 +349,7 @@
     <Content Include="mobify.htm" />
     <Content Include="pages\category.js" />
     <Content Include="pages\home.js" />
+    <Content Include="pages\images.js" />
     <Content Include="pages\quadrant.js" />
     <Content Include="pages\videos.js" />
     <Content Include="res\icon\android\icon-36-ldpi.png" />

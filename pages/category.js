@@ -7,13 +7,11 @@
     var page = $('#category');
     var pageContent = page.children('.ui-content');
     page.prepend(makeControl('header', { title: 'MyScope', params: '?categoryIndex=' + categoryIndex }));
-    pageContent.prepend(makeControl('category-header', { category: category.key, image: category.image }));
+    pageContent.prepend(makeControl('context-header', { title: category.key, image: category.image }));
     pageContent.append(makeControl('old-carousel', {}));
 
     var carousel = pageContent.find('.m-carousel-inner').empty();
     var procedures = category.items;
-
-
 
     $.each(procedures, function (procedureIndex, procedure) {
         carousel.append(makeControl('procedure-card-item', {
