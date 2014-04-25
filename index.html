@@ -93,7 +93,7 @@
     <!-- /#quadrant -->
     
     <!-- #videos -->
-    <div data-role="page" data-theme="b" id="videos">
+    <div data-role="page" data-theme="b" id="videos" class="myscope-dynamic-page">
         <!-- /header -->
         <div role="main" class="ui-content">
             <ul class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
@@ -302,74 +302,74 @@
         $(function () {
             document.addEventListener("deviceready", function () { navigator.splashscreen.hide(); });
         });
-        //$('.m-carousel').carousel();
-        $(document).on("pageshow", "#videos", function () {
-            blueimp.Gallery(
-                [
-                    {
-                        title: 'Some RFA Video',
-                        type: 'video/*',
-                        poster: 'img/video_posters/rfa_sample.png',
-                        sources: [
-                            {
-                                href: 'https://dl.dropboxusercontent.com/sh/9brvca2lr1eq83g/qRlTVAIn83/esophagus/rfa-for-barretts/videos/mp4/Barrett%27s%20Esophagus%20360%20RFA%202.mp4.mp4',
-                                type: 'video/mp4'
-                            },
-                            {
-                                href: 'https://dl.dropboxusercontent.com/sh/9brvca2lr1eq83g/97ngChRTio/esophagus/rfa-for-barretts/videos/ogg/Barrett%27s%20Esophagus%20360%20RFA%202.oggtheora.ogv',
-                                type: 'video/ogg'
-                            },
-                            {
-                                href: 'https://dl.dropboxusercontent.com/sh/9brvca2lr1eq83g/RLOUMoty8x/esophagus/rfa-for-barretts/videos/webm/Barrett%27s%20Esophagus%20360%20RFA%202.webmsd.webm',
-                                type: 'video/webm'
-                            }
-                        ]
-                    },
-                    {
-                        title: 'Some Other RFA Video',
-                        type: 'video/*',
-                        poster: 'img/video_posters/rfa_sample.png',
-                        sources: [
-                            {
-                                href: 'https://dl.dropboxusercontent.com/sh/9brvca2lr1eq83g/qRlTVAIn83/esophagus/rfa-for-barretts/videos/mp4/Barrett%27s%20Esophagus%20360%20RFA%202.mp4.mp4',
-                                type: 'video/mp4'
-                            },
-                            {
-                                href: 'https://dl.dropboxusercontent.com/sh/9brvca2lr1eq83g/97ngChRTio/esophagus/rfa-for-barretts/videos/ogg/Barrett%27s%20Esophagus%20360%20RFA%202.oggtheora.ogv',
-                                type: 'video/ogg'
-                            },
-                            {
-                                href: 'https://dl.dropboxusercontent.com/sh/9brvca2lr1eq83g/RLOUMoty8x/esophagus/rfa-for-barretts/videos/webm/Barrett%27s%20Esophagus%20360%20RFA%202.webmsd.webm',
-                                type: 'video/webm'
-                            }
-                        ]
-                    },
-                    {
-                        title: 'Yet Some Other RFA Video',
-                        type: 'video/*',
-                        poster: 'img/video_posters/rfa_sample.png',
-                        sources: [
-                            {
-                                href: 'https://dl.dropboxusercontent.com/sh/9brvca2lr1eq83g/qRlTVAIn83/esophagus/rfa-for-barretts/videos/mp4/Barrett%27s%20Esophagus%20360%20RFA%202.mp4.mp4',
-                                type: 'video/mp4'
-                            },
-                            {
-                                href: 'https://dl.dropboxusercontent.com/sh/9brvca2lr1eq83g/97ngChRTio/esophagus/rfa-for-barretts/videos/ogg/Barrett%27s%20Esophagus%20360%20RFA%202.oggtheora.ogv',
-                                type: 'video/ogg'
-                            },
-                            {
-                                href: 'https://dl.dropboxusercontent.com/sh/9brvca2lr1eq83g/RLOUMoty8x/esophagus/rfa-for-barretts/videos/webm/Barrett%27s%20Esophagus%20360%20RFA%202.webmsd.webm',
-                                type: 'video/webm'
-                            }
-                        ]
-                    }
-                ],
-                {
-                    container: '#video-carousel',
-                    carousel: true
-                }
-            );
-        });
+////        //$('.m-carousel').carousel();
+////        $(document).on("pageshow", "#videos", function () {
+////            blueimp.Gallery(
+////                [
+////                    {
+////                        title: 'Some RFA Video',
+////                        type: 'video/*',
+////                        poster: 'img/video_posters/rfa_sample.png',
+////                        sources: [
+////                            {
+////                                href: 'https://dl.dropboxusercontent.com/sh/9brvca2lr1eq83g/qRlTVAIn83/esophagus/rfa-for-barretts/videos/mp4/Barrett%27s%20Esophagus%20360%20RFA%202.mp4.mp4',
+////                                type: 'video/mp4'
+////                            },
+////                            {
+////                                href: 'https://dl.dropboxusercontent.com/sh/9brvca2lr1eq83g/97ngChRTio/esophagus/rfa-for-barretts/videos/ogg/Barrett%27s%20Esophagus%20360%20RFA%202.oggtheora.ogv',
+////                                type: 'video/ogg'
+////                            },
+////                            {
+////                                href: 'https://dl.dropboxusercontent.com/sh/9brvca2lr1eq83g/RLOUMoty8x/esophagus/rfa-for-barretts/videos/webm/Barrett%27s%20Esophagus%20360%20RFA%202.webmsd.webm',
+////                                type: 'video/webm'
+////                            }
+////                        ]
+////                    },
+////                    {
+////                        title: 'Some Other RFA Video',
+////                        type: 'video/*',
+////                        poster: 'img/video_posters/rfa_sample.png',
+////                        sources: [
+////                            {
+////                                href: 'https://dl.dropboxusercontent.com/sh/9brvca2lr1eq83g/qRlTVAIn83/esophagus/rfa-for-barretts/videos/mp4/Barrett%27s%20Esophagus%20360%20RFA%202.mp4.mp4',
+////                                type: 'video/mp4'
+////                            },
+////                            {
+////                                href: 'https://dl.dropboxusercontent.com/sh/9brvca2lr1eq83g/97ngChRTio/esophagus/rfa-for-barretts/videos/ogg/Barrett%27s%20Esophagus%20360%20RFA%202.oggtheora.ogv',
+////                                type: 'video/ogg'
+////                            },
+////                            {
+////                                href: 'https://dl.dropboxusercontent.com/sh/9brvca2lr1eq83g/RLOUMoty8x/esophagus/rfa-for-barretts/videos/webm/Barrett%27s%20Esophagus%20360%20RFA%202.webmsd.webm',
+////                                type: 'video/webm'
+////                            }
+////                        ]
+////                    },
+////                    {
+////                        title: 'Yet Some Other RFA Video',
+////                        type: 'video/*',
+////                        poster: 'img/video_posters/rfa_sample.png',
+////                        sources: [
+////                            {
+////                                href: 'https://dl.dropboxusercontent.com/sh/9brvca2lr1eq83g/qRlTVAIn83/esophagus/rfa-for-barretts/videos/mp4/Barrett%27s%20Esophagus%20360%20RFA%202.mp4.mp4',
+////                                type: 'video/mp4'
+////                            },
+////                            {
+////                                href: 'https://dl.dropboxusercontent.com/sh/9brvca2lr1eq83g/97ngChRTio/esophagus/rfa-for-barretts/videos/ogg/Barrett%27s%20Esophagus%20360%20RFA%202.oggtheora.ogv',
+////                                type: 'video/ogg'
+////                            },
+////                            {
+////                                href: 'https://dl.dropboxusercontent.com/sh/9brvca2lr1eq83g/RLOUMoty8x/esophagus/rfa-for-barretts/videos/webm/Barrett%27s%20Esophagus%20360%20RFA%202.webmsd.webm',
+////                                type: 'video/webm'
+////                            }
+////                        ]
+////                    }
+////                ],
+////                {
+////                    container: '#video-carousel',
+////                    carousel: true
+////                }
+////            );
+////        });
     </script>
     
     <!-- This is a template for the category header that goes on each page -->

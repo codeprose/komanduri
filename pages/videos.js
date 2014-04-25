@@ -12,25 +12,6 @@
     page.prepend(makeControl('header', { title: procedure.title, params: '?categoryIndex=' + categoryIndex + '&procedureId=' + procedureId }));
     //pageContent.prepend(makeControl('category-header', { category: procedure.title, image: procedure.image }));
 
-//    var galleryItems = [];
-//    $.each(procedure.videos, function (i, video) {
-//        galleryItems.push({
-//            title: video.title,
-//            type: 'video/*',
-//            poster: 'img/video_posters/rfa_sample.png',
-//            sources: [
-//                { type: 'video/mp4', href: video.sources.mp4 },
-//                { type: 'video/ogg', href: video.sources.ogg },
-//                { type: 'video/webm', href: video.sources.webm }
-//            ]
-//        });
-//    });
-
-//    blueimp.Gallery(galleryItems, {
-//        container: '#video-carousel',
-//        carousel: true
-//    });
-
     page.append(makeControl('footer', {}));
 
     //page.hide();
@@ -44,22 +25,22 @@ $(document).on('pageshow', '#videos', function (event, data) {
 
     var procedure = MyScope.db.getProcedureById(procedureId);
 
-//    var galleryItems = [];
-//    $.each(procedure.videos, function (i, video) {
-//        galleryItems.push({
-//            title: video.title,
-//            type: 'video/*',
-//            poster: 'img/video_posters/rfa_sample.png',
-//            sources: [
-//                { type: 'video/mp4', href: video.sources.mp4 },
-//                { type: 'video/ogg', href: video.sources.ogg },
-//                { type: 'video/webm', href: video.sources.webm }
-//            ]
-//        });
-//    });
+    var galleryItems = [];
+    $.each(procedure.videos, function (i, video) {
+        galleryItems.push({
+            title: video.title,
+            type: 'video/*',
+            poster: 'img/video_posters/rfa_sample.png',
+            sources: [
+                { type: 'video/mp4', href: video.sources.mp4 },
+                { type: 'video/ogg', href: video.sources.ogg },
+                { type: 'video/webm', href: video.sources.webm }
+            ]
+        });
+    });
 
-//    blueimp.Gallery(galleryItems, {
-//        container: '#video-carousel',
-//        carousel: true
-//    });
+    blueimp.Gallery(galleryItems, {
+        container: '#video-carousel',
+        carousel: true
+    });
 });
