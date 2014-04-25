@@ -348,6 +348,8 @@
     <Content Include="main.js" />
     <Content Include="mobify.htm" />
     <Content Include="pages\category.js" />
+    <Content Include="pages\guidelines-slides.js" />
+    <Content Include="pages\guidelines.js" />
     <Content Include="pages\home.js" />
     <Content Include="pages\images.js" />
     <Content Include="pages\quadrant.js" />

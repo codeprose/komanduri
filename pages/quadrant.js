@@ -9,7 +9,7 @@
 
     var page = $('#quadrant');
     var pageContent = page.children('.ui-content');
-    page.prepend(makeControl('header', { title: procedure.title, params: '?categoryIndex=' + categoryIndex + '&procedureId=' + procedureId }));
+    page.prepend(makeControl('header', { title: category.key, params: '?categoryIndex=' + categoryIndex + '&procedureId=' + procedureId }));
     pageContent.prepend(makeControl('context-header', { title: procedure.title, image: procedure.image }));
 
     page.append(makeControl('footer', {}));

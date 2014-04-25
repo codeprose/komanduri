@@ -4,7 +4,6 @@
     var categoryIndex = params.categoryIndex;
     var procedureId = params.procedureId;
 
-    var category = MyScope.db.categories[categoryIndex];
     var procedure = MyScope.db.getProcedureById(params.procedureId);
 
     var page = $(this);

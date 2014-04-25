@@ -25,6 +25,8 @@
     <script type="text/javascript" src="pages/quadrant.js"></script>
     <script type="text/javascript" src="pages/videos.js"></script>
     <script type="text/javascript" src="pages/images.js"></script>
+    <script type="text/javascript" src="pages/guidelines.js"></script>
+    <script type="text/javascript" src="pages/guidelines-slides.js"></script>
 </head>
 <body>
     <!-- #home -->
@@ -121,24 +123,19 @@
         </div>
     </div>
     <!-- /#images -->    
-
-    <div data-role="page" data-theme="b" id="guidelines">
-        <div data-role="header">
-            <h1>
-                RFA for Barrett's</h1>
-            <a href="./" data-shadow="false" data-iconshadow="false" data-icon="carat-l" data-iconpos="notext"
-                data-rel="back" data-ajax="false">Back</a>
-        </div>
-        <!-- /header -->
+    
+    <!-- #guidelines -->
+    <div data-role="page" data-theme="b" id="guidelines" class="myscope-dynamic-page">
         <div role="main" class="ui-content">
-            <ul class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
-                <li class="ui-li-has-thumb"><a class="ui-btn">
-                    <img src="img/ppt-button-original.png" class="ui-li-thumb">
-                    <h2>
-                        Guidelines</h2>
-                </a></li>
-            </ul>
-            <div id="Div2" class="blueimp-gallery blueimp-gallery-carousel">
+
+        </div>
+    </div>
+    <!-- /#guidelines -->
+    
+    <!-- #guidelines-slides -->
+    <div data-role="page" data-theme="b" id="guidelines-slides" class="myscope-dynamic-page">
+        <div role="main" class="ui-content">
+            <div id="slide-carousel" class="blueimp-gallery blueimp-gallery-carousel">
                 <div class="slides">
                 </div>
                 <h3 class="title">
@@ -148,19 +145,9 @@
                 </ol>
             </div>
         </div>
-        <!-- /content -->
-        <div data-role="footer" data-position="fixed">
-            <div data-role="navbar" data-iconpos="bottom">
-                <ul>
-                    <li><a href="#home" data-icon="home">Home</a></li>
-                    <li><a href="#library" data-icon="heart">Library</a></li>
-                    <li><a href="#settings" data-icon="gear">Settings</a></li>
-                </ul>
-            </div>
-            <!-- /navbar -->
-        </div>
-        <!-- /footer -->
     </div>
+    <!-- /#guidelines-slides -->    
+
     <div data-role="page" data-theme="b" id="references">
         <div data-role="header">
             <h1>
@@ -299,6 +286,18 @@
             <div class="m-card-light">
                 <a href="#quadrant?procedureId={{procedureId}}&categoryIndex={{categoryIndex}}" style="text-decoration: none; color: black; font-weight: normal">
                     <img src="{{image}}" />
+                    <p class="m-caption">{{caption}}</p>
+                </a>
+            </div>
+        </div>
+    </script>
+    
+    <!-- This is a template for the card that displays for each procedure in a given category after clicking the category on the first page -->
+    <script id="guidelines-card-item" type="text/x-handlebars-template">
+        <div class="m-item myscope-dynamic">
+            <div class="m-card-light">
+                <a href="#guidelines-slides?procedureId={{procedureId}}&categoryIndex={{categoryIndex}}&guidelinesIndex={{guidelinesIndex}}" style="text-decoration: none; color: black; font-weight: normal">
+                    <img src="{{image}}" style="max-width: 200px; max-height: 300px;" />
                     <p class="m-caption">{{caption}}</p>
                 </a>
             </div>
