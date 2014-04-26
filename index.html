@@ -179,7 +179,7 @@
             <div data-role="navbar" data-iconpos="bottom">
                 <ul>
                     <li><a href="#home" data-icon="home">Home</a></li>
-                    <li><a href="#library" data-icon="heart">Library</a></li>
+                    <li><a href="#quadrant?procedureId=library" data-icon="heart">Library</a></li>
                     <li><a href="#settings" data-icon="gear">Settings</a></li>
                 </ul>
             </div>
@@ -199,7 +199,7 @@
             <div data-role="navbar" data-iconpos="bottom">
                 <ul>
                     <li><a href="#home" data-icon="home">Home</a></li>
-                    <li><a href="#library" data-icon="heart">Library</a></li>
+                    <li><a href="#quadrant?procedureId=library" data-icon="heart">Library</a></li>
                     <li><a href="#settings" data-icon="gear">Settings</a></li>
                 </ul>
             </div>
@@ -219,7 +219,7 @@
             <div data-role="navbar" data-iconpos="bottom">
                 <ul>
                     <li><a href="#home" data-icon="home">Home</a></li>
-                    <li><a href="#library" data-icon="heart">Library</a></li>
+                    <li><a href="#quadrant?procedureId=library" data-icon="heart">Library</a></li>
                     <li><a href="#settings" data-icon="gear">Settings</a></li>
                 </ul>
             </div>
@@ -262,7 +262,7 @@
             <div data-role="navbar" data-iconpos="bottom">
                 <ul>
                     <li><a href="#home" data-icon="home">Home</a></li>
-                    <li><a href="#library" data-icon="heart">Library</a></li>
+                    <li><a href="#quadrant?procedureId=library" data-icon="heart">Library</a></li>
                     <li><a href="#settings" data-icon="gear">Settings</a></li>
                 </ul>
             </div>
@@ -272,10 +272,9 @@
     <!-- This is a template for the card/button that displays on the first page for each category -->
     <script id="category-menu-item" type="text/x-handlebars-template">
         <li class="myscope-dynamic">
-            <a href="#category?categoryIndex={{categoryIndex}}">
+            <a href="#category?categoryIndex={{categoryIndex}}" style="background-color: {{color}}">
                 <img src="{{image}}" class="ui-li-thumb">
                 <h2>{{category}}</h2>
-                <p></p>
             </a>
         </li>
     </script>

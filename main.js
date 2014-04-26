@@ -1,13 +1,13 @@
-﻿(function($, hb) {
-    window.makeControl = function(templateName, data) {
+﻿(function ($, hb) {
+    window.makeControl = function (templateName, data) {
         var template = $('#' + templateName).html();
         var compiled = hb.compile(template);
 
         return compiled(data);
     };
 
-    window.pageParams = function($page, $prevPage, parameterNames) {
-        var data = $.mobile.pageData || $prevPage.data();
+    window.pageParams = function ($page, $prevPage, parameterNames) {
+        var data = $.mobile.pageData || $prevPage.data() || {};
 
         var parameters = {};
         for (var pIndex = 0; pIndex < parameterNames.length; pIndex++) {
