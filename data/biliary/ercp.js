@@ -77,6 +77,34 @@
         }
         ],
         guidelines: [
+        {
+            title: 'Chicago Live 2012',
+            slides: [
+                'https://dl.dropboxusercontent.com/s/5w16o51uyxgqdws/Chicago%20Live%20SK%20ERCP%202012_Page_01.png',
+                'https://dl.dropboxusercontent.com/s/sre9g46xh6b76zx/Chicago%20Live%20SK%20ERCP%202012_Page_02.png',
+                'https://dl.dropboxusercontent.com/s/g4cop2c1d2o1hr7/Chicago%20Live%20SK%20ERCP%202012_Page_03.png',
+                'https://dl.dropboxusercontent.com/s/vwmjlxkdkg3r50x/Chicago%20Live%20SK%20ERCP%202012_Page_04.png',
+                'https://dl.dropboxusercontent.com/s/e0h4jwribnavw34/Chicago%20Live%20SK%20ERCP%202012_Page_05.png',
+                'https://dl.dropboxusercontent.com/s/w5x8hkos2c3w38a/Chicago%20Live%20SK%20ERCP%202012_Page_06.png',
+                'https://dl.dropboxusercontent.com/s/a89y4gt1fpmy4bk/Chicago%20Live%20SK%20ERCP%202012_Page_07.png',
+                'https://dl.dropboxusercontent.com/s/icglfcwz24p8piy/Chicago%20Live%20SK%20ERCP%202012_Page_08.png',
+                'https://dl.dropboxusercontent.com/s/ohj0m9jkof4617d/Chicago%20Live%20SK%20ERCP%202012_Page_09.png',
+                'https://dl.dropboxusercontent.com/s/l8a3zpjxo776o9t/Chicago%20Live%20SK%20ERCP%202012_Page_10.png',
+                'https://dl.dropboxusercontent.com/s/54j72vhsvj3mdb7/Chicago%20Live%20SK%20ERCP%202012_Page_11.png',
+                'https://dl.dropboxusercontent.com/s/8dyub6gxec7vz2m/Chicago%20Live%20SK%20ERCP%202012_Page_12.png',
+                'https://dl.dropboxusercontent.com/s/3vykexs5yd945f0/Chicago%20Live%20SK%20ERCP%202012_Page_13.png',
+                'https://dl.dropboxusercontent.com/s/bfdbn1brdd9p1pk/Chicago%20Live%20SK%20ERCP%202012_Page_14.png',
+                'https://dl.dropboxusercontent.com/s/yoys1iaym3j8inc/Chicago%20Live%20SK%20ERCP%202012_Page_15.png',
+                'https://dl.dropboxusercontent.com/s/nnwhm46hdomjkt3/Chicago%20Live%20SK%20ERCP%202012_Page_16.png',
+                'https://dl.dropboxusercontent.com/s/ztbzx1w38pjtxao/Chicago%20Live%20SK%20ERCP%202012_Page_17.png',
+                'https://dl.dropboxusercontent.com/s/0xk9n79fh0vbef2/Chicago%20Live%20SK%20ERCP%202012_Page_18.png',
+                'https://dl.dropboxusercontent.com/s/2tqupxa7qrx8xf6/Chicago%20Live%20SK%20ERCP%202012_Page_19.png',
+                'https://dl.dropboxusercontent.com/s/zhotk19p1p1vchb/Chicago%20Live%20SK%20ERCP%202012_Page_20.png',
+                'https://dl.dropboxusercontent.com/s/lbm68ervaionwpk/Chicago%20Live%20SK%20ERCP%202012_Page_21.png',
+                'https://dl.dropboxusercontent.com/s/8jgc9afwf7jh56r/Chicago%20Live%20SK%20ERCP%202012_Page_22.png',
+                'https://dl.dropboxusercontent.com/s/w9w5f4t44aja1ou/Chicago%20Live%20SK%20ERCP%202012_Page_23.png'            
+            ]
+        }
         ]
     });
 })();
