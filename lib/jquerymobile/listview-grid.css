@@ -9,7 +9,7 @@
 /* First breakpoint is 48em (768px). 3 column layout. Tiles 250x250 pixels incl. margin at the breakpoint. */
 @media ( min-width: 20em ) {
 	.my-page .ui-content {
-		padding: .5em; /* 9px */
+		padding: .475em; /* 9px */
 	}
 	.my-page .ui-listview-inset 
 	{	    
@@ -17,9 +17,9 @@
 	}
 	.my-page .ui-listview li {
 		float: left;
-		width: 48%; /* 50.0% incl. 1 x 1.2% margin */
+		width: 47%; /* 50.0% incl. 1 x 1.2% margin */
 		height: 120px;
-		margin: .5em 1.2%;
+		margin: .4em 1.5%;
 	}
 	.my-page .ui-listview li > .ui-btn {
 		-webkit-box-sizing: border-box; /* include padding and border in height so we can set it to 100% */
@@ -55,10 +55,11 @@
 	}
 	/* Text position */
 	.my-page .ui-listview h2 {
-		font-size: 1.25em;
+		font-size: 1.0em;
 		margin: 0;
 		padding: .125em 1em;
 		bottom: 50%;
+		white-space: nowrap;
 	}
 	.my-page .ui-listview p {
 		font-size: 1em;

@@ -60,6 +60,7 @@
     <Content Include="css\dx.ios.default.css" />
     <Content Include="css\dx.tizen.black.css" />
     <Content Include="css\dx.win8.black.css" />
+    <Content Include="css\jquerymobile.ios7.css" />
     <Content Include="data\biliary\ercp.js" />
     <Content Include="data\colon\emr-for-complex-polyps.js" />
     <Content Include="data\esophagus\rfa-for-barretts.js" />

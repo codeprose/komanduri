@@ -14,12 +14,10 @@
     <script src="lib/jquerymobile/jquery.mobile-1.4.2.min.js" type="text/javascript"></script>
     <script src="handlebars-v1.3.0.js" type="text/javascript"></script>
     <script src="main.js" type="text/javascript"></script>
-
     <script type="text/javascript" src="data/setup.js"></script>
     <script type="text/javascript" src="data/biliary/ercp.js"></script>
     <script type="text/javascript" src="data/colon/emr-for-complex-polyps.js"></script>
     <script type="text/javascript" src="data/esophagus/rfa-for-barretts.js"></script>
-    
     <script type="text/javascript" src="pages/home.js"></script>
     <script type="text/javascript" src="pages/category.js"></script>
     <script type="text/javascript" src="pages/quadrant.js"></script>
@@ -33,21 +31,26 @@
 <body>
     <!-- #home -->
     <div data-role="page" data-theme="b" id="home" class="my-page">
-        <div data-role="header"><h1>MyScope</h1></div>
+        <div data-role="header" style="font-size: 1.5em">
+            <h1>
+                MyScope</h1>
+        </div>
         <div role="main" class="ui-content">
-            <ul data-role="listview" data-inset="true"></ul>
+            <div style="text-align: center">
+                <h3>
+                    Endoscopy at your fingertips</h3>
+            </div>
+            <ul data-role="listview" data-inset="true">
+            </ul>
         </div>
     </div>
     <!-- /#home -->
-
     <!-- #category -->
     <div data-role="page" id="category" data-theme="b" class="myscope-dynamic-page">
         <div role="main" class="ui-content">
-
         </div>
     </div>
     <!-- /#category -->
-    
     <!-- #quadrant -->
     <div data-role="page" data-theme="b" id="quadrant" class="myscope-dynamic-page">
         <div data-role="main" class="ui-content">
@@ -92,7 +95,6 @@
         </div>
     </div>
     <!-- /#quadrant -->
-    
     <!-- #videos -->
     <div data-role="page" data-theme="b" id="videos" class="myscope-dynamic-page">
         <div role="main" class="ui-content">
@@ -108,48 +110,46 @@
         </div>
     </div>
     <!-- /#videos -->
-    
     <!-- #images -->
     <div data-role="page" data-theme="b" id="images" class="myscope-dynamic-page">
-        <div role="main" class="ui-content">        
-            <div id="image-links" class="links"></div>
+        <div role="main" class="ui-content">
+            <div id="image-links" class="links">
+            </div>
             <div id="image-gallery" class="blueimp-gallery">
-                <div class="slides"></div>
-                <h3 class="title"></h3>
-                <a class="prev"></a>
-                <a class="next"></a>
-                <a class="close"></a>
-                <a class="play-pause"></a>
-                <ol class="indicator"></ol>            
+                <div class="slides">
+                </div>
+                <h3 class="title">
+                </h3>
+                <a class="prev"></a><a class="next"></a><a class="close"></a><a class="play-pause">
+                </a>
+                <ol class="indicator">
+                </ol>
             </div>
         </div>
     </div>
-    <!-- /#images -->    
-    
+    <!-- /#images -->
     <!-- #guidelines -->
     <div data-role="page" data-theme="b" id="guidelines" class="myscope-dynamic-page">
         <div role="main" class="ui-content">
-
         </div>
     </div>
     <!-- /#guidelines -->
-    
     <!-- #guidelines-slides -->
     <div data-role="page" data-theme="b" id="guidelines-slides" class="myscope-dynamic-page">
         <div role="main" class="ui-content">
             <div id="slide-carousel" class="blueimp-gallery">
-                <div class="slides"></div>
-                <h3 class="title"></h3>
-                <a class="prev"></a>
-                <a class="next"></a>
-                <a class="close"></a>
-                <a class="play-pause"></a>
-                <ol class="indicator"></ol>            
+                <div class="slides">
+                </div>
+                <h3 class="title">
+                </h3>
+                <a class="prev"></a><a class="next"></a><a class="close"></a><a class="play-pause">
+                </a>
+                <ol class="indicator">
+                </ol>
             </div>
         </div>
     </div>
-    <!-- /#guidelines-slides -->    
-
+    <!-- /#guidelines-slides -->
     <div data-role="page" data-theme="b" id="references">
         <div data-role="header">
             <h1>
@@ -229,16 +229,25 @@
         </div>
         <!-- /footer -->
     </div>
-
     <script type="text/javascript" src="lib/carousel/carousel.js"></script>
     <script src="lib/gallery/js/blueimp-gallery.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="jqm.page.params.js"></script>
     <script type="text/javascript">
         $(function () {
-            document.addEventListener("deviceready", function () { navigator.splashscreen.hide(); });
+            document.addEventListener("deviceready", function () {
+                navigator.splashscreen.hide();
+            });
+
+            console.log(navigator.userAgent);
+            if (navigator.userAgent.match(/(iPad|iPhone);.*CPU.*OS 7_\d/i) || parseFloat(window.device.version) >= 7.0) {
+                var fileref = document.createElement("link");
+                fileref.setAttribute("rel", "stylesheet");
+                fileref.setAttribute("type", "text/css");
+                fileref.setAttribute("href", "css/jquerymobile.ios7.css");
+                document.getElementsByTagName("head")[0].appendChild(fileref);
+            }
         });
     </script>
-    
     <!-- This is a template for the category header that goes on each page -->
     <script id="context-header" type="text/x-handlebars-template">
         <ul class="ui-listview ui-listview-inset ui-corner-all ui-shadow myscope-dynamic">
@@ -248,7 +257,6 @@
             </a></li>
         </ul>        
     </script>
-    
     <!-- This is the standard header -->
     <script id="header" type="text/x-handlebars-template">
         <div data-role="header" class="myscope-dynamic">
@@ -257,7 +265,6 @@
                 data-rel="back" data-ajax="false">Back</a>
         </div>        
     </script>
-
     <!-- This the standard footer -->
     <script id="footer" type="text/x-handlebars-template">
         <div data-role="footer" data-position="fixed" class="myscope-dynamic">
@@ -270,7 +277,6 @@
             </div>
         </div>
     </script>
-
     <!-- This is a template for the card/button that displays on the first page for each category -->
     <script id="category-menu-item" type="text/x-handlebars-template">
         <li class="myscope-dynamic">
@@ -280,7 +286,6 @@
             </a>
         </li>
     </script>
-    
     <!-- This is a template for the card that displays for each procedure in a given category after clicking the category on the first page -->
     <script id="procedure-card-item" type="text/x-handlebars-template">
         <div class="m-item myscope-dynamic">
@@ -297,7 +302,6 @@
             </div>
         </div>
     </script>
-    
     <!-- This is a template for the card that displays for each procedure in a given category after clicking the category on the first page -->
     <script id="guidelines-card-item" type="text/x-handlebars-template">
         <div class="m-item myscope-dynamic">
@@ -309,14 +313,12 @@
             </div>
         </div>
     </script>
-    
     <!-- This is the old school carousel with no items -->
     <script id="old-carousel" type="text/x-handlebars-template">
         <div class="m-carousel m-center m-scaled m-fade-out myscope-dynamic">
             <div class="m-carousel-inner"></div>
         </div>
     </script>
-    
     <!-- Image Link for gallery -->
     <script id="image-link-for-gallery" type="text/handlebars-template">
         <a href="{{image}}" class="myscope-dynamic">
