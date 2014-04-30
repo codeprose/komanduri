@@ -238,7 +238,11 @@
 
             console.log(navigator.userAgent);
             if (navigator.userAgent.match(/(iPad|iPhone);.*CPU.*OS 7_\d/i) || parseFloat(window.device.version) >= 7.0) {
-                $(".ui-header").css("margin-top", "20px");
+                var fileref = document.createElement("link");
+                fileref.setAttribute("rel", "stylesheet");
+                fileref.setAttribute("type", "text/css");
+                fileref.setAttribute("href", "css/jquerymobile.ios7.css");
+                document.getElementsByTagName("head")[0].appendChild(fileref);
             }
         });
     </script>
