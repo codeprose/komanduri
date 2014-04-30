@@ -26,19 +26,19 @@
     <script type="text/javascript" src="pages/guidelines.js"></script>
     <script type="text/javascript" src="pages/guidelines-slides.js"></script>
     
+    <link rel="stylesheet" href="font/flaticon.css" />
     <link rel="stylesheet" href="myscope.css" />
+    <link rel="stylesheet" href="widgets/procedure-card/procedure-card.css" />
 </head>
 <body>
     <!-- #home -->
     <div data-role="page" data-theme="b" id="home" class="my-page">
         <div data-role="header" style="font-size: 1.5em">
-            <h1>
-                MyScope</h1>
+            <h1>MyScope</h1>
         </div>
         <div role="main" class="ui-content">
             <div style="text-align: center">
-                <h3>
-                    Endoscopy at your fingertips</h3>
+                <h3>Endoscopy at your fingertips</h3>
             </div>
             <ul data-role="listview" data-inset="true">
             </ul>
@@ -152,8 +152,7 @@
     <!-- /#guidelines-slides -->
     <div data-role="page" data-theme="b" id="references">
         <div data-role="header">
-            <h1>
-                RFA for Barrett's</h1>
+            <h1>RFA for Barrett's</h1>
             <a href="./" data-shadow="false" data-iconshadow="false" data-icon="carat-l" data-iconpos="notext"
                 data-rel="back" data-ajax="false">Back</a>
         </div>
@@ -162,8 +161,7 @@
             <ul class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
                 <li class="ui-li-has-thumb"><a class="ui-btn">
                     <img src="img/references-button-original.png" class="ui-li-thumb">
-                    <h2>
-                        References</h2>
+                    <h2>References</h2>
                 </a></li>
             </ul>
             <div id="Div4" class="blueimp-gallery blueimp-gallery-carousel">
@@ -191,8 +189,7 @@
     </div>
     <div data-role="page" data-theme="b" id="library">
         <div data-role="header">
-            <h1>
-                Library</h1>
+            <h1>Library</h1>
         </div>
         <!-- /header -->
         <div role="main" class="ui-content">
@@ -211,8 +208,7 @@
     </div>
     <div data-role="page" data-theme="b" id="settings">
         <div data-role="header">
-            <h1>
-                Settings</h1>
+            <h1>Settings</h1>
         </div>
         <!-- /header -->
         <div role="main" class="ui-content">
@@ -288,20 +284,45 @@
     </script>
     <!-- This is a template for the card that displays for each procedure in a given category after clicking the category on the first page -->
     <script id="procedure-card-item" type="text/x-handlebars-template">
-        <div class="m-item myscope-dynamic">
-            <div class="m-card-light">
-                <a href="#quadrant?procedureId={{procedureId}}&categoryIndex={{categoryIndex}}" style="text-decoration: none; color: black; font-weight: normal">
-                    <img src="{{image}}" />
-                    <p class="m-caption">{{caption}}</p>
-                </a>
-                <div class="card-footer">
-                    <input type="button" value="P" />
-                    <input type="button" value="V" />
-                    <input type="button" value="G" />
+        <div class="procedure-card">
+            <p>{{caption}}</p>
+            <div class="procedure-card-image-container">
+                <div class="procedure-card-image">
+                    <a href="#quadrant?procedureId={{procedureId}}&categoryIndex={{categoryIndex}}">
+                        <img src="{{image}}" />
+                    </a>
                 </div>
             </div>
-        </div>
-    </script>
+            <div class="procedure-card-footer">
+                <div class="procedure-card-footer-button-container">
+                    <a href="#videos?procedureId={{procedureId}}&categoryIndex={{categoryIndex}}">
+                        <div class="procedure-card-footer-button">
+                            &nbsp;<i class="flaticon-youtube17"></i>
+                        </div>
+                    </a>                    
+                    <!--
+                    <div class="procedure-card-footer-button">
+                        &nbsp;<i class="flaticon-youtube17"></i>
+                    </div>
+                    -->            
+                </div>
+                <div class="procedure-card-footer-button-container">
+                    <a href="#images?procedureId={{procedureId}}&categoryIndex={{categoryIndex}}">
+                        <div class="procedure-card-footer-button">
+                            &nbsp;<i class="flaticon-images10"></i>
+                        </div> 
+                    </a>
+                </div>
+                <div class="procedure-card-footer-button-container">
+                    <a href="#guidelines?procedureId={{procedureId}}&categoryIndex={{categoryIndex}}">
+                        <div class="procedure-card-footer-button">
+                            &nbsp;<i class="flaticon-powerpoint2"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>        
+    </script>    
     <!-- This is a template for the card that displays for each procedure in a given category after clicking the category on the first page -->
     <script id="guidelines-card-item" type="text/x-handlebars-template">
         <div class="m-item myscope-dynamic">

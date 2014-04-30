@@ -11,8 +11,8 @@
     var guidelines = procedure.guidelines[guidelinesIndex];
 
     var pageContent = page.children('.ui-content');
+    page.prepend(makeControl('context-header', { title: guidelines.title, image: 'img/ppt-button-original.png' }));
     page.prepend(makeControl('header', { title: 'Guidelines', params: '?categoryIndex=' + categoryIndex + '&procedureId=' + procedureId + '&guidelinesIndex=' + guidelinesIndex }));
-    pageContent.prepend(makeControl('context-header', { title: guidelines.title, image: 'img/ppt-button-original.png' }));
 
     page.append(makeControl('footer', {}));
 

@@ -6,8 +6,8 @@
 
     var page = $('#category');
     var pageContent = page.children('.ui-content');
+    page.prepend(makeControl('context-header', { title: category.key, image: category.image }));
     page.prepend(makeControl('header', { title: 'MyScope', params: '?categoryIndex=' + categoryIndex }));
-    pageContent.prepend(makeControl('context-header', { title: category.key, image: category.image }));
     pageContent.append(makeControl('old-carousel', {}));
 
     var carousel = pageContent.find('.m-carousel-inner').empty();

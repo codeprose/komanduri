@@ -9,8 +9,9 @@
     var procedure = MyScope.db.getProcedureById(procedureId);
 
     var pageContent = page.children('.ui-content');
+    page.prepend(makeControl('context-header', { title: 'Guidelines', image: 'img/ppt-button-original.png' }));
     page.prepend(makeControl('header', { title: procedure.title, params: '?categoryIndex=' + categoryIndex + '&procedureId=' + procedureId }));
-    pageContent.prepend(makeControl('context-header', { title: 'Guidelines', image: 'img/ppt-button-original.png' }));
+
     pageContent.append(makeControl('old-carousel', {}));
 
     var carousel = pageContent.find('.m-carousel-inner').empty();

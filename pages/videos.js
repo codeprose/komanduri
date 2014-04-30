@@ -8,8 +8,8 @@
 
     var page = $(this);
     var pageContent = page.children('.ui-content');
+    page.prepend(makeControl('context-header', { title: 'Videos', image: 'img/play-button-original.png' }));
     page.prepend(makeControl('header', { title: procedure.title, params: '?categoryIndex=' + categoryIndex + '&procedureId=' + procedureId }));
-    pageContent.prepend(makeControl('context-header', { title: 'Videos', image: 'img/play-button-original.png' }));
 
     page.append(makeControl('footer', {}));
 

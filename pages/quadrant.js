@@ -11,8 +11,9 @@
 
     var page = $('#quadrant');
     var pageContent = page.children('.ui-content');
+    page.prepend(makeControl('context-header', { title: procedure.title, image: procedure.image }));
     page.prepend(makeControl('header', { title: category.key, params: '?categoryIndex=' + categoryIndex + '&procedureId=' + procedureId }));
-    pageContent.prepend(makeControl('context-header', { title: procedure.title, image: procedure.image }));
+
 
     page.append(makeControl('footer', {}));
 

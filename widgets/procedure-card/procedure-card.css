@@ -2,9 +2,20 @@
     overflow: auto;
 }
 
+.procedure-card p {
+    width: auto;
+    text-align: center;
+}
+
 .procedure-card-footer {
     width: 100%;
     background-color: transparent;
+}
+
+.procedure-card-footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: normal;
 }
 
 .procedure-card-footer-button-container {
