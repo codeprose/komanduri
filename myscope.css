@@ -3,3 +3,14 @@
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
 }
+
+.card-footer {
+    width: 100%;
+    margin-left: 10%;
+    margin-right: 10%;    
+}
+
+.card-footer > * {
+    display: inline;
+    width: 33%;
+}
