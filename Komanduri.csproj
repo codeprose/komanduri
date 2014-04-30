@@ -364,6 +364,7 @@
     <Content Include="lib\jquery\jquery.js" />
     <Content Include="main.js" />
     <Content Include="mobify.htm" />
+    <Content Include="myscope.css" />
     <Content Include="pages\category.js" />
     <Content Include="pages\guidelines-slides.js" />
     <Content Include="pages\guidelines.js" />
