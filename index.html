@@ -136,13 +136,14 @@
     <div data-role="page" data-theme="b" id="guidelines-slides" class="myscope-dynamic-page">
         <div role="main" class="ui-content">
             <div id="slide-carousel" class="blueimp-gallery">
-                <div class="slides"></div>
-                <h3 class="title"></h3>
-                <a class="prev"></a>
-                <a class="next"></a>
-                <a class="close"></a>
-                <a class="play-pause"></a>
-                <ol class="indicator"></ol>            
+                <div class="slides">
+                </div>
+                <h3 class="title">
+                </h3>
+                <a class="prev"></a><a class="next"></a><a class="close"></a><a class="play-pause">
+                </a>
+                <ol class="indicator">
+                </ol>
             </div>
         </div>
     </div>
@@ -232,12 +233,13 @@
     <script type="text/javascript">
         $(function () {
             document.addEventListener("deviceready", function () {
-                if (parseFloat(window.device.version) >= 7.0) {
-                    document.body.style.marginTop = "20px";
-                }
-
                 navigator.splashscreen.hide();
             });
+
+            console.log(navigator.userAgent);
+            if (navigator.userAgent.match(/(iPad|iPhone);.*CPU.*OS 7_\d/i) || parseFloat(window.device.version) >= 7.0) {
+                $(".ui-header").css("margin-top", "20px");
+            }
         });
     </script>
     <!-- This is a template for the category header that goes on each page -->
