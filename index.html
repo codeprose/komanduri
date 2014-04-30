@@ -14,10 +14,18 @@
     <script src="lib/jquerymobile/jquery.mobile-1.4.2.min.js" type="text/javascript"></script>
     <script src="handlebars-v1.3.0.js" type="text/javascript"></script>
     <script src="main.js" type="text/javascript"></script>
+    <!-- Procedure Data --> 
     <script type="text/javascript" src="data/setup.js"></script>
     <script type="text/javascript" src="data/biliary/ercp.js"></script>
     <script type="text/javascript" src="data/colon/emr-for-complex-polyps.js"></script>
     <script type="text/javascript" src="data/esophagus/rfa-for-barretts.js"></script>
+    <script type="text/javascript" src="data/esophagus/stenting.js"></script>
+    <script type="text/javascript" src="data/esophagus/stricture-dilation.js"></script>
+    <script type="text/javascript" src="data/pancreas/eus-sampling-pancreatic-cyst.js"></script>
+    <script type="text/javascript" src="data/pancreas/eus-tissue-acquisition.js"></script>
+    <script type="text/javascript" src="data/small-intestine/tech-for-enteral-stent-placement.js"></script>
+    <script type="text/javascript" src="data/stomach/endo-eval-subepithelial-masses.js"></script>
+    <!-- Page 'controllers' -->
     <script type="text/javascript" src="pages/home.js"></script>
     <script type="text/javascript" src="pages/category.js"></script>
     <script type="text/javascript" src="pages/quadrant.js"></script>
@@ -235,7 +243,7 @@
             });
 
             console.log(navigator.userAgent);
-            if (navigator.userAgent.match(/(iPad|iPhone);.*CPU.*OS 7_\d/i) || parseFloat(window.device.version) >= 7.0) {
+            if (navigator.userAgent.match(/(iPad|iPhone);.*CPU.*OS 7_\d/i) || (window.device && parseFloat(window.device.version) >= 7.0)) {
                 var fileref = document.createElement("link");
                 fileref.setAttribute("rel", "stylesheet");
                 fileref.setAttribute("type", "text/css");
@@ -284,47 +292,62 @@
     </script>
     <!-- This is a template for the card that displays for each procedure in a given category after clicking the category on the first page -->
     <script id="procedure-card-item" type="text/x-handlebars-template">
-        <div class="procedure-card">
-            <p>{{caption}}</p>
-            <div class="procedure-card-image-container">
-                <div class="procedure-card-image">
-                    <a href="#quadrant?procedureId={{procedureId}}&categoryIndex={{categoryIndex}}">
-                        <img src="{{image}}" />
-                    </a>
-                </div>
-            </div>
-            <div class="procedure-card-footer">
-                <div class="procedure-card-footer-button-container">
-                    <a href="#videos?procedureId={{procedureId}}&categoryIndex={{categoryIndex}}">
-                        <div class="procedure-card-footer-button">
-                            &nbsp;<i class="flaticon-youtube17"></i>
+        <div class="m-item">
+            <div class="m-card">        
+                <div class="carousel-card">
+                    <p>{{caption}}</p>
+                    <div class="carousel-card-image-container">
+                        <div class="carousel-card-image">
+                            <a href="#quadrant?procedureId={{procedureId}}&categoryIndex={{categoryIndex}}">
+                                <img src="{{image}}" />
+                            </a>
                         </div>
-                    </a>                    
-                    <!--
-                    <div class="procedure-card-footer-button">
-                        &nbsp;<i class="flaticon-youtube17"></i>
                     </div>
-                    -->            
-                </div>
-                <div class="procedure-card-footer-button-container">
-                    <a href="#images?procedureId={{procedureId}}&categoryIndex={{categoryIndex}}">
-                        <div class="procedure-card-footer-button">
-                            &nbsp;<i class="flaticon-images10"></i>
-                        </div> 
-                    </a>
-                </div>
-                <div class="procedure-card-footer-button-container">
-                    <a href="#guidelines?procedureId={{procedureId}}&categoryIndex={{categoryIndex}}">
-                        <div class="procedure-card-footer-button">
-                            &nbsp;<i class="flaticon-powerpoint2"></i>
+                    <div class="carousel-card-footer">
+                        <div class="carousel-card-footer-button-container-one-third">
+                            <a href="#videos?procedureId={{procedureId}}&categoryIndex={{categoryIndex}}">
+                                <div class="carousel-card-footer-button">
+                                    &nbsp;<i class="flaticon-youtube17"></i>
+                                </div>
+                            </a>                                
                         </div>
-                    </a>
-                </div>
+                        <div class="carousel-card-footer-button-container-one-third">
+                            <a href="#images?procedureId={{procedureId}}&categoryIndex={{categoryIndex}}">
+                                <div class="carousel-card-footer-button">
+                                    &nbsp;<i class="flaticon-images10"></i>
+                                </div> 
+                            </a>
+                        </div>
+                        <div class="carousel-card-footer-button-container-one-third">
+                            <a href="#guidelines?procedureId={{procedureId}}&categoryIndex={{categoryIndex}}">
+                                <div class="carousel-card-footer-button">
+                                    &nbsp;<i class="flaticon-powerpoint2"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>        
             </div>
-        </div>        
+        </div>
     </script>    
     <!-- This is a template for the card that displays for each procedure in a given category after clicking the category on the first page -->
     <script id="guidelines-card-item" type="text/x-handlebars-template">
+        <div class="m-item">
+            <div class="m-card">
+                <div class="carousel-card">
+                    <p>{{caption}}</p>
+                    <div class="carousel-card-image-container">
+                        <div class="carousel-card-image">
+                            <a href="#guidelines-slides?procedureId={{procedureId}}&categoryIndex={{categoryIndex}}&guidelinesIndex={{guidelinesIndex}}">
+                                <img src="{{image}}" />
+                            </a>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+           
+        <!--
         <div class="m-item myscope-dynamic">
             <div class="m-card-light">
                 <a href="#guidelines-slides?procedureId={{procedureId}}&categoryIndex={{categoryIndex}}&guidelinesIndex={{guidelinesIndex}}" style="text-decoration: none; color: black; font-weight: normal">
@@ -333,6 +356,8 @@
                 </a>
             </div>
         </div>
+        -->
+    
     </script>
     <!-- This is the old school carousel with no items -->
     <script id="old-carousel" type="text/x-handlebars-template">

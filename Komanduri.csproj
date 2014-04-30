@@ -64,7 +64,13 @@
     <Content Include="data\biliary\ercp.js" />
     <Content Include="data\colon\emr-for-complex-polyps.js" />
     <Content Include="data\esophagus\rfa-for-barretts.js" />
+    <Content Include="data\esophagus\stenting.js" />
+    <Content Include="data\esophagus\stricture-dilation.js" />
+    <Content Include="data\pancreas\eus-sampling-pancreatic-cyst.js" />
+    <Content Include="data\pancreas\eus-tissue-acquisition.js" />
     <Content Include="data\setup.js" />
+    <Content Include="data\small-intestine\tech-for-enteral-stent-placement.js" />
+    <Content Include="data\stomach\endo-eval-subepithelial-masses.js" />
     <Content Include="font\flaticon.css" />
     <Content Include="font\flaticon.html" />
     <Content Include="font\flaticon.svg" />
@@ -99,7 +105,21 @@
     <Content Include="img\video_posters\esophagus\rfa-for-barretts\duette-emr-bleed.jpg" />
     <Content Include="img\video_posters\esophagus\rfa-for-barretts\focal-rfa-technique.jpg" />
     <Content Include="img\video_posters\esophagus\rfa-for-barretts\rfa-scc.jpg" />
+    <Content Include="img\video_posters\esophagus\stenting\esophageal-adenocarcinoma-evolution-stent-placement.jpg" />
+    <Content Include="img\video_posters\esophagus\stricture-dilation\cre-dilation.jpg" />
+    <Content Include="img\video_posters\pancreas\eus-sampling-pancreatic-cysts\eus-cystgastrostomy.jpg" />
+    <Content Include="img\video_posters\pancreas\eus-sampling-pancreatic-cysts\eus-fna-mucinous-cystadenoma.jpg" />
+    <Content Include="img\video_posters\pancreas\eus-sampling-pancreatic-cysts\eus-fna-pancreatic-cyst.jpg" />
+    <Content Include="img\video_posters\pancreas\eus-tissue-acquisition\video-2-on-site-specimen-handling.jpg" />
+    <Content Include="img\video_posters\pancreas\eus-tissue-acquisition\video-7-eus-fnb-gsm.jpg" />
+    <Content Include="img\video_posters\pancreas\eus-tissue-acquisition\video-8-eus-fnb-lymph-node.jpg" />
+    <Content Include="img\video_posters\pancreas\eus-tissue-acquisition\video-1-eus-capillary-technique.jpg" />
+    <Content Include="img\video_posters\pancreas\eus-tissue-acquisition\video-3-on-site-specimen-handling.jpg" />
+    <Content Include="img\video_posters\pancreas\eus-tissue-acquisition\video-4-eus-fna-of-a-pancreatic-mass.jpg" />
+    <Content Include="img\video_posters\pancreas\eus-tissue-acquisition\video-5-eus-ta-fanning-technique.jpg" />
     <Content Include="img\video_posters\rfa_sample.png" />
+    <Content Include="img\video_posters\small-intestine\tech-for-enteral-stent-placement\malignant-duodenal-obstruction-evolution-stent-placement.jpg" />
+    <Content Include="img\video_posters\stomach\endo-eval-subepithelial-masses\video-7-eus-fnb-gsm.jpg" />
     <Content Include="index.css" />
     <Content Include="index.html" />
     <Content Include="index_new.html" />
@@ -477,11 +497,7 @@
     <None Include="js\jquery-2.0.3.min.map" />
     <None Include="res\screen\tizen\README.md" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="data\pancreas\" />
-    <Folder Include="data\small-intestine\" />
-    <Folder Include="data\stomach\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
   <ProjectExtensions>

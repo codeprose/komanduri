@@ -1,29 +1,35 @@
-﻿.procedure-card {
+﻿.carousel-card {
     overflow: auto;
 }
 
-.procedure-card p {
+.carousel-card p {
     width: auto;
+    max-width: 200px;
     text-align: center;
 }
 
-.procedure-card-footer {
+.carousel-card-footer {
     width: 100%;
     background-color: transparent;
 }
 
-.procedure-card-footer a {
+.carousel-card-footer a {
     text-decoration: none;
     color: white;
     font-weight: normal;
 }
 
-.procedure-card-footer-button-container {
+.carousel-card-footer-button-container-one-third {
     float: left;
     width: 33.3%;
 }
 
-.procedure-card-footer-button {
+.carousel-card-footer-button-container-one-half {
+    float: left;
+    width: 33.3%;
+}
+
+.carousel-card-footer-button {
     border: 1px solid black;
     width: auto;
     
@@ -39,18 +45,24 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
 }
 
-.procedure-card-footer-button > img {
+/*
+.carousel-card-footer-button > img {
     width: 100%;
 }
+*/
 
-.procedure-card-image {
+.carousel-card-image img {
+    max-width: 200px;
+    max-height: 300px;
+}
+
+.carousel-card-image {
     margin: 2px;
     border: 1px solid black;
 
     width: auto;
 }
 
-.procedure-card-image-container {
-    max-width: 100%;
+.carousel-card-image-container {
     background-color: transparent;
 }
