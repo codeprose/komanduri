@@ -30,8 +30,8 @@ $(document).on('pageshow', '#guidelines-slides', function (event, data) {
 
     blueimp.Gallery(galleryItems, {
         container: '#slide-carousel',
-        carousel: true,
+        carousel: false,
         startSlideshow: false,
-        stretchImages: true
+        index: 0
     });
 });

@@ -21,7 +21,8 @@
             ],
         videos: [
             {
-                title: 'Video 1',
+                title: 'Colon EMR Clip Closure',
+                poster: 'img/video_posters/colon/emr-for-complex-polyps/colon-emr-clip-closure.jpg',
                 sources:
                 {
                     mp4: 'https://dl.dropboxusercontent.com/s/qjqumwbqiwnpdla/Colon%20EMR%20Clip%20Closure%203.mp4.mp4',
@@ -31,7 +32,8 @@
                 fallback: ''
             },
             {
-                title: 'Video 2',
+                title: 'Colon Retro EMR',
+                poster: 'img/video_posters/colon/emr-for-complex-polyps/colon-retro-emr.jpg',
                 sources:
                 {
                     mp4: 'https://dl.dropboxusercontent.com/s/62o09crzvg7oc1k/Colon%20Retro%20EMR.mp4.mp4',
@@ -41,7 +43,8 @@
                 fallback: ''
             },
             {
-                title: 'Video 3',
+                title: 'Flat Cecal Polyp EMR',
+                poster: 'img/video_posters/colon/emr-for-complex-polyps/flat-cecal-polyp-emr.jpg',
                 sources:
                 {
                     mp4: 'https://dl.dropboxusercontent.com/s/asa4ivhv1lpry93/Flat%20Cecal%20Polyp%20EMR%202.mp4.mp4',

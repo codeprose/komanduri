@@ -23,7 +23,8 @@
         ],
         videos: [
             {
-                title: 'Video 1',
+                title: 'AVM RFA',
+                poster: 'img/video_posters/esophagus/rfa-for-barretts/avm-rfa.jpg',
                 sources:
                 {
                     mp4: 'https://dl.dropboxusercontent.com/s/8l4dt8p8na4v3vv/AVM%20RFA%202.mp4.mp4',
@@ -33,7 +34,8 @@
                 fallback: ''
             },
             {
-                title: 'Video 2',
+                title: "Barrett's Esophagus 360 RFA",
+                poster: 'img/video_posters/esophagus/rfa-for-barretts/barretts-esophagus-360-rfa.jpg',
                 sources:
                 {
                     mp4: 'https://dl.dropboxusercontent.com/s/kdl6703law2ew3a/Barrett%27s%20Esophagus%20360%20RFA%202.mp4.mp4',
@@ -43,7 +45,8 @@
                 fallback: ''
             },
             {
-                title: 'Video 3',
+                title: 'Duette EMR Bleed',
+                poster: 'img/video_posters/esophagus/rfa-for-barretts/duette-emr-bleed.jpg',
                 sources:
                 {
                     mp4: 'https://dl.dropboxusercontent.com/s/ber9rdikf5ou6xj/Duette%20EMR%20Bleed%203.mp4.mp4',
@@ -53,7 +56,8 @@
                 fallback: ''
             },
             {
-                title: 'Video 4',
+                title: 'Focal RFA Technique',
+                poster: 'img/video_posters/esophagus/rfa-for-barretts/focal-rfa-technique.jpg',
                 sources:
                 {
                     mp4: 'https://dl.dropboxusercontent.com/s/rwys91uejaeh9bd/Focal%20RFA%20Technique%202.mp4.mp4',
@@ -63,7 +67,8 @@
                 fallback: ''
             },
             {
-                title: 'Video 5',
+                title: 'Gave (1280x720)',
+                poster: 'img/video_posters/esophagus/rfa-for-barretts/gave-1280x720.jpg',
                 sources:
                 {
                     mp4: 'https://dl.dropboxusercontent.com/s/rrgzpogmom0g43v/Gave%20%281280%20x%20720%29.mp4.mp4',
@@ -73,7 +78,8 @@
                 fallback: ''
             },
             {
-                title: 'Video 6',
+                title: 'RFA SCC',
+                poster: 'img/video_posters/esophagus/rfa-for-barretts/rfa-scc.jpg',
                 sources:
                 {
                     mp4: 'https://dl.dropboxusercontent.com/s/xvvu87be3biojjb/RFA%20SCC%202.mp4.mp4',

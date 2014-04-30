@@ -25,7 +25,7 @@ $(document).on('pageshow', '#videos', function (event, data) {
         galleryItems.push({
             title: video.title,
             type: 'video/*',
-            //poster: 'img/video_posters/rfa_sample.png',
+            poster: video.poster,
             sources: [
                 { type: 'video/mp4', href: video.sources.mp4 },
                 { type: 'video/ogg', href: video.sources.ogg },
