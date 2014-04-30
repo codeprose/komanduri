@@ -9,21 +9,21 @@
             { url: 'http://www.sciencedirect.com/science/article/pii/S0016510713021408' }
         ],
         photos: [
-            'https://dl.dropboxusercontent.com/s/n5ov61a6qqo57ch/CRIM-NBI.JPEG',
-            'https://dl.dropboxusercontent.com/s/2m7us04q9mp3pjh/CRIM.JPEG',
-            'https://dl.dropboxusercontent.com/s/3wtfndv9bdpewpq/GAVE-p-RFA-1.JPEG',
-            'https://dl.dropboxusercontent.com/s/rk55ta40zcw4caw/GAVE-post-1.JPEG',
-            'https://dl.dropboxusercontent.com/s/e0xk6z9ugj0ivw9/GAVE-Pre-1.JPEG',
-            'https://dl.dropboxusercontent.com/s/16hnz7oe1cy8fve/image-1.jpeg',
-            'https://dl.dropboxusercontent.com/s/4xpw34vt2wmm47w/image.jpeg',
-            'https://dl.dropboxusercontent.com/s/67an2pgtcnpog5r/jc-post2.JPEG',
-            'https://dl.dropboxusercontent.com/s/3yuyx251s5zuvcp/jc-post-1.JPEG',
-            'https://dl.dropboxusercontent.com/s/wz4pta5o9dqnq0d/JC-pre1.JPEG',
-            'https://dl.dropboxusercontent.com/s/btmxs9f2n9zomtg/JC-pre-2.JPEG'
+            'https://dl.dropboxusercontent.com/s/3wtfndv9bdpewpq/GAVE-p-RFA-1.JPEG',    //  GAVE RFA
+            'https://dl.dropboxusercontent.com/s/rk55ta40zcw4caw/GAVE-post-1.JPEG',     //  GAVE
+            'https://dl.dropboxusercontent.com/s/e0xk6z9ugj0ivw9/GAVE-Pre-1.JPEG',      //  GAVE
+            'https://dl.dropboxusercontent.com/s/16hnz7oe1cy8fve/image-1.jpeg',         //  Long Segment BE
+            'https://dl.dropboxusercontent.com/s/wz4pta5o9dqnq0d/JC-pre1.JPEG',         //  Short Segment BE
+            'https://dl.dropboxusercontent.com/s/btmxs9f2n9zomtg/JC-pre-2.JPEG',        //  Barret's NBI
+            'https://dl.dropboxusercontent.com/s/4xpw34vt2wmm47w/image.jpeg',           //  Inlet Path Post RFA
+            'https://dl.dropboxusercontent.com/s/n5ov61a6qqo57ch/CRIM-NBI.JPEG',        //  Post RFA NBI
+            'https://dl.dropboxusercontent.com/s/2m7us04q9mp3pjh/CRIM.JPEG',            //  Post RFA
+            'https://dl.dropboxusercontent.com/s/67an2pgtcnpog5r/jc-post2.JPEG',        //  Post RFA
+            'https://dl.dropboxusercontent.com/s/3yuyx251s5zuvcp/jc-post-1.JPEG'        //  Post RFA
         ],
         videos: [
             {
-                title: 'AVM RFA',
+                title: 'RFA AVM',
                 poster: 'img/video_posters/esophagus/rfa-for-barretts/avm-rfa.jpg',
                 sources:
                 {
@@ -34,7 +34,7 @@
                 fallback: ''
             },
             {
-                title: "Barrett's Esophagus 360 RFA",
+                title: "Halo 360 RFA",
                 poster: 'img/video_posters/esophagus/rfa-for-barretts/barretts-esophagus-360-rfa.jpg',
                 sources:
                 {
@@ -45,7 +45,7 @@
                 fallback: ''
             },
             {
-                title: 'Duette EMR Bleed',
+                title: "Barrett's EMR",
                 poster: 'img/video_posters/esophagus/rfa-for-barretts/duette-emr-bleed.jpg',
                 sources:
                 {
@@ -56,7 +56,7 @@
                 fallback: ''
             },
             {
-                title: 'Focal RFA Technique',
+                title: 'Halo 90 RFA',
                 poster: 'img/video_posters/esophagus/rfa-for-barretts/focal-rfa-technique.jpg',
                 sources:
                 {
@@ -67,7 +67,7 @@
                 fallback: ''
             },
             {
-                title: 'Gave (1280x720)',
+                title: 'RFA for GAVE',
                 poster: 'img/video_posters/esophagus/rfa-for-barretts/gave-1280x720.jpg',
                 sources:
                 {

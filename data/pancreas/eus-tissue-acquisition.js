@@ -12,7 +12,7 @@
         ],
         videos: [
             {
-                title: 'Video 1 - EUS Capillary Technique',
+                title: 'EUS Capillary Technique',
                 poster: 'img/video_posters/pancreas/eus-tissue-acquistion/video-1-eus-capillary-technique.jpg',
                 sources:
                 {
@@ -23,7 +23,7 @@
                 fallback: ''
             },
             {
-                title: 'Video 2 - On-site Specimen Handling',
+                title: ' On-site Specimen Handling EUS-FNA',
                 poster: 'img/video_posters/pancreas/eus-tissue-acquistion/video-2-on-site-specimen-handling.jpg',
                 sources:
                 {
@@ -34,7 +34,7 @@
                 fallback: ''
             },
             {
-                title: 'Video 3 - On-site Specimen Handling',
+                title: 'On-site Specimen Handling EUS-FNB',
                 poster: 'img/video_posters/pancreas/eus-tissue-acquistion/video-3-on-site-specimen-handling.jpg',
                 sources:
                 {
@@ -45,7 +45,7 @@
                 fallback: ''
             },
             {
-                title: 'Video 4 - EUS-FNA of a Pancreatic Mass',
+                title: 'EUS-FNA of a Pancreatic Mass',
                 poster: 'img/video_posters/pancreas/eus-tissue-acquistion/video-4-eus-fna-of-a-pancreatic-mass.jpg',
                 sources:
                 {
@@ -56,7 +56,7 @@
                 fallback: ''
             },
             {
-                title: 'Video 5 - EUS TA Fanning Technique',
+                title: 'EUS-TA Fanning Technique',
                 poster: 'img/video_posters/pancreas/eus-tissue-acquistion/video-5-eus-ta-fanning-technique.jpg',
                 sources:
                 {
@@ -67,7 +67,7 @@
                 fallback: ''
             },
             {
-                title: 'Video 7 - EUS FNB GSM',
+                title: 'EUS-FNB GSM',
                 poster: 'img/video_posters/pancreas/eus-tissue-acquistion/video-7-eus-fnb-gsm.jpg',
                 sources:
                 {
@@ -78,7 +78,7 @@
                 fallback: ''
             },
             {
-                title: 'Video 8 - EUS-FNA Pancreatic Cyst',
+                title: 'EUS-FNB Lymph Node',
                 poster: 'img/video_posters/pancreas/eus-tissue-acquistion/video-8-eus-fnb-lymph-node.jpg',
                 sources:
                 {
@@ -92,7 +92,7 @@
         ],
         guidelines: [
             {
-                title: "EUS Video Forum 2013",
+                title: "EUS Guidelines",
                 slides: [
                     'https://dl.dropboxusercontent.com/s/9wt5pcjh4rc4p5a/EUS%20College%202013%20SK%20BSC%20Final_Page_01.png',
                     'https://dl.dropboxusercontent.com/s/lfpkwj6kqel5p4b/EUS%20College%202013%20SK%20BSC%20Final_Page_02.png',
@@ -112,7 +112,7 @@
                 ]
             },
             {
-                title: "RCT FNA FNB",
+                title: "EUS RCT FNA v FNB",
                 slides: [
                     'https://dl.dropboxusercontent.com/s/5xyhcgvr1zi52jw/Slide1.PNG',
                     'https://dl.dropboxusercontent.com/s/dhaz4i07m86veup/Slide2.PNG',

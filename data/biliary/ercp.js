@@ -10,18 +10,18 @@
             { url: 'http://www.nejm.org/doi/full/10.1056/NEJMct1208450' }
         ],
         photos: [
-            'https://dl.dropboxusercontent.com/s/vndwh5h9n2yv7gk/image-1.png',
-            'https://dl.dropboxusercontent.com/s/lyat4pnw50boyzu/image-2.png',
-            'https://dl.dropboxusercontent.com/s/3e3avrscopz3mz7/image-3.png',
-            'https://dl.dropboxusercontent.com/s/jo16v88da1gosjs/image-4.png',
-            'https://dl.dropboxusercontent.com/s/u5zv4a20ztqnlzu/image-5.png',
-            'https://dl.dropboxusercontent.com/s/bhpq0xvbniij053/image-6.png',
-            'https://dl.dropboxusercontent.com/s/xys8r27uqkuz1rk/image-7.png',
-            'https://dl.dropboxusercontent.com/s/48nxh750qyq9h94/image.png'
+            'https://dl.dropboxusercontent.com/s/lyat4pnw50boyzu/image-2.png', // Pancreas Divisum Stent 
+            'https://dl.dropboxusercontent.com/s/3e3avrscopz3mz7/image-3.png', // ERCP Pancreas Divisum
+            'https://dl.dropboxusercontent.com/s/jo16v88da1gosjs/image-4.png', // Pancreas Divisum ?
+            'https://dl.dropboxusercontent.com/s/vndwh5h9n2yv7gk/image-1.png', // MRCP CBD Stricture ?
+            'https://dl.dropboxusercontent.com/s/u5zv4a20ztqnlzu/image-5.png', // EUS AIP
+            'https://dl.dropboxusercontent.com/s/bhpq0xvbniij053/image-6.png', // ERCP Bile Duct Stricture
+            'https://dl.dropboxusercontent.com/s/xys8r27uqkuz1rk/image-7.png', // Bile Duct Stricture (Stent)
+            'https://dl.dropboxusercontent.com/s/48nxh750qyq9h94/image.png'    // Biliary Stent (KUB)
         ],
         videos: [
         {
-            title: 'ERCP Diverticulum',
+            title: 'CBD Stones (Billroth II Anatomy)',
             poster: 'img/video_posters/biliary/ercp/ercp-diverticulum.jpg',
             sources:
             {
@@ -32,7 +32,7 @@
             fallback: ''
         },
         {
-            title: 'ERCP Giant Stones EHL',
+            title: 'Difficult Cannulation: Periampullary Diverticulum',
             poster: 'img/video_posters/biliary/ercp/ercp-giant-stones-ehl.jpg',
             sources:
             {
@@ -43,7 +43,7 @@
             fallback: ''
         },
         {
-            title: 'EUS Biliary Rendezvous for Malignant Obstruction',
+            title: 'Difficult Cannulation: EUS-Rendezvous',
             poster: 'img/video_posters/biliary/ercp/eus-biliary-rendezvous-for-malignant-obstruction.jpg',
             sources:
             {
@@ -54,7 +54,7 @@
             fallback: ''
         },
         {
-            title: 'Pancreatoscopy',
+            title: 'Peroral Cholangioscopy (Malignant)',
             poster: 'img/video_posters/biliary/ercp/pancreatoscopy.jpg',
             sources:
             {
@@ -65,7 +65,7 @@
             fallback: ''
         },
         {
-            title: 'Spyglass',
+            title: 'Peroral Cholangioscopy (Benign)',
             poster: 'img/video_posters/biliary/ercp/spyglass.jpg',
             sources:
             {
@@ -78,7 +78,7 @@
         ],
         guidelines: [
         {
-            title: 'Chicago Live 2012',
+            title: 'ERCP Tricks of the Trade',
             slides: [
                 'https://dl.dropboxusercontent.com/s/5w16o51uyxgqdws/Chicago%20Live%20SK%20ERCP%202012_Page_01.png',
                 'https://dl.dropboxusercontent.com/s/sre9g46xh6b76zx/Chicago%20Live%20SK%20ERCP%202012_Page_02.png',

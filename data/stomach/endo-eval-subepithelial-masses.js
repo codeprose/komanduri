@@ -6,27 +6,27 @@
         links: [
         ],
         photos: [
-            'https://dl.dropboxusercontent.com/s/72rjhapmadvz5nf/gist3.JPEG',
-            'https://dl.dropboxusercontent.com/s/0z2z1ndw4mt0e4e/gist4.JPEG',
-            'https://dl.dropboxusercontent.com/s/oswa3la1zhy0xu0/gist%202.JPEG',
-            'https://dl.dropboxusercontent.com/s/up1071b1czrpbtr/gist%203.JPEG',
-            'https://dl.dropboxusercontent.com/s/u719e2mgg0k0d4w/GIST%201.JPEG',
-            'https://dl.dropboxusercontent.com/s/i6jrdi1w5yy9vcj/gist%20pc1.JPEG',
-            'https://dl.dropboxusercontent.com/s/3me2xizmiw53gbi/gist%20pc2.JPEG',
-            'https://dl.dropboxusercontent.com/s/yumc4otfx31o1a2/gist%20pc3.JPEG',
-            'https://dl.dropboxusercontent.com/s/hlh4mzrk8mr7gwe/GIST%20unroofing%20x100.tif',
-            'https://dl.dropboxusercontent.com/s/0365xodshr89uvk/glip2.JPEG',
-            'https://dl.dropboxusercontent.com/s/9k0c0w7kcvyz42f/glip3.JPEG',
-            'https://dl.dropboxusercontent.com/s/s24mncs3yurf8vk/Glip1.JPEG',
-            'https://dl.dropboxusercontent.com/s/7r44fva2polnl4o/GSM%201.TIFF',
-            'https://dl.dropboxusercontent.com/s/6tyktxxk527gnv0/gsmemr1.JPEG',
-            'https://dl.dropboxusercontent.com/s/yg6ecwwditjfgts/gsmemr2.JPEG',
-            'https://dl.dropboxusercontent.com/s/7akohbh65ylxazz/gsmemr3.JPEG',
-            'https://dl.dropboxusercontent.com/s/0nmdft3gob7zzlz/gsmemr4.JPEG'
+            'https://dl.dropboxusercontent.com/s/72rjhapmadvz5nf/gist3.JPEG',                   //  EGD GIST
+            'https://dl.dropboxusercontent.com/s/0z2z1ndw4mt0e4e/gist4.JPEG',                   //  EUS GIST
+            'https://dl.dropboxusercontent.com/s/oswa3la1zhy0xu0/gist%202.JPEG',                //  EUS GIST
+            'https://dl.dropboxusercontent.com/s/up1071b1czrpbtr/gist%203.JPEG',                //  EUS Schwanoma
+            'https://dl.dropboxusercontent.com/s/u719e2mgg0k0d4w/GIST%201.JPEG',                //  EUS Gastric Subepithelial Mass
+            'https://dl.dropboxusercontent.com/s/i6jrdi1w5yy9vcj/gist%20pc1.JPEG',              //  EUS GSM of FNA
+            'https://dl.dropboxusercontent.com/s/3me2xizmiw53gbi/gist%20pc2.JPEG',              //  GIST Unroofing Technique
+            'https://dl.dropboxusercontent.com/s/yumc4otfx31o1a2/gist%20pc3.JPEG',              //  EGD Leiomyoma
+            'https://dl.dropboxusercontent.com/s/hlh4mzrk8mr7gwe/GIST%20unroofing%20x100.tif',  //  EUS Leiomyoma
+            'https://dl.dropboxusercontent.com/s/0365xodshr89uvk/glip2.JPEG',                   //  EGD GIST
+            'https://dl.dropboxusercontent.com/s/9k0c0w7kcvyz42f/glip3.JPEG',                   //  EUS Lipoma
+            'https://dl.dropboxusercontent.com/s/s24mncs3yurf8vk/Glip1.JPEG',                   //  
+            'https://dl.dropboxusercontent.com/s/7r44fva2polnl4o/GSM%201.TIFF',                 //  
+            'https://dl.dropboxusercontent.com/s/6tyktxxk527gnv0/gsmemr1.JPEG',                 //  
+            'https://dl.dropboxusercontent.com/s/yg6ecwwditjfgts/gsmemr2.JPEG',                 //  
+            'https://dl.dropboxusercontent.com/s/7akohbh65ylxazz/gsmemr3.JPEG',                 //  
+            'https://dl.dropboxusercontent.com/s/0nmdft3gob7zzlz/gsmemr4.JPEG'                  //  
         ],
         videos: [
             {
-                title: 'Video 7 - EUS-FNB GSM',
+                title: 'EUS-FNB GIST',
                 poster: 'img/video_posters/stomach/endo-eval-subepithelial-masses/video-7-eus-fnb-gsm.jpg',
                 sources:
                 {

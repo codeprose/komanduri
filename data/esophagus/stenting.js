@@ -18,7 +18,7 @@
         ],
         videos: [
             {
-                title: 'Esophageal Adenocarcinoma - Evolution Stent Placement',
+                title: 'Malignant Esophageal Stricture Stent Placement',
                 poster: 'img/video_posters/esophagus/stenting/esophageal-adenocarcinoma-evolution-stent-placement.jpg',
                 sources:
                 {

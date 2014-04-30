@@ -19,7 +19,7 @@
         ],
         videos: [
             {
-                title: 'CRE Dilation',
+                title: 'CRE Dilation of RBES',
                 poster: 'img/video_posters/esophagus/stricture-dilation/cre-dilation.jpg',
                 sources:
                 {
@@ -32,7 +32,7 @@
         ],
         guidelines: [
             {
-                title: "Implications of GERD in Barrett's Esophagus",
+                title: "GERD in BE",
                 slides: [
                     'https://dl.dropboxusercontent.com/s/98jkl519vtzmta6/Slide1.PNG',
                     'https://dl.dropboxusercontent.com/s/2e8qak8qn942kiv/Slide2.PNG',
@@ -63,7 +63,7 @@
                 ]
             },
             {
-                title: "PL EOE 1",
+                title: "Eosinophilic Esophagitis",
                 slides: [
                     'https://dl.dropboxusercontent.com/s/o65x3qtmzs3594u/Slide1.PNG',
                     'https://dl.dropboxusercontent.com/s/lthx8vefmu42hs8/Slide2.PNG',

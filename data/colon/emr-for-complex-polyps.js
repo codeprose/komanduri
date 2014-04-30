@@ -9,19 +9,19 @@
             { url: 'http://www.sciencedirect.com/science/article/pii/S001651071200226X' }
         ],
         photos: [
-            'https://dl.dropboxusercontent.com/s/psbyqqp44851qcq/channel%20colon%2023.JPEG',
-            'https://dl.dropboxusercontent.com/s/iitbw7odqebvpgb/channel%20colon%20final.JPEG',
-            'https://dl.dropboxusercontent.com/s/piyghnm22iwd0c1/channel%20colon.JPEG',
-            'https://dl.dropboxusercontent.com/s/pg5c952qmt8secc/colon%20emr%201.JPEG',
-            'https://dl.dropboxusercontent.com/s/6pt6sby23mj1vmg/colon%20emr%202.JPEG',
-            'https://dl.dropboxusercontent.com/s/xiktzmlefe5h7ht/colon%20emr%20closure%20cook%20clips.JPEG',
-            'https://dl.dropboxusercontent.com/s/mp92uphzhg1a4wv/colon%20emr%20defect.JPEG',
-            'https://dl.dropboxusercontent.com/s/g2kq4zu1vegsyw6/polyp%20jan%2014.JPEG',
-            'https://dl.dropboxusercontent.com/s/q9f8zbo98obysyv/post%20emr%20jan%202014.JPEG'
+            'https://dl.dropboxusercontent.com/s/psbyqqp44851qcq/channel%20colon%2023.JPEG',                    //  RFA Post Colon EMR
+            'https://dl.dropboxusercontent.com/s/iitbw7odqebvpgb/channel%20colon%20final.JPEG',                 //  RFA Post Colon EMR
+            'https://dl.dropboxusercontent.com/s/piyghnm22iwd0c1/channel%20colon.JPEG',                         //  RFA Post Colon EMR
+            'https://dl.dropboxusercontent.com/s/pg5c952qmt8secc/colon%20emr%201.JPEG',                         //  Paris IIa Polyp Submucosal Injection
+            'https://dl.dropboxusercontent.com/s/6pt6sby23mj1vmg/colon%20emr%202.JPEG',                         //  Polyp Retroflexion
+            'https://dl.dropboxusercontent.com/s/xiktzmlefe5h7ht/colon%20emr%20closure%20cook%20clips.JPEG',    //  Post EMR Closure with Endoclips
+            'https://dl.dropboxusercontent.com/s/mp92uphzhg1a4wv/colon%20emr%20defect.JPEG',                    //  Post EMR Site
+            'https://dl.dropboxusercontent.com/s/g2kq4zu1vegsyw6/polyp%20jan%2014.JPEG',                        //  3cm Paris IIa Polyp
+            'https://dl.dropboxusercontent.com/s/q9f8zbo98obysyv/post%20emr%20jan%202014.JPEG'                  //  Post EMR Site
             ],
         videos: [
             {
-                title: 'Colon EMR Clip Closure',
+                title: 'Colon EMR Paris IIa',
                 poster: 'img/video_posters/colon/emr-for-complex-polyps/colon-emr-clip-closure.jpg',
                 sources:
                 {
@@ -32,7 +32,7 @@
                 fallback: ''
             },
             {
-                title: 'Colon Retro EMR',
+                title: 'Colon EMR Retroflexion',
                 poster: 'img/video_posters/colon/emr-for-complex-polyps/colon-retro-emr.jpg',
                 sources:
                 {
@@ -41,7 +41,7 @@
                     webm: 'https://dl.dropboxusercontent.com/s/t3v22fepsq0h1x6/Colon%20Retro%20EMR.webmsd.webm'
                 },
                 fallback: ''
-            },
+            }/*,
             {
                 title: 'Flat Cecal Polyp EMR',
                 poster: 'img/video_posters/colon/emr-for-complex-polyps/flat-cecal-polyp-emr.jpg',
@@ -52,7 +52,7 @@
                     webm: 'https://dl.dropboxusercontent.com/s/6xqrcx9t3qy81cs/Flat%20Cecal%20Polyp%20EMR%202.webmsd.webm'
                 },
                 fallback: ''
-            }                                
+            }*/                                
         ],
         guidelines: [
         {
