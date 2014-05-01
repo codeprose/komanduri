@@ -36,7 +36,8 @@ $(document).on('pageshow', '#videos', function (event, data) {
 
     blueimp.Gallery(galleryItems, {
         container: '#video-carousel',
-        carousel: true,
-        startSlideshow: false
+        carousel: false,
+        startSlideshow: false,
+        index: 0
     });
 });
