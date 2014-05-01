@@ -14,11 +14,11 @@
             'https://dl.dropboxusercontent.com/s/i6jrdi1w5yy9vcj/gist%20pc1.JPEG',              //  EUS GSM of FNA
             'https://dl.dropboxusercontent.com/s/3me2xizmiw53gbi/gist%20pc2.JPEG',              //  GIST Unroofing Technique
             'https://dl.dropboxusercontent.com/s/yumc4otfx31o1a2/gist%20pc3.JPEG',              //  EGD Leiomyoma
-            'https://dl.dropboxusercontent.com/s/hlh4mzrk8mr7gwe/GIST%20unroofing%20x100.tif',  //  EUS Leiomyoma
+            'https://dl.dropboxusercontent.com/s/k75l4qjejzmxiuk/GIST%20unroofing%20x100.png',  //  EUS Leiomyoma
             'https://dl.dropboxusercontent.com/s/0365xodshr89uvk/glip2.JPEG',                   //  EGD GIST
             'https://dl.dropboxusercontent.com/s/9k0c0w7kcvyz42f/glip3.JPEG',                   //  EUS Lipoma
             'https://dl.dropboxusercontent.com/s/s24mncs3yurf8vk/Glip1.JPEG',                   //  
-            'https://dl.dropboxusercontent.com/s/7r44fva2polnl4o/GSM%201.TIFF',                 //  
+            'https://dl.dropboxusercontent.com/s/3210lafwiepk4ue/GSM%201.png',                 //  
             'https://dl.dropboxusercontent.com/s/6tyktxxk527gnv0/gsmemr1.JPEG',                 //  
             'https://dl.dropboxusercontent.com/s/yg6ecwwditjfgts/gsmemr2.JPEG',                 //  
             'https://dl.dropboxusercontent.com/s/7akohbh65ylxazz/gsmemr3.JPEG',                 //  

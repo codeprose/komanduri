@@ -12,10 +12,10 @@
             'https://dl.dropboxusercontent.com/s/k87lflqtwks9ybi/CRE2.JPEG',
             'https://dl.dropboxusercontent.com/s/1hjl5p25xp3pzkn/CRE3.JPEG',
             'https://dl.dropboxusercontent.com/s/ubn6zbil50hy5ky/CRE4.JPEG',
-            'https://dl.dropboxusercontent.com/s/1tw22iumduce4vk/pl-a4.TIFF',
+            'https://dl.dropboxusercontent.com/s/gfddrdkeono25sw/pl-a4.png',
             'https://dl.dropboxusercontent.com/s/yaa51yxijz6d9v8/post%20rfa%20stricture%201.JPEG',
             'https://dl.dropboxusercontent.com/s/s9it075yrtysgw0/post%20rfa%20stricture%20dil%203.JPEG',
-            'https://dl.dropboxusercontent.com/s/xx10aga7nz3kglm/wi%20sm%20egd%202.TIFF'
+            'https://dl.dropboxusercontent.com/s/uv67sgfwaazttk1/wi%20sm%20egd%202.png'
         ],
         videos: [
             {

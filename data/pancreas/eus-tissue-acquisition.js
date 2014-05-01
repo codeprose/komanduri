@@ -6,9 +6,9 @@
         links: [
         ],
         photos: [
-            'https://dl.dropboxusercontent.com/s/si3hnv7d27i7j0a/Cellblock%2060x.tif',
-            'https://dl.dropboxusercontent.com/s/2jbni5ywb6zrr2a/DQ%2060x.tif',
-            'https://dl.dropboxusercontent.com/s/tglx7e5ky0wddek/Pap%2060x.tif'
+            'https://dl.dropboxusercontent.com/s/3vu2bx7fuc4wo7y/Cellblock%2060x.png',
+            'https://dl.dropboxusercontent.com/s/pusp1neqxwvbs3b/DQ%2060x.png',
+            'https://dl.dropboxusercontent.com/s/s4h1fd828t6alw7/Pap%2060x.png'
         ],
         videos: [
             {
@@ -23,7 +23,7 @@
                 fallback: ''
             },
             {
-                title: ' On-site Specimen Handling EUS-FNA',
+                title: 'On-site Specimen Handling EUS-FNA',
                 poster: 'img/video_posters/pancreas/eus-tissue-acquistion/video-2-on-site-specimen-handling.jpg',
                 sources:
                 {

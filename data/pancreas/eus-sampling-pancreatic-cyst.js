@@ -14,7 +14,7 @@
         ],
         videos: [
             {
-                title: 'EUS Cystgastostromy',
+                title: 'EUS Cystgastostomy',
                 poster: 'img/video_posters/pancreas/eus-sampling-pancreatic-cysts/eus-cystgastrostomy.jpg',
                 sources:
                 {
@@ -25,7 +25,7 @@
                 fallback: ''
             },
             {
-                title: 'EUS-FNA Micinous Cystadenoma',
+                title: 'EUS-FNA Mucinous Cystadenoma',
                 poster: 'img/video_posters/pancreas/eus-sampling-pancreatic-cysts/eus-fna-mucinous-cystadenoma.jpg',
                 sources:
                 {
