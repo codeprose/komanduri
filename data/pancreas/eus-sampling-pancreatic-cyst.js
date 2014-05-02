@@ -1,7 +1,7 @@
 ﻿(function () {
     MyScope.db.categories[3].items.push({
         title: "EUS Sampling of Pancreatic Cysts",
-        id: 'eus-sampling-pancreatic-cyst',
+        id: 'eus-sampling-pancreatic-cyst', 
         image: 'img/procedures/pancreatic-cysts.jpeg',
         links: [
         ],
