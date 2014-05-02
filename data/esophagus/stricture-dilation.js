@@ -2,7 +2,7 @@
     MyScope.db.categories[2].items.push({
         title: "Esophageal Stricture Dilation",
         id: 'esophageal-stricture-dilation',
-        image: 'img/procedures/esophageal-stricture-dilation.jpeg',
+        image: 'img/procedures/esophageal-stricture-dilation.jpg',
         links: [
         ],
         photos: [

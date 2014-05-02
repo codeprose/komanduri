@@ -2,7 +2,7 @@
     MyScope.db.categories[5].items.push({
         title: "Endoscopic Evaluation of Gastric Subepithelial Masses",
         id: 'endo-eval-subepithelial-masses',
-        image: 'img/procedures/subepithelial-masses.jpeg',
+        image: 'img/procedures/subepithelial-masses.jpg',
         links: [
         ],
         photos: [

@@ -2,7 +2,7 @@
     MyScope.db.categories[1].items.push({
         title: 'EMR for Complex Polyps',
         id: 'polyps',
-        image: 'img/procedures/emr-for-complex-polyps.jpeg',
+        image: 'img/procedures/emr-for-complex-polyps.jpg',
         links: [
             { url: 'http://www.sciencedirect.com/science/article/pii/S1542356513014547' },
             { url: 'http://www.sciencedirect.com/science/article/pii/S0016510713001909' },

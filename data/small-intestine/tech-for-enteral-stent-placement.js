@@ -2,7 +2,7 @@
     MyScope.db.categories[4].items.push({
         title: "Techniques for Enteral Stent Placement",
         id: 'tech-for-enteral-stent-placement',
-        image: 'img/procedures/enteral-stenting.jpeg',
+        image: 'img/procedures/enteral-stenting.jpg',
         links: [
         ],
         photos: [

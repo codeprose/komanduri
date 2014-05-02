@@ -2,7 +2,7 @@
     MyScope.db.categories[2].items.push({
         title: "Esophageal Stenting",
         id: 'esophageal-stenting',
-        image: 'img/procedures/esophageal-stenting.jpeg',
+        image: 'img/procedures/esophageal-stenting.jpg',
         links: [
         ],
         photos: [
