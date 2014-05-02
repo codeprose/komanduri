@@ -2,13 +2,14 @@
     MyScope.db.categories[3].items.push({
         title: "EUS Tissue Acquisition",
         id: 'eus-tissue-acquisition',
-        image: 'http://placehold.it/200x200',
+        image: 'img/procedures/eus-tissue-acquisition.jpg',
         links: [
         ],
         photos: [
-            'https://dl.dropboxusercontent.com/s/3vu2bx7fuc4wo7y/Cellblock%2060x.png',
-            'https://dl.dropboxusercontent.com/s/pusp1neqxwvbs3b/DQ%2060x.png',
-            'https://dl.dropboxusercontent.com/s/s4h1fd828t6alw7/Pap%2060x.png'
+            { title: 'Cytology', url: 'https://dl.dropboxusercontent.com/s/3vu2bx7fuc4wo7y/Cellblock%2060x.png' },
+            { title: 'Cytology', url: 'https://dl.dropboxusercontent.com/s/pusp1neqxwvbs3b/DQ%2060x.png' },
+            { title: 'Cytology', url: 'https://dl.dropboxusercontent.com/s/s4h1fd828t6alw7/Pap%2060x.png' },
+            { title: 'EUS-FNA', url: 'https://dl.dropboxusercontent.com/s/4yqb7nwl2xwktmm/EUS%20TA.png' }
         ],
         videos: [
             {

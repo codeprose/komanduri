@@ -2,19 +2,18 @@
     MyScope.db.categories[2].items.push({
         title: "Esophageal Stenting",
         id: 'esophageal-stenting',
-        image: 'http://placehold.it/200x200',
+        image: 'img/procedures/esophageal-stenting.jpeg',
         links: [
         ],
         photos: [
-            'https://dl.dropboxusercontent.com/s/fjw6l9h8mn86xl7/Esoph%20ca%20barium.jpg',
-            'https://dl.dropboxusercontent.com/s/ssjoshmcv4m3685/evo.JPEG',
-            'https://dl.dropboxusercontent.com/s/ffoo0cjqfn4igjq/image-1.png',
-            'https://dl.dropboxusercontent.com/s/jd200mrjvvjevkn/image-2.png',
-            'https://dl.dropboxusercontent.com/s/50o5vja7af9wlnj/image-3.png',
-            'https://dl.dropboxusercontent.com/s/zm748a156ajzrfi/image.png',
-            'https://dl.dropboxusercontent.com/s/he9ym7xewqo9qg3/lt1.JPEG',
-            'https://dl.dropboxusercontent.com/s/lgttaz6rmho5xfg/lt4.JPEG',
-            'https://dl.dropboxusercontent.com/s/jmc8cde7wj2i4hn/lt5.JPEG'
+            { title: 'Esophageal Cancer UGI', url: 'https://dl.dropboxusercontent.com/s/fjw6l9h8mn86xl7/Esoph%20ca%20barium.jpg' },
+            { title: 'Esophageal Cancer UGI', url: 'https://dl.dropboxusercontent.com/s/zm748a156ajzrfi/image.png' },            
+            { title: 'Post Stent UGI', url: 'https://dl.dropboxusercontent.com/s/50o5vja7af9wlnj/image-3.png' },            
+            { title: 'Malignant Esophageal Stricture', url: 'https://dl.dropboxusercontent.com/s/he9ym7xewqo9qg3/lt1.JPEG' },         
+            { title: 'EGD Post Stent Placement', url: 'https://dl.dropboxusercontent.com/s/lgttaz6rmho5xfg/lt4.JPEG' },           
+            { title: 'Esophageal Cancer Stent', url: 'https://dl.dropboxusercontent.com/s/ssjoshmcv4m3685/evo.JPEG' },            
+            { title: 'Esoph Stent Post Esophagectomy Fistula', url: 'https://dl.dropboxusercontent.com/s/ffoo0cjqfn4igjq/image-1.png' },
+            { title: 'EGD Post Stent', url: 'https://dl.dropboxusercontent.com/s/jmc8cde7wj2i4hn/lt5.JPEG' }            
         ],
         videos: [
             {

@@ -15,7 +15,7 @@
     page.append(makeControl('footer', {}));
 
     $.each(procedure.photos, function (i, image) {
-        $('#image-links').append(makeControl('image-link-for-gallery', { image: image }));
+        $('#image-links').append(makeControl('image-link-for-gallery', { image: image.url, title: image.title }));
     });
 
     page.hide();
@@ -29,7 +29,23 @@ $(document).on('pageshow', '#images', function (_, data) {
         event = event || window.event;
         var target = event.target || event.srcElement,
         link = target.src ? target.parentNode : target,
-        options = { index: link, event: event, container: '#image-gallery' },
+        options = {
+            index: link, event: event, 
+            container: '#image-gallery',
+            onslide: function (index, slide) {
+//                console.log(index);
+//                console.log(slide);
+
+//                console.log(this.list);
+//                var $likeButton = $(this.container.find('.myscope-like-dislike'));
+//                $likeButton.on('click', function() {
+//                    //MyScope.db.library.photos.push(procedure.photos[index]);
+//                    var $this = $(this);
+//                    $this.toggleClass('flaticon-like3');
+//                    $this.toggleClass('flaticon-dislike');
+//                });
+            }
+        },
         links = this.getElementsByTagName('a');
         blueimp.Gallery(links, options);
     };

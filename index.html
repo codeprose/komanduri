@@ -46,7 +46,7 @@
         </div>
         <div role="main" class="ui-content">
             <div style="text-align: center">
-                <h3>Endoscopy at your fingertips</h3>
+                <h3 class="homepage-subheader">Endoscopy at your fingertips</h3>
             </div>
             <ul data-role="listview" data-inset="true">
             </ul>
@@ -65,8 +65,7 @@
             <div class="ui-grid-a">
                 <div class="ui-block-a" style="padding: 4px">
                     <a href="#videos" style="text-decoration: none">
-                        <h3 class="ui-bar ui-bar-a quadrant-tile-title">
-                            Video</h3>
+                        <h3 class="ui-bar ui-bar-a quadrant-tile-title">Video</h3>
                         <div class="ui-body">
                             <img class="quadrant-image" src="img/play-button-original.png" />
                         </div>
@@ -74,8 +73,7 @@
                 </div>
                 <div class="ui-block-b" style="padding: 4px">
                     <a href="#images" style="text-decoration: none">
-                        <h3 class="ui-bar ui-bar-a quadrant-tile-title">
-                            Images</h3>
+                        <h3 class="ui-bar ui-bar-a quadrant-tile-title">Images</h3>
                         <div class="ui-body">
                             <img class="quadrant-image" src="img/images-button-original.png" />
                         </div>
@@ -83,8 +81,7 @@
                 </div>
                 <div class="ui-block-a" style="padding: 4px">
                     <a href="#guidelines" style="text-decoration: none">
-                        <h3 class="ui-bar ui-bar-a quadrant-tile-title">
-                            Guidelines</h3>
+                        <h3 class="ui-bar ui-bar-a quadrant-tile-title">Guidelines</h3>
                         <div class="ui-body">
                             <img class="quadrant-image" src="img/ppt-button-original.png" />
                         </div>
@@ -92,8 +89,7 @@
                 </div>
                 <div class="ui-block-b" style="padding: 4px">
                     <a href="#references" style="text-decoration: none">
-                        <h3 class="ui-bar ui-bar-a quadrant-tile-title">
-                            References</h3>
+                        <h3 class="ui-bar ui-bar-a quadrant-tile-title">References</h3>
                         <div class="ui-body">
                             <img class="quadrant-image" src="img/references-button-original.png" />
                         </div>
@@ -131,6 +127,7 @@
                 </h3>
                 <a class="prev"></a><a class="next"></a><a class="close"></a><a class="play-pause">
                 </a>
+                <!--<a class="myscope-like-dislike flaticon-like3"></a>-->
                 <ol class="indicator">
                 </ol>
             </div>
@@ -275,9 +272,9 @@
         <div data-role="footer" data-position="fixed" class="myscope-dynamic">
             <div data-role="navbar" data-iconpos="bottom">
                 <ul>
-                    <li><a href="#home" data-icon="home">Home</a></li>
-                    <li><a href="#quadrant?procedureId=library" data-icon="heart">Library</a></li>
-                    <li><a href="#settings" data-icon="gear">Settings</a></li>
+                    <li><a href="#home" data-icon="home"></a></li>
+                    <li><a href="#quadrant?procedureId=library" data-icon="heart"></a></li>
+                    <li><a href="#settings" data-icon="gear"></a></li>
                 </ul>
             </div>
         </div>
@@ -347,18 +344,6 @@
                 </div> 
             </div>
         </div>
-           
-        <!--
-        <div class="m-item myscope-dynamic">
-            <div class="m-card-light">
-                <a href="#guidelines-slides?procedureId={{procedureId}}&categoryIndex={{categoryIndex}}&guidelinesIndex={{guidelinesIndex}}" style="text-decoration: none; color: black; font-weight: normal">
-                    <img src="{{image}}" style="max-width: 200px; max-height: 300px;" />
-                    <p class="m-caption">{{caption}}</p>
-                </a>
-            </div>
-        </div>
-        -->
-    
     </script>
     <!-- This is the old school carousel with no items -->
     <script id="old-carousel" type="text/x-handlebars-template">
@@ -368,7 +353,7 @@
     </script>
     <!-- Image Link for gallery -->
     <script id="image-link-for-gallery" type="text/handlebars-template">
-        <a href="{{image}}" class="myscope-dynamic">
+        <a href="{{image}}" class="myscope-dynamic" title="{{title}}">
             <img src="{{image}}" style="max-width: 31%;" />
         </a>
     </script>

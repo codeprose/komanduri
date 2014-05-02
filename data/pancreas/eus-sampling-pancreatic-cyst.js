@@ -2,15 +2,15 @@
     MyScope.db.categories[3].items.push({
         title: "EUS Sampling of Pancreatic Cysts",
         id: 'eus-sampling-pancreatic-cyst',
-        image: 'http://placehold.it/200x200',
+        image: 'img/procedures/pancreatic-cysts.jpeg',
         links: [
         ],
         photos: [
-            'https://dl.dropboxusercontent.com/s/8h80pjg1e2s738n/cyst1.JPEG',
-            'https://dl.dropboxusercontent.com/s/w62g29hqie0oby7/cyst2.JPEG',
-            'https://dl.dropboxusercontent.com/s/pzseopw7rs60ni8/cyst3.JPEG',
-            'https://dl.dropboxusercontent.com/s/ghia1xxy1fmd5uf/cyst4.JPEG',
-            'https://dl.dropboxusercontent.com/s/t2jsqsc37pygm54/cyst5.JPEG'
+            { title: 'Cyst with Mural Nodule',      url: 'https://dl.dropboxusercontent.com/s/8h80pjg1e2s738n/cyst1.JPEG' },
+            { title: 'IPMN',                        url: 'https://dl.dropboxusercontent.com/s/w62g29hqie0oby7/cyst2.JPEG' },
+            { title: 'Cyst with Mucous Plug',       url: 'https://dl.dropboxusercontent.com/s/pzseopw7rs60ni8/cyst3.JPEG' },
+            { title: 'Cystic Neuroendocrine Tumor', url: 'https://dl.dropboxusercontent.com/s/ghia1xxy1fmd5uf/cyst4.JPEG' },
+            { title: 'FNA Cyst',                    url: 'https://dl.dropboxusercontent.com/s/t2jsqsc37pygm54/cyst5.JPEG' }
         ],
         videos: [
             {

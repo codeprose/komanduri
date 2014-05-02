@@ -2,24 +2,24 @@
     MyScope.db.categories[2].items.push({
         title: "RFA for Barrett's Esophagus",
         id: 'esophagus',
-        image: 'img/procedure-icons/rfa_for_barretts.png',
+        image: 'img/procedures/rfa-for-barretts.jpg',
         links: [
             { url: 'http://www.sciencedirect.com/science/article/pii/S0016510713026266' },
             { url: 'http://www.sciencedirect.com/science/article/pii/S0016508513015965' },
             { url: 'http://www.sciencedirect.com/science/article/pii/S0016510713021408' }
         ],
         photos: [
-            'https://dl.dropboxusercontent.com/s/3wtfndv9bdpewpq/GAVE-p-RFA-1.JPEG',    //  GAVE RFA
-            'https://dl.dropboxusercontent.com/s/rk55ta40zcw4caw/GAVE-post-1.JPEG',     //  GAVE
-            'https://dl.dropboxusercontent.com/s/e0xk6z9ugj0ivw9/GAVE-Pre-1.JPEG',      //  GAVE
-            'https://dl.dropboxusercontent.com/s/16hnz7oe1cy8fve/image-1.jpeg',         //  Long Segment BE
-            'https://dl.dropboxusercontent.com/s/wz4pta5o9dqnq0d/JC-pre1.JPEG',         //  Short Segment BE
-            'https://dl.dropboxusercontent.com/s/btmxs9f2n9zomtg/JC-pre-2.JPEG',        //  Barret's NBI
-            'https://dl.dropboxusercontent.com/s/4xpw34vt2wmm47w/image.jpeg',           //  Inlet Path Post RFA
-            'https://dl.dropboxusercontent.com/s/n5ov61a6qqo57ch/CRIM-NBI.JPEG',        //  Post RFA NBI
-            'https://dl.dropboxusercontent.com/s/2m7us04q9mp3pjh/CRIM.JPEG',            //  Post RFA
-            'https://dl.dropboxusercontent.com/s/67an2pgtcnpog5r/jc-post2.JPEG',        //  Post RFA
-            'https://dl.dropboxusercontent.com/s/3yuyx251s5zuvcp/jc-post-1.JPEG'        //  Post RFA
+            { title: 'Long Segment BE',         url: 'https://dl.dropboxusercontent.com/s/4xpw34vt2wmm47w/image.jpeg' },
+            { title: 'Short Segment BE',        url: 'https://dl.dropboxusercontent.com/s/btmxs9f2n9zomtg/JC-pre-2.JPEG' },
+            { title: "Barrett's NBI",           url: 'https://dl.dropboxusercontent.com/s/wz4pta5o9dqnq0d/JC-pre1.JPEG' },
+            { title: 'Inlet Path Post RFA',     url: 'https://dl.dropboxusercontent.com/s/16hnz7oe1cy8fve/image-1.jpeg' },
+            { title: 'Post RFA',                url: 'https://dl.dropboxusercontent.com/s/3yuyx251s5zuvcp/jc-post-1.JPEG' },
+            { title: 'Post RFA',                url: 'https://dl.dropboxusercontent.com/s/67an2pgtcnpog5r/jc-post2.JPEG' },
+            { title: 'Post RFA NBI',            url: 'https://dl.dropboxusercontent.com/s/n5ov61a6qqo57ch/CRIM-NBI.JPEG' },
+            { title: 'Post RFA',                url: 'https://dl.dropboxusercontent.com/s/2m7us04q9mp3pjh/CRIM.JPEG' },
+            { title: 'GAVE',                    url: 'https://dl.dropboxusercontent.com/s/rk55ta40zcw4caw/GAVE-post-1.JPEG' },
+            { title: 'GAVE',                    url: 'https://dl.dropboxusercontent.com/s/e0xk6z9ugj0ivw9/GAVE-Pre-1.JPEG' },
+            { title: 'GAVE RFA',                url: 'https://dl.dropboxusercontent.com/s/3wtfndv9bdpewpq/GAVE-p-RFA-1.JPEG' }
         ],
         videos: [
             {

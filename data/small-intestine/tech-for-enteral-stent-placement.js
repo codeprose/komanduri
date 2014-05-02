@@ -2,22 +2,22 @@
     MyScope.db.categories[4].items.push({
         title: "Techniques for Enteral Stent Placement",
         id: 'tech-for-enteral-stent-placement',
-        image: 'http://placehold.it/200x200',
+        image: 'img/procedures/enteral-stenting.jpeg',
         links: [
         ],
         photos: [
-            'https://dl.dropboxusercontent.com/s/vow8ahhp8x1ju7m/Cannulation.JPEG',
-            'https://dl.dropboxusercontent.com/s/lfi4rswqjresqu4/goo1.JPEG',
-            'https://dl.dropboxusercontent.com/s/6x0fwiny0hq87vb/goo2.JPEG',
-            'https://dl.dropboxusercontent.com/s/xdbvkt8cqv1bs8j/goo4.JPEG',
-            'https://dl.dropboxusercontent.com/s/w6awrljvcaamd1c/goo5.JPEG',
-            'https://dl.dropboxusercontent.com/s/78xue81fviwg96c/Goo3.JPEG',
-            'https://dl.dropboxusercontent.com/s/qe8kcxl2tfltio6/image-1.png',
-            'https://dl.dropboxusercontent.com/s/1g5tlksb9b7gki4/image-2.png',
-            'https://dl.dropboxusercontent.com/s/i7udf3l1nownxci/image-3.png',
-            'https://dl.dropboxusercontent.com/s/0gkevjqn3gg5nzz/image.png',
-            'https://dl.dropboxusercontent.com/s/5eyx5kdzj7awgs1/SEMS.JPEG',
-            'https://dl.dropboxusercontent.com/s/y262z04b4iyecbb/stent%20occlusion%201.JPEG'
+            { title: 'GOO', url: 'https://dl.dropboxusercontent.com/s/vow8ahhp8x1ju7m/Cannulation.JPEG' },
+            { title: 'GOO', url: 'https://dl.dropboxusercontent.com/s/78xue81fviwg96c/Goo3.JPEG' },
+            { title: 'GOO Guidewire', url: 'https://dl.dropboxusercontent.com/s/lfi4rswqjresqu4/goo1.JPEG' },
+            { title: 'GOO Guidewire', url: 'https://dl.dropboxusercontent.com/s/xdbvkt8cqv1bs8j/goo4.JPEG' },
+            { title: 'SEMS GOO', url: 'https://dl.dropboxusercontent.com/s/6x0fwiny0hq87vb/goo2.JPEG' },
+            { title: 'GOO SEMS', url: 'https://dl.dropboxusercontent.com/s/w6awrljvcaamd1c/goo5.JPEG' },
+            { title: 'GOO Fluoro Guidewire Access', url: 'https://dl.dropboxusercontent.com/s/0gkevjqn3gg5nzz/image.png' },
+            { title: 'GOO Fluoro Stent', url: 'https://dl.dropboxusercontent.com/s/qe8kcxl2tfltio6/image-1.png' },
+            { title: 'GOO Fluoro Stent', url: 'https://dl.dropboxusercontent.com/s/1g5tlksb9b7gki4/image-2.png' },
+            { title: 'Final SEMS', url: 'https://dl.dropboxusercontent.com/s/5eyx5kdzj7awgs1/SEMS.JPEG' },
+            { title: 'GOO Fluoro Jejunal Stent', url: 'https://dl.dropboxusercontent.com/s/i7udf3l1nownxci/image-3.png' },
+            { title: 'EGD Stent Occlusion', url: 'https://dl.dropboxusercontent.com/s/y262z04b4iyecbb/stent%20occlusion%201.JPEG' }
         ],
         videos: [
             {

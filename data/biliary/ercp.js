@@ -2,7 +2,7 @@
     MyScope.db.categories[0].items.push({
         title: 'Difficult ERCP',
         id: 'ercp',
-        image: 'http://placehold.it/200x200',
+        image: 'img/procedures/difficult-ercp.jpg',
         links: [
             { url: 'http://www.sciencedirect.com/science/article/pii/S0016510713023523' },
             { url: 'http://www.ncbi.nlm.nih.gov/pubmed/24409076' },
@@ -10,14 +10,14 @@
             { url: 'http://www.nejm.org/doi/full/10.1056/NEJMct1208450' }
         ],
         photos: [
-            'https://dl.dropboxusercontent.com/s/lyat4pnw50boyzu/image-2.png', // Pancreas Divisum Stent 
-            'https://dl.dropboxusercontent.com/s/3e3avrscopz3mz7/image-3.png', // ERCP Pancreas Divisum
-            'https://dl.dropboxusercontent.com/s/jo16v88da1gosjs/image-4.png', // Pancreas Divisum ?
-            'https://dl.dropboxusercontent.com/s/vndwh5h9n2yv7gk/image-1.png', // MRCP CBD Stricture ?
-            'https://dl.dropboxusercontent.com/s/u5zv4a20ztqnlzu/image-5.png', // EUS AIP
-            'https://dl.dropboxusercontent.com/s/bhpq0xvbniij053/image-6.png', // ERCP Bile Duct Stricture
-            'https://dl.dropboxusercontent.com/s/xys8r27uqkuz1rk/image-7.png', // Bile Duct Stricture (Stent)
-            'https://dl.dropboxusercontent.com/s/48nxh750qyq9h94/image.png'    // Biliary Stent (KUB)
+            { title: 'Pancreas Divisum',            url: 'https://dl.dropboxusercontent.com/s/jo16v88da1gosjs/image-4.png' },
+            { title: 'ERCP Pancreas Divisum',       url: 'https://dl.dropboxusercontent.com/s/3e3avrscopz3mz7/image-3.png' },
+            { title: 'Pancreas Divisum Stent',      url: 'https://dl.dropboxusercontent.com/s/lyat4pnw50boyzu/image-2.png' },
+            { title: 'MRCP CBD Stricture',          url: 'https://dl.dropboxusercontent.com/s/vndwh5h9n2yv7gk/image-1.png' },
+            { title: 'EUS AIP',                     url: 'https://dl.dropboxusercontent.com/s/u5zv4a20ztqnlzu/image-5.png' },
+            { title: 'ERCP Bile Duct Stricture',    url: 'https://dl.dropboxusercontent.com/s/bhpq0xvbniij053/image-6.png' },
+            { title: 'Bile Duct Stricture (Stent)', url: 'https://dl.dropboxusercontent.com/s/xys8r27uqkuz1rk/image-7.png' },
+            { title: 'Biliary Stent (KUB)',         url: 'https://dl.dropboxusercontent.com/s/48nxh750qyq9h94/image.png' }
         ],
         videos: [
         {

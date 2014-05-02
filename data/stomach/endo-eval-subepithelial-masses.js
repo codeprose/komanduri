@@ -2,27 +2,26 @@
     MyScope.db.categories[5].items.push({
         title: "Endoscopic Evaluation of Gastric Subepithelial Masses",
         id: 'endo-eval-subepithelial-masses',
-        image: 'http://placehold.it/200x200',
+        image: 'img/procedures/subepithelial-masses.jpeg',
         links: [
         ],
         photos: [
-            'https://dl.dropboxusercontent.com/s/72rjhapmadvz5nf/gist3.JPEG',                   //  EGD GIST
-            'https://dl.dropboxusercontent.com/s/0z2z1ndw4mt0e4e/gist4.JPEG',                   //  EUS GIST
-            'https://dl.dropboxusercontent.com/s/oswa3la1zhy0xu0/gist%202.JPEG',                //  EUS GIST
-            'https://dl.dropboxusercontent.com/s/up1071b1czrpbtr/gist%203.JPEG',                //  EUS Schwanoma
-            'https://dl.dropboxusercontent.com/s/u719e2mgg0k0d4w/GIST%201.JPEG',                //  EUS Gastric Subepithelial Mass
-            'https://dl.dropboxusercontent.com/s/i6jrdi1w5yy9vcj/gist%20pc1.JPEG',              //  EUS GSM of FNA
-            'https://dl.dropboxusercontent.com/s/3me2xizmiw53gbi/gist%20pc2.JPEG',              //  GIST Unroofing Technique
-            'https://dl.dropboxusercontent.com/s/yumc4otfx31o1a2/gist%20pc3.JPEG',              //  EGD Leiomyoma
-            'https://dl.dropboxusercontent.com/s/k75l4qjejzmxiuk/GIST%20unroofing%20x100.png',  //  EUS Leiomyoma
-            'https://dl.dropboxusercontent.com/s/0365xodshr89uvk/glip2.JPEG',                   //  EGD GIST
-            'https://dl.dropboxusercontent.com/s/9k0c0w7kcvyz42f/glip3.JPEG',                   //  EUS Lipoma
-            'https://dl.dropboxusercontent.com/s/s24mncs3yurf8vk/Glip1.JPEG',                   //  
-            'https://dl.dropboxusercontent.com/s/3210lafwiepk4ue/GSM%201.png',                 //  
-            'https://dl.dropboxusercontent.com/s/6tyktxxk527gnv0/gsmemr1.JPEG',                 //  
-            'https://dl.dropboxusercontent.com/s/yg6ecwwditjfgts/gsmemr2.JPEG',                 //  
-            'https://dl.dropboxusercontent.com/s/7akohbh65ylxazz/gsmemr3.JPEG',                 //  
-            'https://dl.dropboxusercontent.com/s/0nmdft3gob7zzlz/gsmemr4.JPEG'                  //  
+            { title: 'EGD GIST', url: 'https://dl.dropboxusercontent.com/s/u719e2mgg0k0d4w/GIST%201.JPEG' },
+            { title: 'EUS GIST', url: 'https://dl.dropboxusercontent.com/s/oswa3la1zhy0xu0/gist%202.JPEG' },
+            { title: 'EUS GIST', url: 'https://dl.dropboxusercontent.com/s/up1071b1czrpbtr/gist%203.JPEG' },
+            { title: 'EUS Schwanoma', url: 'https://dl.dropboxusercontent.com/s/i6jrdi1w5yy9vcj/gist%20pc1.JPEG' },
+            { title: 'EUS Gastric Subepithelial Mass', url: 'https://dl.dropboxusercontent.com/s/3me2xizmiw53gbi/gist%20pc2.JPEG' },
+            { title: 'EUS GSM of FNA', url: 'https://dl.dropboxusercontent.com/s/yumc4otfx31o1a2/gist%20pc3.JPEG' },
+            { title: 'GIST Unroofing Technique', url: 'https://dl.dropboxusercontent.com/s/k75l4qjejzmxiuk/GIST%20unroofing%20x100.png' },
+            { title: 'EGD Leiomyoma', url: 'https://dl.dropboxusercontent.com/s/72rjhapmadvz5nf/gist3.JPEG' },
+            { title: 'EUS Leiomyoma', url: 'https://dl.dropboxusercontent.com/s/0z2z1ndw4mt0e4e/gist4.JPEG' },
+            { title: 'EGD GIST', url: 'https://dl.dropboxusercontent.com/s/s24mncs3yurf8vk/Glip1.JPEG' },
+            { title: 'EUS Lipoma', url: 'https://dl.dropboxusercontent.com/s/0365xodshr89uvk/glip2.JPEG' },
+            { title: 'EGD Unroofing Biopsy', url: 'https://dl.dropboxusercontent.com/s/3210lafwiepk4ue/GSM%201.png' },
+            { title: 'EUS Carcinoid', url: 'https://dl.dropboxusercontent.com/s/6tyktxxk527gnv0/gsmemr1.JPEG' },
+            { title: 'EGD Carcinoid', url: 'https://dl.dropboxusercontent.com/s/yg6ecwwditjfgts/gsmemr2.JPEG' },
+            { title: 'EMR Carcinoid', url: 'https://dl.dropboxusercontent.com/s/7akohbh65ylxazz/gsmemr3.JPEG' },
+            { title: 'Post EMR Carcinoid', url: 'https://dl.dropboxusercontent.com/s/0nmdft3gob7zzlz/gsmemr4.JPEG' } 
         ],
         videos: [
             {

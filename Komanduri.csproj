@@ -89,6 +89,15 @@
     <Content Include="img\procedure-icons\rfa_for_barretts.png" />
     <Content Include="img\procedure-icons\small_intestine.jpg" />
     <Content Include="img\procedure-icons\stomach.jpg" />
+    <Content Include="img\procedures\difficult-ercp.jpg" />
+    <Content Include="img\procedures\emr-for-complex-polyps.JPEG" />
+    <Content Include="img\procedures\enteral-stenting.JPEG" />
+    <Content Include="img\procedures\esophageal-stenting.JPEG" />
+    <Content Include="img\procedures\esophageal-stricture-dilation.JPEG" />
+    <Content Include="img\procedures\eus-tissue-acquisition.jpg" />
+    <Content Include="img\procedures\pancreatic-cysts.JPEG" />
+    <Content Include="img\procedures\rfa-for-barretts.jpg" />
+    <Content Include="img\procedures\subepithelial-masses.JPEG" />
     <Content Include="img\references-button-original.png" />
     <Content Include="img\splash.png" />
     <Content Include="img\video_posters\biliary\ercp\ercp-diverticulum.jpg" />

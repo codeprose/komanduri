@@ -2,20 +2,20 @@
     MyScope.db.categories[2].items.push({
         title: "Esophageal Stricture Dilation",
         id: 'esophageal-stricture-dilation',
-        image: 'http://placehold.it/200x200',
+        image: 'img/procedures/esophageal-stricture-dilation.jpeg',
         links: [
         ],
         photos: [
-            'https://dl.dropboxusercontent.com/s/83y37s38r6oye81/cre5.JPEG',
-            'https://dl.dropboxusercontent.com/s/gv7l6n4pd1z1m58/cre6.JPEG',
-            'https://dl.dropboxusercontent.com/s/0gnpprpu6grj5w6/CRE1.JPEG',
-            'https://dl.dropboxusercontent.com/s/k87lflqtwks9ybi/CRE2.JPEG',
-            'https://dl.dropboxusercontent.com/s/1hjl5p25xp3pzkn/CRE3.JPEG',
-            'https://dl.dropboxusercontent.com/s/ubn6zbil50hy5ky/CRE4.JPEG',
-            'https://dl.dropboxusercontent.com/s/gfddrdkeono25sw/pl-a4.png',
-            'https://dl.dropboxusercontent.com/s/yaa51yxijz6d9v8/post%20rfa%20stricture%201.JPEG',
-            'https://dl.dropboxusercontent.com/s/s9it075yrtysgw0/post%20rfa%20stricture%20dil%203.JPEG',
-            'https://dl.dropboxusercontent.com/s/uv67sgfwaazttk1/wi%20sm%20egd%202.png'
+            { title: 'Benign Esophageal Stricture', url: 'https://dl.dropboxusercontent.com/s/0gnpprpu6grj5w6/CRE1.JPEG' },
+            { title: 'Esophageal Stricture', url: 'https://dl.dropboxusercontent.com/s/uv67sgfwaazttk1/wi%20sm%20egd%202.png' },
+            { title: 'CRE Ballon Dilation', url: 'https://dl.dropboxusercontent.com/s/k87lflqtwks9ybi/CRE2.JPEG' },
+            { title: 'CRE Ballon Dilation', url: 'https://dl.dropboxusercontent.com/s/1hjl5p25xp3pzkn/CRE3.JPEG' },
+            { title: 'Post Dilation', url: 'https://dl.dropboxusercontent.com/s/ubn6zbil50hy5ky/CRE4.JPEG' },
+            { title: 'RBES', url: 'https://dl.dropboxusercontent.com/s/83y37s38r6oye81/cre5.JPEG' },
+            { title: 'CRE Ballon Dilation', url: 'https://dl.dropboxusercontent.com/s/gv7l6n4pd1z1m58/cre6.JPEG' },
+            { title: 'EoE Stricture Dilation', url: 'https://dl.dropboxusercontent.com/s/gfddrdkeono25sw/pl-a4.png' },
+            { title: 'Post RFA Stricture', url: 'https://dl.dropboxusercontent.com/s/yaa51yxijz6d9v8/post%20rfa%20stricture%201.JPEG' },
+            { title: 'Post RFA Stricture Dilation', url: 'https://dl.dropboxusercontent.com/s/s9it075yrtysgw0/post%20rfa%20stricture%20dil%203.JPEG' }
         ],
         videos: [
             {
