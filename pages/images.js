@@ -31,20 +31,7 @@ $(document).on('pageshow', '#images', function (_, data) {
         link = target.src ? target.parentNode : target,
         options = {
             index: link, event: event, 
-            container: '#image-gallery',
-            onslide: function (index, slide) {
-//                console.log(index);
-//                console.log(slide);
-
-//                console.log(this.list);
-//                var $likeButton = $(this.container.find('.myscope-like-dislike'));
-//                $likeButton.on('click', function() {
-//                    //MyScope.db.library.photos.push(procedure.photos[index]);
-//                    var $this = $(this);
-//                    $this.toggleClass('flaticon-like3');
-//                    $this.toggleClass('flaticon-dislike');
-//                });
-            }
+            container: '#image-gallery'
         },
         links = this.getElementsByTagName('a');
         blueimp.Gallery(links, options);

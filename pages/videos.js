@@ -13,6 +13,10 @@
 
     page.append(makeControl('footer', {}));
 
+    $.each(procedure.videos, function (i, video) {
+        $('#video-links').append(makeControl('image-link-for-gallery', { image: video.poster, title: video.title, index: i }));
+    });
+
     page.hide();
 });
 
@@ -34,10 +38,23 @@ $(document).on('pageshow', '#videos', function (event, data) {
         });
     });
 
-    blueimp.Gallery(galleryItems, {
-        container: '#video-carousel',
-        carousel: false,
-        startSlideshow: false,
-        index: 0
-    });
+    document.getElementById('video-links').onclick = function (evt) {
+        evt = evt || window.event;
+        var target = evt.target || evt.srcElement;
+        var index = $(target).data('index');
+        var options = {
+            index: index,
+            event: evt,
+            container: '#video-carousel'
+        };
+
+        blueimp.Gallery(galleryItems, options);
+    };
+
+//    blueimp.Gallery(galleryItems, {
+//        container: '#video-carousel',
+//        carousel: false,
+//        startSlideshow: false,
+//        index: 0
+//    });
 });

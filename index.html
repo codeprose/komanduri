@@ -102,13 +102,15 @@
     <!-- #videos -->
     <div data-role="page" data-theme="b" id="videos" class="myscope-dynamic-page">
         <div role="main" class="ui-content">
+            <div id="video-links" class="links">
+            </div>            
             <div id="video-carousel" class="blueimp-gallery">
                 <div class="slides">
                 </div>
                 <h3 class="title">
                 </h3>
                 <a class="prev"></a><a class="next"></a><a class="close">x</a><a class="play-pause">
-                </a>
+                                                                              </a>
                 <ol class="indicator">
                 </ol>
             </div>
@@ -353,7 +355,7 @@
     </script>
     <!-- Image Link for gallery -->
     <script id="image-link-for-gallery" type="text/handlebars-template">
-        <a href="{{image}}" class="myscope-dynamic" title="{{title}}">
+        <a href="{{image}}" class="myscope-dynamic" title="{{title}}" data-index="{{index}}">
             <img src="{{image}}" style="max-width: 31%;" />
         </a>
     </script>

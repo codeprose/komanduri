@@ -65,3 +65,17 @@
     margin-top: 2px;
     margin-bottom: 2px;
 }
+
+.blueimp-gallery > .title {
+    font-size: 14px;
+    top: 78%;
+    left: 15px;
+    right: 15px;
+    width: auto;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.blueimp-gallery {
+    background-color: black;
+}
