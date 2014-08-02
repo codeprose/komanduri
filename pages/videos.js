@@ -28,13 +28,14 @@ $(document).on('pageshow', '#videos', function (event, data) {
     $.each(procedure.videos, function (i, video) {
         galleryItems.push({
             title: video.title,
-            type: 'video/*',
-            poster: video.poster,
-            sources: [
-                { type: 'video/mp4', href: video.sources.mp4 },
-                { type: 'video/ogg', href: video.sources.ogg },
-                { type: 'video/webm', href: video.sources.webm }
-            ]
+            type: 'text/html', //type: 'video/*',
+            poster: 'https://img.youtube.com/vi/zuxZ0Ar35TA/maxresdefault.jpg', //poster: video.poster,
+            youtube: 'zuxZ0Ar35TA'
+//            sources: [
+//                { type: 'video/mp4', href: video.sources.mp4 },
+//                { type: 'video/ogg', href: video.sources.ogg },
+//                { type: 'video/webm', href: video.sources.webm }
+//            ]
         });
     });
 
