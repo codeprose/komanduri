@@ -141,6 +141,7 @@
     <Content Include="img\logo.png" />
     <Content Include="index.js" />
     <Content Include="jqm.page.params.js" />
+    <Content Include="js\blueimp-codeprose.js" />
     <Content Include="js\codeprose-widget-setup.js" />
     <Content Include="js\dx.phonejs.js" />
     <Content Include="js\fastclick.js" />
