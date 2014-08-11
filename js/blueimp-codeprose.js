@@ -1,0 +1,23 @@
+﻿blueimp.Gallery.prototype.textFactory = function (obj, callback) {
+    /*
+    
++        <div class="video-container">
++            <iframe width="560" height="315" src="//www.youtube.com/embed/S0Yu1nvmRMM?rel=0"
++                frameborder="0" allowfullscreen></iframe>
++        </div>
+    
+    */
+
+    var $iframe = $('<iframe height="315" width="560" frameborder="0" allowfullscreen>');
+    $iframe.attr('src', 'http://www.youtube.com/embed/' + 'zuxZ0Ar35TA' + '?rel=0');
+
+    var $container = $('<div>');
+    $container.append($iframe);
+
+    callback({
+        type: 'load',
+        target: $container.get(0)
+    });
+
+    return $container[0];
+};

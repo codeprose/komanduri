@@ -22,6 +22,13 @@
     <preference name="auto-hide-splash-screen" value="false" />
     <preference name="permissions" value="none"/>
 
+    <preference name="MediaPlayerRequiresUserAction" value="false" />
+    <preference name="AllowInlineMediaPlayback" value="true" />
+    <preference name="OpenAllWhitelistURLsInWebView" value="true" />
+
+    <access origin="http://youtube.com" subdomains="true" />
+    <access origin="http://ytimg.com" subdomains="true" />
+
     <!-- Android icons -->
     <icon src="img/icon.png"  gap:platform="android" gap:density="ldpi" />
     <icon src="img/icon.png"  gap:platform="android" gap:density="mdpi" />
