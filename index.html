@@ -3,43 +3,50 @@
 <head>
     <title>MyScope</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=0" />
+    
+    
     <link href="lib/jquerymobile/jquery.mobile-1.4.2.min.css" rel="stylesheet" type="text/css" />
     <link href="lib/jquerymobile/listview-grid.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="lib/carousel/carousel.css" />
     <link rel="stylesheet" href="lib/carousel/carousel-style.css" />
     <link href="lib/gallery/css/blueimp-gallery.min.css" rel="stylesheet" type="text/css" />
-    <!-- This script is added by PhoneGap build -->
+   
     <script type="text/javascript" src="cordova.js"></script>
     <script src="lib/jquery/jquery.js" type="text/javascript"></script>
     <script src="lib/jquerymobile/jquery.mobile-1.4.2.min.js" type="text/javascript"></script>
     <script src="handlebars-v1.3.0.js" type="text/javascript"></script>
     <script src="main.js" type="text/javascript"></script>
-    <!-- Procedure Data --> 
-    <script type="text/javascript" src="data/setup.js"></script>
-    <script type="text/javascript" src="data/biliary/ercp.js"></script>
-    <script type="text/javascript" src="data/colon/emr-for-complex-polyps.js"></script>
-    <script type="text/javascript" src="data/esophagus/rfa-for-barretts.js"></script>
-    <script type="text/javascript" src="data/esophagus/stenting.js"></script>
-    <script type="text/javascript" src="data/esophagus/stricture-dilation.js"></script>
-    <script type="text/javascript" src="data/pancreas/eus-sampling-pancreatic-cyst.js"></script>
-    <script type="text/javascript" src="data/pancreas/eus-tissue-acquisition.js"></script>
-    <script type="text/javascript" src="data/small-intestine/tech-for-enteral-stent-placement.js"></script>
-    <script type="text/javascript" src="data/stomach/endo-eval-subepithelial-masses.js"></script>
-    <!-- Page 'controllers' -->
-    <script type="text/javascript" src="pages/home.js"></script>
-    <script type="text/javascript" src="pages/category.js"></script>
-    <script type="text/javascript" src="pages/quadrant.js"></script>
-    <script type="text/javascript" src="pages/videos.js"></script>
-    <script type="text/javascript" src="pages/images.js"></script>
-    <script type="text/javascript" src="pages/guidelines.js"></script>
-    <script type="text/javascript" src="pages/guidelines-slides.js"></script>
+    <!--
+        <script type="text/javascript" src="data/setup.js"></script>
+        <script type="text/javascript" src="data/biliary/ercp.js"></script>
+        <script type="text/javascript" src="data/colon/emr-for-complex-polyps.js"></script>
+        <script type="text/javascript" src="data/esophagus/rfa-for-barretts.js"></script>
+        <script type="text/javascript" src="data/esophagus/stenting.js"></script>
+        <script type="text/javascript" src="data/esophagus/stricture-dilation.js"></script>
+        <script type="text/javascript" src="data/pancreas/eus-sampling-pancreatic-cyst.js"></script>
+        <script type="text/javascript" src="data/pancreas/eus-tissue-acquisition.js"></script>
+        <script type="text/javascript" src="data/small-intestine/tech-for-enteral-stent-placement.js"></script>
+        <script type="text/javascript" src="data/stomach/endo-eval-subepithelial-masses.js"></script>
+
+        <script type="text/javascript" src="pages/home.js"></script>
+        <script type="text/javascript" src="pages/category.js"></script>
+        <script type="text/javascript" src="pages/quadrant.js"></script>
+        <script type="text/javascript" src="pages/videos.js"></script>
+        <script type="text/javascript" src="pages/images.js"></script>
+        <script type="text/javascript" src="pages/guidelines.js"></script>
+        <script type="text/javascript" src="pages/guidelines-slides.js"></script>
     
-    <link rel="stylesheet" href="font/flaticon.css" />
-    <link rel="stylesheet" href="myscope.css" />
-    <link rel="stylesheet" href="widgets/procedure-card/procedure-card.css" />
+        <link rel="stylesheet" href="font/flaticon.css" />
+        <link rel="stylesheet" href="myscope.css" />
+        <link rel="stylesheet" href="widgets/procedure-card/procedure-card.css" />
+        -->
 </head>
-<body>
-    <!-- #home -->
+    <body>
+        <div>
+            <iframe height="315" width="100%" frameborder="0" allowfullscreen src="http://www.youtube.com/embed/zuxZ0Ar35TA?rel=0"></iframe>
+        </div>
+
+<!--
     <div data-role="page" data-theme="b" id="home" class="my-page">
         <div data-role="header" style="font-size: 1.5em">
             <h1>MyScope</h1>
@@ -52,14 +59,12 @@
             </ul>
         </div>
     </div>
-    <!-- /#home -->
-    <!-- #category -->
+
     <div data-role="page" id="category" data-theme="b" class="myscope-dynamic-page">
         <div role="main" class="ui-content">
         </div>
     </div>
-    <!-- /#category -->
-    <!-- #quadrant -->
+
     <div data-role="page" data-theme="b" id="quadrant" class="myscope-dynamic-page">
         <div data-role="main" class="ui-content">
             <div class="ui-grid-a">
@@ -98,8 +103,7 @@
             </div>
         </div>
     </div>
-    <!-- /#quadrant -->
-    <!-- #videos -->
+
     <div data-role="page" data-theme="b" id="videos" class="myscope-dynamic-page">
         <div role="main" class="ui-content">
             <div id="video-links" class="links">
@@ -116,8 +120,7 @@
             </div>
         </div>
     </div>
-    <!-- /#videos -->
-    <!-- #images -->
+
     <div data-role="page" data-theme="b" id="images" class="myscope-dynamic-page">
         <div role="main" class="ui-content">
             <div id="image-links" class="links">
@@ -128,21 +131,19 @@
                 <h3 class="title">
                 </h3>
                 <a class="prev"></a><a class="next"></a><a class="close"></a><a class="play-pause">
-                </a>
-                <!--<a class="myscope-like-dislike flaticon-like3"></a>-->
+                                                                             </a>
+ 
                 <ol class="indicator">
                 </ol>
             </div>
         </div>
     </div>
-    <!-- /#images -->
-    <!-- #guidelines -->
+
     <div data-role="page" data-theme="b" id="guidelines" class="myscope-dynamic-page">
         <div role="main" class="ui-content">
         </div>
     </div>
-    <!-- /#guidelines -->
-    <!-- #guidelines-slides -->
+
     <div data-role="page" data-theme="b" id="guidelines-slides" class="myscope-dynamic-page">
         <div role="main" class="ui-content">
             <div id="slide-carousel" class="blueimp-gallery">
@@ -151,26 +152,26 @@
                 <h3 class="title">
                 </h3>
                 <a class="prev"></a><a class="next"></a><a class="close"></a><a class="play-pause">
-                </a>
+                                                                             </a>
                 <ol class="indicator">
                 </ol>
             </div>
         </div>
     </div>
-    <!-- /#guidelines-slides -->
+
     <div data-role="page" data-theme="b" id="references">
         <div data-role="header">
             <h1>RFA for Barrett's</h1>
             <a href="./" data-shadow="false" data-iconshadow="false" data-icon="carat-l" data-iconpos="notext"
-                data-rel="back" data-ajax="false">Back</a>
+               data-rel="back" data-ajax="false">Back</a>
         </div>
-        <!-- /header -->
+
         <div role="main" class="ui-content">
             <ul class="ui-listview ui-listview-inset ui-corner-all ui-shadow">
                 <li class="ui-li-has-thumb"><a class="ui-btn">
-                    <img src="img/references-button-original.png" class="ui-li-thumb">
-                    <h2>References</h2>
-                </a></li>
+                                                <img src="img/references-button-original.png" class="ui-li-thumb">
+                                                <h2>References</h2>
+                                            </a></li>
             </ul>
             <div id="Div4" class="blueimp-gallery blueimp-gallery-carousel">
                 <div class="slides">
@@ -182,7 +183,7 @@
                 </ol>
             </div>
         </div>
-        <!-- /content -->
+
         <div data-role="footer" data-position="fixed">
             <div data-role="navbar" data-iconpos="bottom">
                 <ul>
@@ -191,15 +192,15 @@
                     <li><a href="#settings" data-icon="gear">Settings</a></li>
                 </ul>
             </div>
-            <!-- /navbar -->
+ 
         </div>
-        <!-- /footer -->
+   
     </div>
     <div data-role="page" data-theme="b" id="library">
         <div data-role="header">
             <h1>Library</h1>
         </div>
-        <!-- /header -->
+
         <div role="main" class="ui-content">
         </div>
         <div data-role="footer" data-position="fixed">
@@ -210,15 +211,15 @@
                     <li><a href="#settings" data-icon="gear">Settings</a></li>
                 </ul>
             </div>
-            <!-- /navbar -->
+        
         </div>
-        <!-- /footer -->
+            
     </div>
     <div data-role="page" data-theme="b" id="settings">
         <div data-role="header">
             <h1>Settings</h1>
         </div>
-        <!-- /header -->
+            
         <div role="main" class="ui-content">
         </div>
         <div data-role="footer" data-position="fixed">
@@ -229,31 +230,31 @@
                     <li><a href="#settings" data-icon="gear">Settings</a></li>
                 </ul>
             </div>
-            <!-- /navbar -->
+                
         </div>
-        <!-- /footer -->
+
     </div>
     <script type="text/javascript" src="lib/carousel/carousel.js"></script>
     <script src="lib/gallery/js/blueimp-gallery.min.js" type="text/javascript"></script>
     <script type="text/javascript" src="js/blueimp-codeprose.js"></script>
     <script type="text/javascript" src="jqm.page.params.js"></script>
     <script type="text/javascript">
-        $(function () {
-            document.addEventListener("deviceready", function () {
-                navigator.splashscreen.hide();
-            });
+            $(function () {
+                document.addEventListener("deviceready", function () {
+                    navigator.splashscreen.hide();
+                });
 
-            console.log(navigator.userAgent);
-            if (navigator.userAgent.match(/(iPad|iPhone);.*CPU.*OS 7_\d/i) || (window.device && parseFloat(window.device.version) >= 7.0)) {
-                var fileref = document.createElement("link");
-                fileref.setAttribute("rel", "stylesheet");
-                fileref.setAttribute("type", "text/css");
-                fileref.setAttribute("href", "css/jquerymobile.ios7.css");
-                document.getElementsByTagName("head")[0].appendChild(fileref);
-            }
-        });
-    </script>
-    <!-- This is a template for the category header that goes on each page -->
+                console.log(navigator.userAgent);
+                if (navigator.userAgent.match(/(iPad|iPhone);.*CPU.*OS 7_\d/i) || (window.device && parseFloat(window.device.version) >= 7.0)) {
+                    var fileref = document.createElement("link");
+                    fileref.setAttribute("rel", "stylesheet");
+                    fileref.setAttribute("type", "text/css");
+                    fileref.setAttribute("href", "css/jquerymobile.ios7.css");
+                    document.getElementsByTagName("head")[0].appendChild(fileref);
+                }
+            });
+        </script>
+
     <script id="context-header" type="text/x-handlebars-template">
         <ul class="ui-listview ui-listview-inset ui-corner-all ui-shadow myscope-dynamic">
             <li class="ui-li-has-thumb"><a class="ui-btn context-header">
@@ -262,7 +263,7 @@
             </a></li>
         </ul>        
     </script>
-    <!-- This is the standard header -->
+
     <script id="header" type="text/x-handlebars-template">
         <div data-role="header" class="myscope-dynamic">
             <h1>{{title}}</h1>
@@ -270,7 +271,7 @@
                 data-rel="back" data-ajax="false">Back</a>
         </div>        
     </script>
-    <!-- This the standard footer -->
+
     <script id="footer" type="text/x-handlebars-template">
         <div data-role="footer" data-position="fixed" class="myscope-dynamic">
             <div data-role="navbar" data-iconpos="bottom">
@@ -282,7 +283,7 @@
             </div>
         </div>
     </script>
-    <!-- This is a template for the card/button that displays on the first page for each category -->
+
     <script id="category-menu-item" type="text/x-handlebars-template">
         <li class="myscope-dynamic">
             <a href="#category?categoryIndex={{categoryIndex}}" style="background-color: {{color}}">
@@ -291,7 +292,7 @@
             </a>
         </li>
     </script>
-    <!-- This is a template for the card that displays for each procedure in a given category after clicking the category on the first page -->
+
     <script id="procedure-card-item" type="text/x-handlebars-template">
         <div class="m-item">
             <div class="m-card">        
@@ -331,7 +332,7 @@
             </div>
         </div>
     </script>    
-    <!-- This is a template for the card that displays for each procedure in a given category after clicking the category on the first page -->
+
     <script id="guidelines-card-item" type="text/x-handlebars-template">
         <div class="m-item">
             <div class="m-card">
@@ -348,17 +349,18 @@
             </div>
         </div>
     </script>
-    <!-- This is the old school carousel with no items -->
+   
     <script id="old-carousel" type="text/x-handlebars-template">
         <div class="m-carousel m-center m-scaled m-fade-out myscope-dynamic">
             <div class="m-carousel-inner"></div>
         </div>
     </script>
-    <!-- Image Link for gallery -->
+     
     <script id="image-link-for-gallery" type="text/handlebars-template">
         <a href="{{image}}" class="myscope-dynamic" title="{{title}}" data-index="{{index}}">
             <img src="{{image}}" style="max-width: 31%;" />
         </a>
     </script>
-</body>
+    -->
+    </body>
 </html>

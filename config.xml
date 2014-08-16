@@ -26,8 +26,7 @@
     <preference name="AllowInlineMediaPlayback" value="true" />
     <preference name="OpenAllWhitelistURLsInWebView" value="true" />
 
-    <access origin="http://youtube.com" subdomains="true" />
-    <access origin="http://ytimg.com" subdomains="true" />
+    <access origin="*" />
 
     <!-- Android icons -->
     <icon src="img/icon.png"  gap:platform="android" gap:density="ldpi" />
