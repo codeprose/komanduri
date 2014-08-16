@@ -14,10 +14,20 @@
     var $container = $('<div>');
     $container.append($iframe);
 
-    callback({
+    this.setTimeout(callback, [{
         type: 'load',
-        target: $container.get(0)
-    });
+        target: $container[0]
+    }]);
 
     return $container[0];
+
+//    var $test = $('<div>');
+//    $test.html('<span>THIS IS A TEST</span>');
+
+//    this.setTimeout(callback, [{
+//        type: 'load',
+//        target: $test.get(0)
+//    }]);
+
+//    return $test.get(0);
 };
