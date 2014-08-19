@@ -8,10 +8,10 @@
     
     */
 
-    var $iframe = $('<iframe height="315" width="560" frameborder="0" allowfullscreen>');
+    var $iframe = $('<iframe style="height: 100%" width="100%" frameborder="0" allowfullscreen>');
     $iframe.attr('src', 'http://www.youtube.com/embed/' + 'zuxZ0Ar35TA' + '?rel=0');
 
-    var $container = $('<div>');
+    var $container = $('<div style="width: 100%; height: 100%">');
     $container.append($iframe);
 
     this.setTimeout(callback, [{
