@@ -1,0 +1,217 @@
+body {
+	background-color: #3e454d;
+	height: 100%;
+}
+
+p {
+	color: #FFF;
+	display: inline-block;
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	margin: 0;
+	padding: 0;
+}
+
+/* --- icons --- */
+
+.icon-home {
+	background: url(../img/icons/icon-house.png) center no-repeat;
+	display: inline-block;
+	height: 50px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	top: 20px;
+	width: 100%;
+}
+.icon-favorite {
+	background: url(../img/icons/icon-favorite.png) center no-repeat;
+	display: inline-block;
+	height: 50px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	top: 20px;
+	width: 100%;
+}
+.icon-logo {
+	background: url(../img/icons/logo.png) left no-repeat;
+	display: inline-block;
+	height: 50px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	top: 25px;
+	width: 100%;
+}
+.icon-settings {
+	background: url(../img/icons/icon-settings.png) center no-repeat;
+	display: inline-block;
+	height: 50px;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	top: 20px;
+	width: 100%;
+}
+
+/* --- end icons --- */
+
+
+header {
+	background-color: #EEE;
+	
+	padding: 0 !important;
+}
+	header .menu {
+		border-bottom: 1px solid #95989b;
+		display: inline-block;
+		height: 100px;
+		margin: 0;
+		padding: 0;
+	}
+		.menu > ul {
+			display: inline-block;
+			float: left;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			position: relative;
+			width: 100%;
+		}
+
+
+/* --- content submenu main --- */
+section.content-main {
+	padding: 0 !important;
+	overflow: hidden;
+	z-index: 1;
+}
+	section.content-main > div.content-menu {
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+	section.content-main > div.content-menu ul {
+		display: inline-block;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		position: relative;
+		width: 100%;
+	}
+	section.content-main > div.content-menu ul > li {
+		background: rgba(50,55,62,1);
+		background: -moz-linear-gradient(top, rgba(50,55,62,1) 0%, rgba(62,69,77,1) 29%);
+		background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(50,55,62,1)), color-stop(29%, rgba(62,69,77,1)));
+		background: -webkit-linear-gradient(top, rgba(50,55,62,1) 0%, rgba(62,69,77,1) 29%);
+		background: -o-linear-gradient(top, rgba(50,55,62,1) 0%, rgba(62,69,77,1) 29%);
+		background: -ms-linear-gradient(top, rgba(50,55,62,1) 0%, rgba(62,69,77,1) 29%);
+		background: linear-gradient(to bottom, rgba(50,55,62,1) 0%, rgba(62,69,77,1) 29%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#32373e', endColorstr='#3e454d', GradientType=0 );
+		cursor: pointer;
+		display: inline-block;
+		float: left;
+		height: 170px;
+		margin: 0;
+		padding: 0;
+		position: relative;
+		width: 100%;
+	}
+	section.content-main > div.content-menu ul > li > div.img {
+		display: inline-block;
+		float: left;
+		height: 170px;
+		margin: 0;
+		padding: 0;
+		position: relative;
+	}
+	section.content-main > div.content-menu ul > li > div.desc {
+		background: url(../img/content-menu-back.png) 100% top no-repeat;
+		height: 170px;
+	}
+	section.content-main > div.content-menu ul > li > div.desc > h2 {
+		color: #FFF;
+		font-family: 'Raleway', sans-serif;
+		font-size: 32px;
+		font-weight: 300;
+		letter-spacing: 8px;
+		line-height: 1em;
+		margin: 75px 0 0 0;
+		padding: 0 15% 0 0;
+		position: relative;
+		text-align: right;
+		top: 0;
+	}
+
+/* --- end content submenu main --- */
+
+/* --- content --- */
+section.content-content {
+	display: block;
+	float: left;
+	height: 100%;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	top: 270px;
+	width: 100%;
+	z-index: 0;
+}
+	section.content-content > div.container {
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		z-index: 1;
+	}
+		section.content-content > div.container > div {
+			display: block;
+			padding: 0;
+			position: absolute;
+			top: -3000px;
+			width: 100%;
+		}
+		section.content-content > div.container > div.active {
+			-webkit-transition: all 1s ease-in-out;
+			-moz-transition: all 1s ease-in-out;
+			-o-transition: all 1s ease-in-out;
+			transition: all 1s ease-in-out;
+			top: 0;
+		}
+			section.content-content > div.container > div > ul.content {
+				background: #3e454d;
+				display: inline-block;
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				
+			}
+				section.content-content > div.container > div > ul.content > li {
+					border-bottom: 2px solid #383e45;
+					border-top: 2px solid #485159;
+					height: 120px;
+					margin: 0;
+					padding: 0;
+					position: relative;
+					width: 100%;
+				}
+				section.content-content > div.container > div > ul.content > li h2 {
+					display: inline-block;
+					font-family: 'Raleway', sans-serif;
+					font-size: 28px;
+					font-weight: 200;
+					margin: 20px 0 10px 0;
+					padding: 0;
+				}
+				
+
+
+/* --- end content --- */
+
+/* --- extras --- */
+
+.text-orange {
+	color: #facbb4;
+}
