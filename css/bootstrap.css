@@ -5410,8 +5410,9 @@ button.close {
   margin: 10px;
 }
 .modal-content {
+  overflow: hidden;
   position: relative;
-  background-color: #fff;
+  background-color: #253746;
   -webkit-background-clip: padding-box;
           background-clip: padding-box;
   border: 1px solid #999;
@@ -5428,7 +5429,7 @@ button.close {
   bottom: 0;
   left: 0;
   z-index: 1040;
-  background-color: #000;
+  background-color: rgba(0,0,0,0);
 }
 .modal-backdrop.fade {
   filter: alpha(opacity=0);
@@ -5439,18 +5440,33 @@ button.close {
   opacity: .5;
 }
 .modal-header {
+  height: 99px;
   min-height: 16.42857143px;
   padding: 15px;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #5b6770;
 }
 .modal-header .close {
   margin-top: -2px;
 }
 .modal-title {
-  margin: 0;
+  color: #FFF;
+  font-family: 'Raleway', sans-serif;
+  font-size: 28px;
+  font-weight: 300;
+  margin: 12px 0 0 30px;
   line-height: 1.42857143;
 }
 .modal-body {
+  background: rgba(91,103,112,1);
+  background: -moz-linear-gradient(top, rgba(91,103,112,1) 0%, rgba(36,41,47,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(91,103,112,1)), color-stop(100%, rgba(36,41,47,1)));
+  background: -webkit-linear-gradient(top, rgba(91,103,112,1) 0%, rgba(36,41,47,1) 100%);
+  background: -o-linear-gradient(top, rgba(91,103,112,1) 0%, rgba(36,41,47,1) 100%);
+  background: -ms-linear-gradient(top, rgba(91,103,112,1) 0%, rgba(36,41,47,1) 100%);
+  background: linear-gradient(to bottom, rgba(91,103,112,1) 0%, rgba(36,41,47,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5b6770', endColorstr='#24292f', GradientType=0 );
+  border: 1px solid #323e48;
+  border-top: none;
   position: relative;
   padding: 15px;
 }
