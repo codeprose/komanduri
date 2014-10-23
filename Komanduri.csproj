@@ -155,9 +155,6 @@
     <Content Include="js\jquery.velocity.min.js" />
     <Content Include="js\main.js" />
     <Content Include="js\velocity.ui.min.js" />
-    <Content Include="font\flaticon.css" />
-    <Content Include="font\flaticon.html" />
-    <Content Include="font\flaticon.svg" />
     <Content Include="icon.png" />
     <Content Include="config.xml">
       <SubType>Designer</SubType>
@@ -492,11 +489,6 @@
     <None Include="fonts\raleway-thin-webfont.eot" />
     <None Include="fonts\raleway-thin-webfont.ttf" />
     <None Include="fonts\raleway-thin-webfont.woff" />
-    <None Include="img\icons\Thumbs.db" />
-    <None Include="img\Thumbs.db" />
-    <None Include="font\flaticon.eot" />
-    <None Include="font\flaticon.ttf" />
-    <None Include="font\flaticon.woff" />
     <None Include="res\screen\tizen\README.md" />
   </ItemGroup>
   <ItemGroup>
