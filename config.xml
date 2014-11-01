@@ -4,9 +4,9 @@
     xmlns:gap="http://phonegap.com/ns/1.0"
     id="com.codeprose.komanduri"
     versionCode="100"
-    version="0.1.0.12">
+    version="0.1.0.13">
    
-    <name>MyScope</name>
+    <name>EndoscopyNow</name>
 
     <description>
         Endoscopic Procedure Reference
