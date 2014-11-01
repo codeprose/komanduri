@@ -1,5 +1,5 @@
 ﻿/// <reference path="../js/jquery-1.10.2.min.js"; />
-/// <reference path="../js/knockout-3.0.0.js"; />
+/// <reference path="../js/knockout-3.2.0.js"; />
 
 (function () {
     var favorites = [

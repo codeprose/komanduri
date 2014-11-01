@@ -245,6 +245,25 @@ var app, myScope = {
 		app.active_menu_right();
 		//overhidden
 		$('body > div').css({ 'overflow': 'hidden' });
+		
+		//
+		$(window).on('orientationchange', function(event) {
+			if(app.isLandscape()) {
+				window.location.reload();
+			}
+		});
+	},
+	/* function: reaload
+		Reload to change landscape, this is for javascript reload auto.
+		
+		parameter:
+			void.
+		
+		return:
+			orientation - Integer.
+	*/
+	isLandscape: function() {
+    	return (window.orientation === 90 || window.orientation === -90);
 	},
     /* function: create_menu
         Create menu, html and listener link.
@@ -390,6 +409,13 @@ var app, myScope = {
 					$('#accordion-procedure').find('.panel-collapse').removeClass('in');
 					$(current_element).addClass('in');
 					
+					var menu_hamburguer = '<div class="col-xs-3 btn-menu-hamburguer">' +
+						'<button>' +
+							'<span></span><span></span><span></span>' +
+						'</button>' +
+					'</div>';
+					
+					app.settings.menu_item_click.append(menu_hamburguer);
 					app.animation_content(null, null, 6);
 				});
 			});
@@ -479,17 +505,18 @@ var app, myScope = {
 		$('.content-ui-prev').find('.title').css({ 'background': color });
 		$('.content-ui-prev').find('.title').find('h2').css({ 'color' : color_sec });
 
-		//
+		//activate tab
 		$.each($('.content-ui-prev').find('.content-list-menu > ul').find('li'), function(key, value) {
 			$(value).off('click').on('click', function() {
-				$('#accordion-procedure').on('show.bs.collapse', function () {
-			        $('#accordion-procedure .in').collapse('hide');
-			    });
+				app.settings.content_main.parent().parent().removeClass('prev-ui');
+				app.settings.content_main.parent().parent().addClass('procedure');
                 
                 $($(this).find('button').attr('data-target')).collapse('show');
 				
-				$('.content-procedure').addClass('active');
 				$('.content-ui-prev').removeClass('active');
+				
+				$('.content-procedure').addClass('active');
+				$('.content-procedure').parent().parent().addClass('procedure');
 			});
 		});
 		
@@ -505,12 +532,22 @@ var app, myScope = {
 			void.
 	*/
 	back_list: function(element) {
+		$('#accordion-procedure').on('show.bs.collapse', function () {
+			$('#accordion-procedure .in').collapse('hide');
+		});
+		
 		$(element).off('click').on('click', function() {
 			$('header').addClass('in');
 			
 			$('.dummy').removeClass('active');
 			$('.content-procedure').removeClass('active');
 			$('.content-ui-prev').removeClass('active');
+			
+			//aca
+			$('.content-procedure').parent().parent().removeClass('procedure');
+			$('.content-ui-prev').parent().parent().removeClass('prev-ui');
+			
+			console.log('contentmain');
 			
 			app.settings.content_menu_right.removeClass('active');
 			app.settings.content_main.parent().parent().removeClass('active');
@@ -575,18 +612,20 @@ var app, myScope = {
             /* loading animations items list listeners.
              * Event callback menu animation and animation array up. */
 			case 1:
+				var element_heigth = $('div.content-menu ul > li').height();
+				
 				if(array_elements[0] != null) {
 					$.each(array_elements, function(key, value) {
-						value.item.delay(50 * key).css({ 'top' : -(170 * (key + 1)), 'opacity':0 });
+						value.item.delay(50 * key).css({ 'top' : -(element_heigth * (key + 1)), 'opacity':0 });
 						
 						if(key == (array_elements.length-1)) {
 							$.each(array_elements_sec, function(key_sec, value_sec) {
 								$('#menu').on('transitionend webkitTransitionEnd oTransitionEnd otransitionend', function() {
 									if(key_sec == (array_elements_sec.length - 1)) {
-										$(value_sec).delay(50 * key_sec).css({ 'top': -(170 * (key_sec))});
+										$(value_sec).delay(50 * key_sec).css({ 'top': -(element_heigth * (key_sec))});
 									} else {
 										if($(value_sec).attr('id') != 1) {
-											$(value_sec).delay(50 * key_sec).css({ 'top': -(170 * (key_sec + 1)) });
+											$(value_sec).delay(50 * key_sec).css({ 'top': -(element_heigth * (key_sec + 1)) });
 										}
 									}
 									
@@ -598,9 +637,9 @@ var app, myScope = {
 				} else {
 					$.each(array_elements_sec, function(key, value) {
 						if(key == (array_elements_sec.length - 1)) {
-							$(value).delay(20 * key).css({ 'top': -(170 * (key)) });
+							$(value).delay(20 * key).css({ 'top': -(element_heigth * (key)) });
 						} else {
-							$(value).delay(20 * key).css({ 'top': -(170 * (key + 1)) });
+							$(value).delay(20 * key).css({ 'top': -(element_heigth * (key + 1)) });
 						}
 					});
 				}
@@ -615,6 +654,8 @@ var app, myScope = {
 			case 2:
 				//remove height
 				$('#menu').removeClass('min');
+				app.settings.content_main.parent().parent().removeClass('content');
+				app.settings.content_main.parent().parent().removeClass('procedure');
 				
 				$.each(array_elements.get(), function(key, value) {
 					$(value).delay(50 * key).removeAttr('style');
@@ -633,6 +674,8 @@ var app, myScope = {
 				app.settings.content_main.find('ul').empty();
 				app.settings.content_main.removeAttr('style');
 				app.settings.content_main.addClass('active');
+				
+				app.settings.content_main.parent().parent().addClass('content');
 				
 				//app.settings.content_main
 				$.each(content, function(key, value) {
@@ -677,21 +720,34 @@ var app, myScope = {
 				$('.content-main').addClass('menu-alternative');
 				app.settings.menu_item_click.addClass('active-alternative');
 				
+				app.settings.content_main.parent().parent().removeClass('content');
+				app.settings.content_main.parent().parent().removeClass('procedure');
+				
 				$('.content-ui-prev').addClass('active');
+				$('.content-ui-prev').parent().parent().addClass('prev-ui');
+				
 				app.scroll_thumbs();
 				
 				console.log('animation 5');
 			break;
             case 6:
             	$('header').removeClass('in');
+				app.scroll_thumbs();
 				
 				//carga de content
+				
 				app.settings.content_main.removeClass('active');
 				$('.content-ui-prev').removeClass('active');
 				
+				app.settings.content_main.parent().parent().removeClass('content');
+				app.settings.content_main.parent().parent().removeClass('prev-ui');
+				
 				$('.content-procedure').addClass('active');
+				$('.content-procedure').parent().parent().addClass('procedure');
+				
 				app.settings.content_main.parent().parent().css({ 'top':101,'z-index':2 });
-
+				
+				$('.dummy').addClass('active');
 				$('.content-main').addClass('menu-alternative');
 				app.settings.menu_item_click.addClass('active-alternative');
 				

@@ -1,4 +1,3 @@
-
 body {
 	background-color: #3e454d;
 	height: 100%;
@@ -236,7 +235,6 @@ header.menu-top {
 }
 	header.menu-top.in {
 		display: block;
-		height: 100px;
 		z-index: 99999;
 	}
 	header.menu-top .menu {
@@ -325,7 +323,7 @@ header.menu-top {
 /* --- menu right --- */
 
 .menu-right {
-	display: inline-block;
+	display: none;
 	float: right;
 	margin: 0;
 	padding: 0;
@@ -338,6 +336,7 @@ header.menu-top {
 	width: 250px;
 }
 	.menu-right.active {
+		display: inline-block;
 		left: 0;
 	}
 	.menu-right > ul {
@@ -421,7 +420,6 @@ header.menu-top {
 		width: 50% !important;
 	}
 	.menu-alternative > div.content-menu > ul.content > li.active-alternative h2 {
-		font-size: 1.6em !important;
 		margin-top: 40px;
 		text-align: left;
 	}
@@ -589,10 +587,10 @@ section.content-main div.dummy {
 
 /* --- content --- */
 section.content-main-info {
-	display: block;
+	display: inline-block;
 	float: left;
-	height: 100%;
 	left: 0;
+	height: 100%;
 	overflow: hidden;
 	padding: 0;
 	position: absolute;
@@ -637,12 +635,17 @@ section.content-main-info {
 			top: -3000px;
 		}
 		section.content-main-info > div.container > div.content.active {
+			display: inline-block;
+			height: 100%;
+			overflow-y: scroll;
+			overflow-x: hidden;
 			opacity: 1;
 			top: 0;
 		}
 			section.content-main-info > div.container > div.content > ul {
 				background: #3e454d;
 				display: inline-block;
+				height: auto;
 				list-style: none;
 				margin: 0;
                 overflow: hidden;
@@ -924,7 +927,7 @@ section.content-main-info {
 
 						/* --- video panel --- */
 						#content-procedure-videos {
-							height: 549px;
+							height: auto;
 						}
                         section.content-main-info > div.container > div.content-procedure > div.panel div.panel-body .video {
                             display: inline-block;
@@ -968,7 +971,7 @@ section.content-main-info {
 
 						/* --- guidelines --- */
 						#content-procedure-guidelines {
-							height: 500px;
+							height: auto;
 						}
                         section.content-main-info > div.container > div.content-procedure > div.panel div.panel-body .guideline-file {
                             display: inline-block;
@@ -1024,6 +1027,10 @@ section.content-main-info {
                                 }
 
                         /* --- images tab --- */
+						#content-procedure-references {
+							overflow-y: scroll;
+						}
+
                         section.content-main-info > div.container > div.content-procedure > div.panel div.panel-body > ul.thumbnails-images {
                         	display: inline-block;
                         	height: 525px;
@@ -1302,48 +1309,886 @@ section.settings {
 
 /* --- media queries --- */
 
-/* Large desktops and laptops */
-@media (min-width: 1200px) {
-
-}
-
-/* Portrait tablets and medium desktops */
-@media (min-width: 992px) and (max-width: 1199px) {
-
-}
-
-/* Portrait tablets and small desktops */
-@media (min-width: 768px) and (max-width: 991px) {
-
-}
-
-/* Landscape phones and portrait tablets */
-@media (max-width: 767px) {
-	#menu li > div > h2 {
-		font-size: 2em;
-		padding-right: 0;
-	}
-}
-
-/* Landscape phones and smaller */
-@media (max-width: 480px) {
-	h2 {
-		font-size: 1.6em !important;
-	}
-
+/* --- Iphone --- */
+@media only screen and (min-width : 320px) {
 	p {
 		font-size: .9em;
 	}
-
-	#menu li > div.desc {
-		padding-left: 0;
+	
+	/* --- haeader --- */
+	header.menu-top .menu {
+		height: 50px;
 	}
-
+		header.menu-top .logo {
+			width: 40% !important;
+		}
+			header.menu-top .logo > a {
+				left: 15px;
+				padding: 0;
+			}
+				.icon-logo {
+					background: none;
+					content: url(../img/icons/logo-min.png);
+					height: 30px;
+					top: 6px;
+					width: 116px;
+				}
+		
+		header.menu-top.in {
+			height: 50px;
+		}
+		
+		.menu > ul > li {
+			padding: 0;
+			width: 13.7%;
+		}
+			.menu > ul > li a {
+				left: 5%;
+			}
+	
+		.icon-home {
+			background: none;
+			content: url(../img/icons/icon-house.png);
+			height: 20px;
+			top: 14px;
+			width: 23px;
+		}
+		.icon-favorite {
+			background: none;
+			content: url(../img/icons/icon-favorite-min.png);
+			height: 21px;
+			top: 15px;
+			width: 23px;
+		}
+		.icon-settings {
+			background: none;
+			content: url(../img/icons/icon-settings-min.png);
+			height: 20px;
+			top: 16px;
+			width: 23px;
+		}
+		
+		.icon-bar {
+			font-size: 35px;
+			height: 40px;
+			top: 4px;
+		}
+		.icon-share,
+		.icon-start {
+			background-size: 65%;
+			height: 29px;
+			top: -4px;
+		}
+		.icon-home-b,
+		.icon-favorite-b,
+		.icon-settings-b {
+			background-size: 60%;
+			height: 37px;
+			top: 5px;
+			width: 40px;
+		}
+	
+	
+	/* --- content menu main list --- */
+	section.content-main div.dummy {
+		height: 60px;
+		width: 85px;
+	}
+	section.content-main > div.dummy.active > div,
+	section.content-main > div.dummy.active > div > div.btn-dummy {
+		height: 60px;
+	}
+	section.content-main > div.content-menu ul > li,
+	section.content-main > div.content-menu ul > li > div.img {
+		height: 85px;
+	}
+			section.content-main > div.content-menu ul > li > div.img > img:last-child {
+				height: 85px;
+			}
+		section.content-main > div.content-menu ul > li > div.desc {
+			background-size: 83px 69px;
+			height: 85px;
+		}
+	
+		section.content-main > div.content-menu ul.min {
+			height: 80px;
+		}
+	
+	
+	section.content-main-info {
+		top: 135px;
+	}
+		section.content-main-info > div.container > div.content > ul > li {
+			border-bottom: 1px solid #383e45;
+			border-top: 1px solid #485159;
+			height: 80px;
+		}
+			section.content-main-info > div.container > div.content > ul > li p {
+				font-size: 0.75em;
+			}
+		section.content-main-info > div.container > div.content > ul > li .controller-options {
+			border-bottom: 1px solid rgba(90,90,90,.2);
+			border-top: 1px solid rgba(255,255,255,.5);
+			height: 80px;
+			left: 102%;
+		}
+			section.content-main-info > div.container > div.content > ul > li .controller-options > span.triangle {
+				left: -7px;
+				top: 22px;
+			}
+			section.content-main-info > div.container > div.content > ul > li .controller-options > ul button {
+				height: 80px;
+			}
+	
+	
+	.menu-alternative {
+		height: 60px;
+	}
+		.active-alternative {
+			top: -85px;
+		}
+		.menu-alternative > div.content-menu > ul.content > li.active-alternative {
+			background-size: 35%;
+		}
+		.menu-alternative > div.content-menu > ul.content > li.active-alternative,
+		.menu-alternative > div.content-menu > ul.content > li.active-alternative > div.img > img.min-image {
+			height: 60px;
+		}
+			.menu-alternative > div.content-menu > ul.content > li.active-alternative > div.btn-menu-hamburguer button {
+				height: 65px;
+				left: 0;
+			}
+				.menu-alternative > div.content-menu > ul.content > li.active-alternative > div.btn-menu-hamburguer {
+					left: 78%;
+					position: absolute;
+					width: 37%;
+				}
+				div.btn-menu-hamburguer button > span {
+					height: 4px;
+					margin: 4px 20%;
+				}
+			.menu-alternative > div.content-menu > ul.content > li.active-alternative h2 {
+				margin: 24px 0 0 0 !important;
+				letter-spacing: 5px;
+				left: -5px;
+				padding: 0 !important;
+			}
+	
 	#menu li > div > h2 {
-		font-size: 1.5em;
-		padding-right: 0;
-		text-align: right;
+		font-size: 1.2em;
+		margin: 35px 0 0 0;
+		padding: 0 6% 0 0;
 	}
+	
+	.menu-right {
+		width: 200px;
+	}
+		.menu-right > ul > li {
+			height: 50px;
+		}
+			.menu-right > ul > li > a {
+				padding: 0 10px;
+			}
+				.menu-right > ul > li > a > span:nth-child(2) {
+					font-size: 14px;
+					padding: 0 5px;
+					position: relative;
+					top: -6px;
+				}
+				.menu-right > ul > li > a > span:nth-child(3) {
+					top: 15px;
+				}
+	
+	
+	/* --- cointent --- */
+	section.content-main-info > div.container > div.content-ui-prev > .content-list-menu > ul > li {
+		height: 135px;
+	}
+		section.content-main-info > div.container > div.content-ui-prev > .content-list-menu > ul > li > button {
+			height: 135px;
+		}
+		section.content-main-info > div.container > div.content-ui-prev > .content-list-menu > ul > li > button > p {
+			font-size: 1.1em;
+			margin: 5px 0 0px 0;
+		}
+		
+		section.content-main-info > div.container > div.content-ui-prev > .content-list-menu > ul > li > button > span {
+			font-size: 4em;
+		}
+		section.content-main-info > div.container > div.content-ui-prev > .content-list-menu > ul > li:nth-child(1) > button > span {
+			font-size: 4em;
+		}
+			section.content-main-info > div.container > div.content-ui-prev > .content-list-menu > ul > li:nth-child(1) > button > span > span {
+				left: 2px;
+				position: relative;
+			}
+		section.content-main-info > div.container > div.content-ui-prev > .content-list-menu > ul > li:nth-child(3) > button > span {
+			font-size: 4em;
+		}
+	
+	section.content-main-info > div.container > div.content-ui-prev > .title {
+		border-bottom: 1px inset rgba(90,90,90,.7);
+		height: 50px;
+	}
+		section.content-main-info > div.container > div.content-ui-prev > .title h2 {
+			font-size: 1.25em;
+			margin: 0 0 0 3%;
+			top: 16px;
+		}
+		section.content-main-info > div.container > div.content-ui-prev > div:first-child button {
+			height: 30px;
+			top: -7px;
+			width: 16%;
+		}
+	
+	section.content-main-info > div.container > div.content > ul > li .controller-options > ul > li {
+		padding: 0;
+	}
+	section.content-main-info > div.container > div.content-procedure > div.panel > div.panel-heading > a > span.icon-bar > span {
+		top: 20px;
+	}
+	
+	
+	/* --- info --- */
+	section.content-main-info.procedure {
+		height: 705px;
+		top: 60px !important;
+	}
+	section.content-main-info.active {
+		left: -200px;
+	}
+	section.content-main-info.prev-ui {
+		height: 500px;
+		top: 60px !important;
+	}
+		section.content-main-info > div.container > div.content > ul > li h2 {
+			font-size: 1.1em !important;
+			margin: 10px 0 5px 0;
+		}
+	
+	
+	/* --- tabs --- */
+	section.content-main-info > div.container > div.content-procedure > div.panel > div.panel-heading > a {
+		font-size: 20px;
+		letter-spacing: 5px;
+	}
+		section.content-main-info > div.container > div.content-procedure > div.panel > div.panel-heading,
+		section.content-main-info > div.container > div.content-procedure > div.panel > div.panel-heading > a {
+			height: 60px;
+		}
+			section.content-main-info > div.container > div.content-procedure > div.panel > div.panel-heading > a > span.icon-bar {
+				height: 60px;
+			}
+				section.content-main-info > div.container > div.content-procedure > div.panel > div.panel-heading > a > span.icon-bar > span {
+					font-size: 0.6em;
+					top: 7px;
+				}
+			section.content-main-info > div.container > div.content-procedure > div.panel > div.panel-heading > a >	p {
+				font-size: .8em;
+				top: 16px;
+			}
+	
+	/* --- videos --- */
+	section.content-main-info > div.container > div.content-procedure > div.panel div.panel-body .video {
+		height: 230px;
+	}
+	section.content-main-info > div.container > div.content-procedure > div.panel div.panel-body > div.thumbnails-videos > ul,
+	section.content-main-info > div.container > div.content-procedure > div.panel div.panel-body > div.thumbnails-videos > ul > li > button {
+		height: 80px;
+	}
+		section.content-main-info > div.container > div.content-procedure > div.panel div.panel-body > div.thumbnails-videos > ul > li > button > img {
+			max-width: 160%;
+		}
+	
+	/* --- guidelines --- */
+	section.content-main-info > div.container > div.content-procedure > div.panel div.panel-body .guideline-file .title {
+		margin: 15px 0 15px 10px;
+	}
+		section.content-main-info > div.container > div.content-procedure > div.panel div.panel-body .guideline-file .desc {
+			margin: 10px 0;
+		}
+			section.content-main-info > div.container > div.content-procedure > div.panel div.panel-body .guideline-file .desc p {
+				font-size: 12px;
+				height: 90px;
+				line-height: 1.1em;
+			}
+	
+	/* --- references --- */
+	section.content-main-info > div.container > div.content-procedure > div.panel div.panel-body > div.thumbnails-guidelines > ul,
+	section.content-main-info > div.container > div.content-procedure > div.panel div.panel-body > div.thumbnails-guidelines > ul > li,
+	section.content-main-info > div.container > div.content-procedure > div.panel div.panel-body > div.thumbnails-guidelines > ul > li > button {
+		height: 80px;
+	}
+	
+	.panel-body ul.content-references-list > li > div {
+		padding: 0;
+	}
+		.panel-body ul.content-references-list > li > div h3 {
+			font-size: 16px;
+			line-height: 1em;
+			margin: 8px 0 14px 0;
+		}
+		.panel-body ul.content-references-list > li > div p {
+			font-size: 12px;
+			line-height: 1.1em;
+		}
+	
+	.panel-body ul.content-references-list {
+		border-top: 1px solid #aaa;
+	}
+		.panel-body ul.content-references-list > li > div span {
+			background-position: center 10px;
+			background-size: 35%;
+		}
+	
+	/* --- modal --- */
+	.icon-share-w {
+		background-size: 70%;
+	}
+	
+	.modal-header {
+		background-position-x: 120% !important;
+		height: 70px;
+	}
+			#modal-share div.modal-header > button {
+				height: 45px;
+				margin-right: 0;
+			}
+	.modal-title {
+		font-size: 17px;
+		margin: 5px 0 0 0;
+	}
+		#modal-share {
+			top: 0;
+		}
+			#modal-share div.modal-body > ul {
+				margin: 0 0 15px;
+			}
+		#modal-share div.modal-body > ul > li {
+			margin-top: 25px;
+		}
+			#modal-share div.modal-body > ul > li > a {
+				font-size: 13px;
+			}
+			#modal-share div.modal-body > ul > li > a > img {
+				width: 70%;
+			}
+			#modal-share div.modal-body > ul > li > a > span {
+				margin: 5px 0 15px;
+			}
+	
+	
+	
+	/* --- FAVORITES --- */
+	section.content-main-info.favorites p {
+		font-size: .8em;
+	}
+	
+	section.content-main-info.favorites {
+		top: 50px;
+	}
+		section.content-main-info.favorites > ul.container > li > div.title {
+			border-bottom: 2px solid #d7b185;
+			border-top: 1px solid #fabb72;
+			height: 60px;
+		}
+			section.content-main-info.favorites > ul.container > li > div.title h2 {
+				font-size: 1.1em;
+				margin: 22px 0 0 0;
+				padding: 0 0 0 15px;
+			}
+		section.content-main-info.favorites > ul.container > li > div.content > ul.content-items > li h2 {
+			font-size: 1.1em;
+			margin: 10px 0 5px 0;
+		}
+	section.content-main-info.favorites .bg-menu {
+		top: -50px;
+	}
+	
+	section.content-main-info.favorites > ul.container > li > div.content {
+		top: -4px;
+	}
+		section.content-main-info.favorites > ul.container > li > div.content > ul.content-items > li {
+			height: 80px;
+		}
+			section.content-main-info.favorites > ul.container > li > div.content > ul.content-items > li .controller-options {
+				left: 102%;
+			}
+				section.content-main-info.favorites > ul.container > li > div.content > ul.content-items > li .controller-options {
+					height: 80px;
+				}
+					section.content-main-info.favorites > ul.container > li > div.content > ul.content-items > li .controller-options > span.triangle {
+						left: -7px;
+						top: 22px;
+					}
+					section.content-main-info.favorites > ul.container > li > div.content > ul.content-items > li .controller-options ul button {
+						height: 80px;
+					}
+	
+	section.content-main-info.favorites .icon-bar {
+		width: 50px;
+	}
+	
+	
+	/* --- SETTINGS --- */
+	.settings h2 {
+		font-size: 25px;
+		margin: 30px 0;
+	}
+		.settings label {
+			font-size: 13px;
+			padding-left: 2%;
+			width: 93%;
+		}
+}
+
+/* --- Landscape phones and smaller --- */
+@media only screen and (min-width : 480px) {
+	p {
+		font-size: .9em;
+	}
+	
+	/* --- haeader --- */
+	header.menu-top .menu {
+		height: 80px;
+	}
+		header.menu-top .logo {
+			width: 40% !important;
+		}
+			header.menu-top .logo > a {
+				left: 5px;
+				padding: 0;
+			}
+				.icon-logo {
+					background: none;
+					content: url(../img/icons/logo.png);
+					height: 52px;
+					top: 11px;
+					width: 227px;
+				}
+	
+		header.menu-top.in {
+			height: 80px;
+		}
+		
+		.menu > ul > li {
+			padding: 0;
+			width: 14.7%;
+		}
+			.menu > ul > li a {
+				left: 16%;
+			}
+	
+		.icon-home {
+			background: none;
+			content: url(../img/icons/icon-house.png);
+			height: 30px;
+			top: 20px;
+			width: 35px;
+		}
+		.icon-favorite {
+			background: none;
+			content: url(../img/icons/icon-favorite.png);
+			height: 31px;
+			top: 21px;
+			width: 35px;
+		}
+		.icon-settings {
+			background: none;
+			content: url(../img/icons/icon-settings.png);
+			height: 31px;
+			top: 20px;
+			width: 35px;
+		}
+		
+		.icon-bar {
+			font-size: 49px;
+			height: 40px;
+			top: 10px;
+		}
+		.icon-share,
+		.icon-start {
+			background-size: 80%;
+			height: 35px;
+			top: -2px;
+		}
+		.icon-home-b,
+		.icon-favorite-b,
+		.icon-settings-b {
+			background-size: 75%;
+			height: 40px;
+			top: 7px;
+			width: 40px;
+		}
+	
+	
+	/* --- content menu main list --- */
+	section.content-main div.dummy {
+		height: 60px;
+		width: 85px;
+	}
+	section.content-main > div.dummy.active > div,
+	section.content-main > div.dummy.active > div > div.btn-dummy {
+		height: 60px;
+	}
+	
+	section.content-main > div.content-menu ul > li {
+		height: 140px;
+	}
+	section.content-main > div.content-menu ul > li > div.img {
+		height: 140px;
+	}
+			section.content-main > div.content-menu ul > li > div.img > img:last-child {
+				height: 140px;
+			}
+		section.content-main > div.content-menu ul > li > div.desc {
+			background-size: 130px 112px;
+			height: 140px;	
+		}
+	
+		section.content-main > div.content-menu ul.min {
+			height: 140px;
+		}
+	
+	
+	section.content-main-info {
+		top: 219px;
+	}
+		section.content-main-info > div.container > div.content > ul > li {
+			border-bottom: 2px solid #383e45;
+			border-top: 2px solid #485159;
+			height: 110px;
+		}
+			section.content-main-info > div.container > div.content > ul > li p {
+				font-size: 0.9em;
+			}
+		section.content-main-info > div.container > div.content > ul > li .controller-options {
+			border-bottom: 2px solid rgba(90,90,90,.2);
+			border-top: 2px solid rgba(255,255,255,.5);
+			height: 110px;
+			left: 100%;
+		}
+			section.content-main-info > div.container > div.content > ul > li .controller-options > span.triangle {
+				left: -9px;
+				top: 35px;
+			}
+			section.content-main-info > div.container > div.content > ul > li .controller-options > ul button {
+				height: 85px;
+			}
+	
+	
+	.menu-alternative {
+		height: 90px;
+	}
+		.active-alternative {
+			top: -85px;
+		}
+		.menu-alternative > div.content-menu > ul.content > li.active-alternative {
+			background-size: 20%;
+			background-position: 90% top;
+		}
+		.menu-alternative > div.content-menu > ul.content > li.active-alternative,
+		.menu-alternative > div.content-menu > ul.content > li.active-alternative > div.img > img.min-image {
+			height: 90px;
+		}
+			.menu-alternative > div.content-menu > ul.content > li.active-alternative > div.btn-menu-hamburguer button {
+				height: 90px;
+				left: 0;
+			}
+				.menu-alternative > div.content-menu > ul.content > li.active-alternative > div.btn-menu-hamburguer {
+					left: 78%;
+					position: absolute;
+					width: 37%;
+				}
+				div.btn-menu-hamburguer button > span {
+					height: 6px;
+					margin: 5px 20%;
+				}
+			.menu-alternative > div.content-menu > ul.content > li.active-alternative h2 {
+				margin: 35px 0 0 0 !important;
+				letter-spacing: 5px;
+				left: -5px;
+				padding: 0 !important;
+			}
+	
+	#menu li > div > h2 {
+		font-size: 1.7em;
+		margin: 60px 0 0 0;
+		padding: 0 20% 0 0;
+	}
+	
+	.menu-right {
+		width: 230px;
+	}
+		.menu-right > ul > li {
+			height: 60px;
+		}
+			.menu-right > ul > li > a {
+				padding: 0 10px;
+			}
+				.menu-right > ul > li > a > span:nth-child(2) {
+					font-size: 17px;
+					padding: 0 7px;
+					position: relative;
+					top: -4px;
+				}
+				.menu-right > ul > li > a > span:nth-child(3) {
+					top: 15px;
+				}
+	
+	
+	/* --- cointent --- */
+	section.content-main-info > div.container > div.content-ui-prev > .content-list-menu > ul > li {
+		height: 170px;
+	}
+		section.content-main-info > div.container > div.content-ui-prev > .content-list-menu > ul > li > button {
+			height: 170px;
+		}
+		section.content-main-info > div.container > div.content-ui-prev > .content-list-menu > ul > li > button > p {
+			font-size: 1.4em;
+			margin: 20px 0 0px 0;
+		}
+		
+		section.content-main-info > div.container > div.content-ui-prev > .content-list-menu > ul > li > button > span {
+			font-size: 5em;
+		}
+		section.content-main-info > div.container > div.content-ui-prev > .content-list-menu > ul > li:nth-child(1) > button > span {
+			font-size: 5em;
+		}
+			section.content-main-info > div.container > div.content-ui-prev > .content-list-menu > ul > li:nth-child(1) > button > span > span {
+				left: 2px;
+				position: relative;
+			}
+		section.content-main-info > div.container > div.content-ui-prev > .content-list-menu > ul > li:nth-child(3) > button > span {
+			font-size: 5em;
+		}
+	
+	section.content-main-info > div.container > div.content-ui-prev > .title {
+		border-bottom: 1px inset rgba(90,90,90,.7);
+		height: 60px;
+	}
+		section.content-main-info > div.container > div.content-ui-prev > .title h2 {
+			font-size: 1.7em;
+			margin: 0 0 0 3%;
+			top: 16px;
+		}
+		section.content-main-info > div.container > div.content-ui-prev > div:first-child button {
+			height: 35px;
+			top: -15px;
+			width: 13%;
+		}
+	
+	section.content-main-info > div.container > div.content > ul > li .controller-options > ul > li {
+		padding: 0;
+	}
+	section.content-main-info > div.container > div.content-procedure > div.panel > div.panel-heading > a > span.icon-bar > span {
+		top: 20px;
+	}
+	
+	
+	/* --- info --- */
+	section.content-main-info.procedure {
+		height: 705px;
+		top: 90px !important;
+	}
+	section.content-main-info.active {
+		left: -230px;
+	}
+	section.content-main-info.prev-ui {
+		height: 500px;
+		top: 90px !important;
+	}
+		section.content-main-info > div.container > div.content > ul > li h2 {
+			font-size: 1.7em !important;
+			margin: 15px 0 10px 0;
+		}
+	
+	
+	/* --- tabs --- */
+	section.content-main-info > div.container > div.content-procedure > div.panel > div.panel-heading > a {
+		font-size: 20px;
+		letter-spacing: 5px;
+	}
+		section.content-main-info > div.container > div.content-procedure > div.panel > div.panel-heading,
+		section.content-main-info > div.container > div.content-procedure > div.panel > div.panel-heading > a {
+			height: 80px;
+		}
+			section.content-main-info > div.container > div.content-procedure > div.panel > div.panel-heading > a > span.icon-bar {
+				height: 80px;
+			}
+				section.content-main-info > div.container > div.content-procedure > div.panel > div.panel-heading > a > span.icon-bar > span {
+					font-size: 0.7em;
+					top: 10px;
+				}
+			section.content-main-info > div.container > div.content-procedure > div.panel > div.panel-heading > a >	p {
+				font-size: 1.1em;
+				letter-spacing: 8px;
+				top: 25px;
+			}
+	
+	/* --- videos --- */
+	section.content-main-info > div.container > div.content-procedure > div.panel div.panel-body .video {
+		height: 290px;
+	}
+	section.content-main-info > div.container > div.content-procedure > div.panel div.panel-body > div.thumbnails-videos > ul,
+	section.content-main-info > div.container > div.content-procedure > div.panel div.panel-body > div.thumbnails-videos > ul > li > button {
+		height: 100px;
+	}
+		section.content-main-info > div.container > div.content-procedure > div.panel div.panel-body > div.thumbnails-videos > ul > li > button > img {
+			max-width: 160%;
+		}
+	
+	/* --- guidelines --- */
+	section.content-main-info > div.container > div.content-procedure > div.panel div.panel-body .guideline-file .title {
+		margin: 15px 0 15px 10px;
+	}
+		section.content-main-info > div.container > div.content-procedure > div.panel div.panel-body .guideline-file .desc {
+			margin: 10px 0;
+		}
+			section.content-main-info > div.container > div.content-procedure > div.panel div.panel-body .guideline-file .desc p {
+				font-size: 13px;
+				height: 105px;
+				line-height: 1.4em;
+			}
+	
+	/* --- references --- */
+	section.content-main-info > div.container > div.content-procedure > div.panel div.panel-body > div.thumbnails-guidelines > ul,
+	section.content-main-info > div.container > div.content-procedure > div.panel div.panel-body > div.thumbnails-guidelines > ul > li,
+	section.content-main-info > div.container > div.content-procedure > div.panel div.panel-body > div.thumbnails-guidelines > ul > li > button {
+		height: 105px;
+	}
+	
+	.panel-body ul.content-references-list > li > div {
+		padding: 0;
+	}
+		.panel-body ul.content-references-list > li > div h3 {
+			font-size: 20px;
+			line-height: 1em;
+			margin: 10px 0 14px 0;
+		}
+		.panel-body ul.content-references-list > li > div p {
+			font-size: 12px;
+			line-height: 1.4em;
+		}
+	
+	.panel-body ul.content-references-list {
+		border-top: 1px solid #aaa;
+	}
+		.panel-body ul.content-references-list > li > div span {
+			background-position: center 10px;
+			background-size: 40%;
+		}
+	
+	/* --- modal --- */
+	.icon-share-w {
+		background-size: 85%;
+	}
+	
+	.modal-header {
+		background-position-x: 100% !important;
+		height: 85px;
+	}
+			#modal-share div.modal-header > button {
+				height: 57px;
+				margin-right: 5px;
+			}
+	.modal-title {
+		font-size: 23px;
+		margin: 12px 0 0 15px;
+	}
+		#modal-share {
+			top: 0;
+		}
+			#modal-share div.modal-body > ul {
+				margin: 0 0 15px;
+			}
+		#modal-share div.modal-body > ul > li {
+			margin-top: 35px;
+		}
+			#modal-share div.modal-body > ul > li > a {
+				font-size: 16px;
+			}
+			#modal-share div.modal-body > ul > li > a > img {
+				width: 70%;
+			}
+			#modal-share div.modal-body > ul > li > a > span {
+				margin: 25px 0 15px;
+			}
+	
+	
+	
+	/* --- FAVORITES --- */
+	section.content-main-info.favorites p {
+		font-size: .9em;
+	}
+	
+	section.content-main-info.favorites {
+		top: 80px;
+	}
+		section.content-main-info.favorites > ul.container > li > div.title {
+			border-bottom: 4px solid #d7b185;
+			border-top: 2px solid #fabb72;
+			height: 90px;
+		}
+			section.content-main-info.favorites > ul.container > li > div.title h2 {
+				font-size: 1.7em;
+				margin: 30px 0 0 0;
+				padding: 0 0 0 15px;
+			}
+		section.content-main-info.favorites > ul.container > li > div.content > ul.content-items > li h2 {
+			font-size: 1.7em;
+			margin: 15px 0 10px 0;
+		}
+	section.content-main-info.favorites .bg-menu {
+		height: 90px;
+		top: -55px;
+	}
+	
+	section.content-main-info.favorites > ul.container > li > div.content {
+		top: -4px;
+	}
+		section.content-main-info.favorites > ul.container > li > div.content > ul.content-items > li {
+			height: 110px;
+		}
+			section.content-main-info.favorites > ul.container > li > div.content > ul.content-items > li .controller-options {
+				left: 100%;
+			}
+				section.content-main-info.favorites > ul.container > li > div.content > ul.content-items > li .controller-options {
+					height: 110px;
+				}
+					section.content-main-info.favorites > ul.container > li > div.content > ul.content-items > li .controller-options > span.triangle {
+						left: -9px;
+						top: 32px;
+					}
+					section.content-main-info.favorites > ul.container > li > div.content > ul.content-items > li .controller-options ul button {
+						height: 110px;
+					}
+	
+	section.content-main-info.favorites .icon-bar {
+		top: 0px;
+		width: 50px;
+	}
+	
+	
+	
+	/* --- SETTINGS --- */
+	.settings h2 {
+		font-size: 25px;
+		margin: 30px 0;
+	}
+		.settings label {
+			font-size: 14px;
+			padding-left: 2%;
+			width: 93%;
+		}
+}
+
+/* --- Landscape phones and portrait tablets --- */
+@media only screen and (min-width : 480px) and (orientation : landscape) {
+}
+
+/* --- Portrait tablets and small desktops --- */
+@media (min-width: 768px) and (max-width: 991px) {
 }
 
 /* --- end media queries --- */
