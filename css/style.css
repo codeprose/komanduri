@@ -72,26 +72,80 @@ input[type=checkbox] {
 			content: "\e603";
 		}
 
+/* Created with iconvau.lt */
+
+@font-face {
+	font-family: "iconvault";
+	src: url("../fonts/iconvault_ad3cd810b9bb2abe14231dcb38665b65.eot");
+	src: url("../fonts/iconvault_ad3cd810b9bb2abe14231dcb38665b65.eot?#iefix") format("embedded-opentype"),
+	   url("../fonts/iconvault_ad3cd810b9bb2abe14231dcb38665b65.woff") format("woff"),
+	   url("../fonts/iconvault_ad3cd810b9bb2abe14231dcb38665b65.ttf") format("truetype"),
+	   url("../fonts/iconvault_ad3cd810b9bb2abe14231dcb38665b65.svg#iconvault") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+	.icon-home:before,
+	.icon-favorites:before,
+	.icon-logo:before,
+	.icon-config:before {
+		font-family: "iconvault";
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1;
+		-webkit-font-smoothing: antialiased;
+		display: inline-block;
+		text-decoration: inherit;
+	}
+	.icon-home:before { content: "\f100"; }
+	.icon-favorites:before { content: "\f101"; }
+	.icon-logo:before { content: "\f102"; }
+	.icon-config:before { content: "\f103"; }
+
+
 /* --- icons --- */
 
 .icon-home {
-	background: url(../img/icons/icon-house.png) center no-repeat;
+	color: #7c8d95;
 	display: inline-block;
-	height: 50px;
+	font-size: 5em;
 	margin: 0;
 	padding: 0;
 	position: relative;
-	top: 20px;
+	-webkit-transform: skewX(35deg);
+	-moz-transform: skewX(35deg);
+	-ms-transform: skewX(35deg);
+	-o-transform: skewX(35deg);
+	transform: skewX(35deg);
 	width: 100%;
 }
-.icon-favorite {
-	background: url(../img/icons/icon-favorite.png) center no-repeat;
+.icon-favorites {
+	color: #7c8d95;
 	display: inline-block;
-	height: 50px;
+	font-size: 5em;
 	margin: 0;
 	padding: 0;
 	position: relative;
-	top: 20px;
+	-webkit-transform: skewX(35deg);
+	-moz-transform: skewX(35deg);
+	-ms-transform: skewX(35deg);
+	-o-transform: skewX(35deg);
+	transform: skewX(35deg);
+	width: 100%;
+}
+.icon-config {
+	color: #7c8d95;
+	display: inline-block;
+	font-size: 4.8em;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	-webkit-transform: skewX(35deg);
+	-moz-transform: skewX(35deg);
+	-ms-transform: skewX(35deg);
+	-o-transform: skewX(35deg);
+	transform: skewX(35deg);
 	width: 100%;
 }
 .icon-logo {
@@ -102,16 +156,6 @@ input[type=checkbox] {
 	padding: 0;
 	position: relative;
 	top: 25px;
-	width: 100%;
-}
-.icon-settings {
-	background: url(../img/icons/icon-settings.png) center no-repeat;
-	display: inline-block;
-	height: 50px;
-	margin: 0;
-	padding: 0;
-	position: relative;
-	top: 20px;
 	width: 100%;
 }
 .icon-bar {
@@ -225,7 +269,7 @@ header.menu-top {
 	height: 0;
 	margin: 0;
 	padding: 0 !important;
-	position: relative;
+	position: fixed;
     -webkit-transition: all .5s ease-in;
 	-moz-transition: all .5s ease-in;
 	-o-transition: all .5s ease-in;
@@ -244,6 +288,7 @@ header.menu-top {
 		margin: 0;
         overflow: hidden;
 		padding: 0;
+		position: fixed;
 		z-index: 99999;
 	}
 		.menu > ul {
@@ -293,12 +338,13 @@ header.menu-top {
                 .menu > ul > li a {
                     display: inline-block;
                     position: relative;
-                    -webkit-transform: skewX(35deg);
-                    -moz-transform: skewX(35deg);
-                    -ms-transform: skewX(35deg);
-                    -o-transform: skewX(35deg);
-                    transform: skewX(35deg);
-                    width: 105%;
+                    -webkit-transform: skewX(0deg);
+                    -moz-transform: skewX(0deg);
+                    -ms-transform: skewX(0deg);
+                    -o-transform: skewX(0deg);
+                    transform: skewX(0deg);
+					text-align: center;
+                    width: 100%;
                 }
 	header.menu-top .logo {
 		background: none !important;
@@ -327,7 +373,7 @@ header.menu-top {
 	float: right;
 	margin: 0;
 	padding: 0;
-	position: relative;
+	position: fixed;
 	-webkit-transition: all .3s ease-in-out;
 	-moz-transition: all .3s ease-in-out;
 	-o-transition: all .3s ease-in-out;
@@ -337,7 +383,8 @@ header.menu-top {
 }
 	.menu-right.active {
 		display: inline-block;
-		left: 0;
+		left: 100%;
+		margin-left: -200px;
 	}
 	.menu-right > ul {
 		display: inline-block;
@@ -472,8 +519,15 @@ div.btn-menu-hamburguer button {
 section.content-main {
 	padding: 0 !important;
 	overflow: hidden;
+	position: fixed;
+	top: 50px;
+	width: 100%;
 	z-index: 1;
 }
+	section.content-main.menu-alternative{
+		top: 0;
+		z-index: 9999;
+	}
 	section.content-main > div.content-menu {
 		display: inline-block;
 		margin: 0;
@@ -508,6 +562,7 @@ section.content-main {
 		height: 170px;
 		margin: 0;
 		opacity: 1;
+		overflow: hidden;
 		padding: 0;
 		position: relative;
 		-webkit-transition: all .3s ease-in-out;
@@ -1224,6 +1279,7 @@ section.content-main-info.favorites {
 
 section.settings {
 	display: inline-block;
+	margin-top: 40px;
 }
 	section.settings > h2 {
 		color: #facbb4;
@@ -1323,15 +1379,13 @@ section.settings {
 			width: 40% !important;
 		}
 			header.menu-top .logo > a {
-				left: 15px;
 				padding: 0;
 			}
 				.icon-logo {
-					background: none;
-					content: url(../img/icons/logo-min.png);
+					background-size: 100%;
 					height: 30px;
 					top: 6px;
-					width: 116px;
+					width: 120px;
 				}
 		
 		header.menu-top.in {
@@ -1342,30 +1396,21 @@ section.settings {
 			padding: 0;
 			width: 13.7%;
 		}
-			.menu > ul > li a {
-				left: 5%;
-			}
 	
 		.icon-home {
-			background: none;
-			content: url(../img/icons/icon-house.png);
-			height: 20px;
-			top: 14px;
-			width: 23px;
+			font-size: 2.5em;
+			left: 5px;
+			top: 5px;
 		}
-		.icon-favorite {
-			background: none;
-			content: url(../img/icons/icon-favorite-min.png);
-			height: 21px;
-			top: 15px;
-			width: 23px;
+		.icon-favorites {
+			font-size: 3em;
+			left: 5px;
+			top: 3px;
 		}
-		.icon-settings {
-			background: none;
-			content: url(../img/icons/icon-settings-min.png);
-			height: 20px;
-			top: 16px;
-			width: 23px;
+		.icon-config {
+			font-size: 2.5em;
+			left: 5px;
+			top: 7px;
 		}
 		
 		.icon-bar {
@@ -1398,8 +1443,14 @@ section.settings {
 	section.content-main > div.dummy.active > div > div.btn-dummy {
 		height: 60px;
 	}
-	section.content-main > div.content-menu ul > li,
+	section.content-main > div.content-menu ul > li {
+		height: 75px;
+		width: 100%;
+	}
 	section.content-main > div.content-menu ul > li > div.img {
+		height: 75px;
+	}
+	section.content-main > div.content-menu ul > li.active {
 		height: 85px;
 	}
 			section.content-main > div.content-menu ul > li > div.img > img:last-child {
@@ -1481,6 +1532,7 @@ section.settings {
 	}
 	
 	.menu-right {
+		top: 60px;
 		width: 200px;
 	}
 		.menu-right > ul > li {
@@ -1760,8 +1812,6 @@ section.settings {
 				padding: 0;
 			}
 				.icon-logo {
-					background: none;
-					content: url(../img/icons/logo.png);
 					height: 52px;
 					top: 11px;
 					width: 227px;
@@ -1775,30 +1825,21 @@ section.settings {
 			padding: 0;
 			width: 14.7%;
 		}
-			.menu > ul > li a {
-				left: 16%;
-			}
 	
 		.icon-home {
-			background: none;
-			content: url(../img/icons/icon-house.png);
-			height: 30px;
-			top: 20px;
-			width: 35px;
+			font-size: 3.8em;
+			left: 5px;
+			top: 5px;
 		}
-		.icon-favorite {
-			background: none;
-			content: url(../img/icons/icon-favorite.png);
-			height: 31px;
-			top: 21px;
-			width: 35px;
+		.icon-favorites {
+			font-size: 4.2em;
+			left: 5px;
+			top: 4px;
 		}
-		.icon-settings {
-			background: none;
-			content: url(../img/icons/icon-settings.png);
-			height: 31px;
-			top: 20px;
-			width: 35px;
+		.icon-config {
+			font-size: 3.8em;
+			left: 5px;
+			top: 7px;
 		}
 		
 		.icon-bar {

@@ -316,9 +316,11 @@ var app, myScope = {
 			var current_element = element;
 			var elements_total = $('#menu').find('li');
 			var array_elements_last = elements_total;
+			$('#menu').find('li').removeClass('active');
 
 			//z-index elemento state top
 			current_element.css({ 'z-index' : elements_total.length });
+			current_element.addClass('active');
 			
 			//path elements animations
 			for(var i=1; i < elements_total.length; i++) {
@@ -654,6 +656,8 @@ var app, myScope = {
 			case 2:
 				//remove height
 				$('#menu').removeClass('min');
+				$('#menu').find('li').removeClass('active');
+				
 				app.settings.content_main.parent().parent().removeClass('content');
 				app.settings.content_main.parent().parent().removeClass('procedure');
 				
@@ -689,6 +693,8 @@ var app, myScope = {
 								}, 1000);
 							}
 						});
+						
+						$('.content.active').scrollTop = 0;
 						
 						//color icons
 						color_main = value.css_style; color_sec = value.color_icons;
