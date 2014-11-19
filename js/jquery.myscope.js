@@ -545,7 +545,6 @@ var app, myScope = {
 			$('.content-procedure').removeClass('active');
 			$('.content-ui-prev').removeClass('active');
 			
-			//aca
 			$('.content-procedure').parent().parent().removeClass('procedure');
 			$('.content-ui-prev').parent().parent().removeClass('prev-ui');
 			
@@ -607,7 +606,17 @@ var app, myScope = {
 			});
 		}, 200);
 	},
-    /*
+    /* function: animation_content
+		Animations basic.
+		
+		parameters:
+			array_elements - 
+			array_elements_sec - 
+			type_animation - 
+			element - 
+		
+		return:
+			void.
     */
 	animation_content: function(array_elements, array_elements_sec, type_animation, element) {
 		switch(type_animation) {
@@ -762,7 +771,14 @@ var app, myScope = {
             break;
 		}
 	},
-	/*
+	/* function: scroll_thumbs
+		Scroll container.
+		
+		parameter:
+			void.
+		
+		return:
+			void.
 	*/
 	scroll_thumbs: function() {
 		//videos
@@ -804,10 +820,4 @@ var app, myScope = {
 // Instance app
 $(function() {
 	myScope.init();
-});
-
-
-//document ready for modal boostrap
-$(document).on('ready', function() {
-	$('#modal-settings').modal('show');
 });
