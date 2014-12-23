@@ -4,50 +4,56 @@
     xmlns:gap="http://phonegap.com/ns/1.0"
     id="com.codeprose.komanduri"
     versionCode="100"
-    version="0.1.0.13">
-   
-    <name>EndoscopyNow</name>
+    version="0.1.0.14">
 
-    <description>
-        Endoscopic Procedure Reference
-    </description>
+  <name>EndoscopyNow</name>
 
-    <author href="http://www.thecodeprose.com">
-        CodeProse, LLC
-    </author>
+  <description>
+    Endoscopic Procedure Reference
+  </description>
 
-    <preference name="phonegap-version" value="3.6.3" />
-    <!--<preference name="orientation" value="portrait" />-->
-    <preference name="target-device" value="handset" />
-    <preference name="auto-hide-splash-screen" value="false" />
-    <preference name="permissions" value="none"/>
+  <author href="http://www.thecodeprose.com">
+    CodeProse, LLC
+  </author>
 
-    <preference name="MediaPlayerRequiresUserAction" value="false" />
-    <preference name="AllowInlineMediaPlayback" value="true" />
-    <preference name="OpenAllWhitelistURLsInWebView" value="true" />
+  <preference name="phonegap-version" value="3.6.3" />
+  <!--<preference name="orientation" value="portrait" />-->
+  <preference name="target-device" value="handset" />
+  <preference name="auto-hide-splash-screen" value="false" />
+  <preference name="permissions" value="none"/>
 
-    <access origin="*" />
+  <preference name="MediaPlayerRequiresUserAction" value="false" />
+  <preference name="AllowInlineMediaPlayback" value="true" />
+  <preference name="OpenAllWhitelistURLsInWebView" value="true" />
 
-    <!-- Android icons -->
-    <icon src="img/icon.png"  gap:platform="android" gap:density="ldpi" />
-    <icon src="img/icon.png"  gap:platform="android" gap:density="mdpi" />
-    <icon src="img/icon.png"  gap:platform="android" gap:density="hdpi" />
-    <icon src="img/icon.png"  gap:platform="android" gap:density="xhdpi" />
+  <preference name="StatusBarOverlaysWebView" value="false" />
 
-    <!-- iPhone icons -->
-    <icon src="img/icon.png"  gap:platform="ios" width="57" height="57" />
-    <icon src="img/icon.png" gap:platform="ios" width="114" height="114" />
+  <access origin="*" />
 
-    <!-- Android splashes -->
-    <gap:splash src="img/splash.png"  gap:platform="android" gap:density="ldpi" />
-    <gap:splash src="img/splash.png"  gap:platform="android" gap:density="mdpi" />
-    <gap:splash src="img/splash.png"  gap:platform="android" gap:density="hdpi" />
-    <gap:splash src="img/splash.png" gap:platform="android" gap:density="xhdpi" />
+  <!-- Android icons -->
+  <icon src="img/icon.png"  gap:platform="android" gap:density="ldpi" />
+  <icon src="img/icon.png"  gap:platform="android" gap:density="mdpi" />
+  <icon src="img/icon.png"  gap:platform="android" gap:density="hdpi" />
+  <icon src="img/icon.png"  gap:platform="android" gap:density="xhdpi" />
 
-    <!-- iPhone splashes -->
-    <gap:splash src="img/splash.png" gap:platform="ios" width="320" height="480" />
-    <gap:splash src="img/splash.png" gap:platform="ios" width="640" height="960" />
-    <gap:splash src="img/splash.png" gap:platform="ios" width="640" height="1136" />
-    <gap:splash src="img/splash.png" gap:platform="ios" width="768" height="1024" />
-    <gap:splash src="img/splash.png" gap:platform="ios" width="1024" height="768" />  
+  <!-- iPhone icons -->
+  <icon src="img/icon.png"  gap:platform="ios" width="57" height="57" />
+  <icon src="img/icon.png" gap:platform="ios" width="114" height="114" />
+
+  <!-- Android splashes -->
+  <gap:splash src="img/splash.png"  gap:platform="android" gap:density="ldpi" />
+  <gap:splash src="img/splash.png"  gap:platform="android" gap:density="mdpi" />
+  <gap:splash src="img/splash.png"  gap:platform="android" gap:density="hdpi" />
+  <gap:splash src="img/splash.png" gap:platform="android" gap:density="xhdpi" />
+
+  <!-- iPhone splashes -->
+  <gap:splash src="img/splash.png" gap:platform="ios" width="320" height="480" />
+  <gap:splash src="img/splash.png" gap:platform="ios" width="640" height="960" />
+  <gap:splash src="img/splash.png" gap:platform="ios" width="640" height="1136" />
+  <gap:splash src="img/splash.png" gap:platform="ios" width="768" height="1024" />
+  <gap:splash src="img/splash.png" gap:platform="ios" width="1024" height="768" />
+
+  <!-- plugins -->
+  <gap:plugin name="com.kernix.pdfviewer" />
+  <gap:plugin name="org.apache.cordova.statusbar" />
 </widget>
