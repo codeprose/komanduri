@@ -4,7 +4,7 @@
     xmlns:gap="http://phonegap.com/ns/1.0"
     id="com.codeprose.komanduri"
     versionCode="100"
-    version="0.1.0.14">
+    version="0.1.0.15">
 
   <name>EndoscopyNow</name>
 
@@ -54,6 +54,6 @@
   <gap:splash src="img/splash.png" gap:platform="ios" width="1024" height="768" />
 
   <!-- plugins -->
-  <gap:plugin name="com.kernix.pdfviewer" />
-  <gap:plugin name="org.apache.cordova.statusbar" />
+  <gap:plugin name="com.kernix.pdfviewer" version="1.1.0" source="pgb" />
+  <gap:plugin name="org.apache.cordova.statusbar" version="0.1.4" source="plugins.cordova.io" />
 </widget>
