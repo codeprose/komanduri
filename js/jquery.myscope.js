@@ -32,19 +32,19 @@ var menu = [
  * Content for with item. */
 var content = [
 	{
-		id: 1,
+		id: 1, // ESOPHAGUS
 		items: [
 			{
 				id: 1,
-				title: 'Other Big Procedure Name',
+				title: "EET for Barrett's Esophagus",
 				desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget odio vel sem volutpat lacinia non quis lorem.',
 			}, {
 				id: 2,
-				title: 'Other Big Procedure Name',
+				title: 'Esophageal Stenting',
 				desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget odio vel sem volutpat lacinia non quis lorem.',
 			}, {
 				id: 3,
-				title: 'Other Big Procedure Name',
+				title: 'Esophageal Stricture Dilation',
 				desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget odio vel sem volutpat lacinia non quis lorem.',
 			}, {
 				id: 4,
@@ -60,15 +60,15 @@ var content = [
 		color_icons: '#002e55'
 	},
 	{
-		id: 2,
+		id: 2, // STOMACH
 		items: [
 			{
 				id: 1,
-				title: 'Other Big Procedure Name',
+				title: 'GI Bleed',
 				desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget odio vel sem volutpat lacinia non quis lorem.',
 			}, {
 				id: 2,
-				title: 'Other Big Procedure Name',
+				title: 'Managment of GAVE',
 				desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget odio vel sem volutpat lacinia non quis lorem.',
 			}, {
 				id: 3,
@@ -84,15 +84,15 @@ var content = [
 		color_icons: '#9b9182'
 	},
 	{
-		id: 3,
+		id: 3, // INTESTINE
 		items: [
 			{
 				id: 1,
-				title: 'Other Big Procedure Name',
+				title: 'EMR Duodenal Adenoma',
 				desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget odio vel sem volutpat lacinia non quis lorem.',
 			}, {
 				id: 2,
-				title: 'Other Big Procedure Name',
+				title: 'Techniques for Enteral Stent Placement',
 				desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget odio vel sem volutpat lacinia non quis lorem.',
 			}, {
 				id: 3,
@@ -120,15 +120,15 @@ var content = [
 		color_icons: '#8a833a '
 	},
 	{
-		id: 4,
+		id: 4, // COLON
 		items: [
 			{
 				id: 1,
-				title: 'Other Big Procedure Name',
+				title: 'Colon EMR',
 				desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget odio vel sem volutpat lacinia non quis lorem.',
 			}, {
 				id: 2,
-				title: 'Other Big Procedure Name',
+				title: 'Colon EMR Complications',
 				desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget odio vel sem volutpat lacinia non quis lorem.',
 			}, {
 				id: 3,
@@ -140,19 +140,19 @@ var content = [
 		color_icons: '#6b0003 '
 	},
 	{
-		id: 5,
+		id: 5, // BILIARY
 		items: [
 			{
 				id: 1,
-				title: 'Other Big Procedure Name',
+				title: 'ERCP Cholangioscopy',
 				desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget odio vel sem volutpat lacinia non quis lorem.',
 			}, {
 				id: 2,
-				title: 'Other Big Procedure Name',
+				title: 'ERCP Difficult Cannulation',
 				desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget odio vel sem volutpat lacinia non quis lorem.',
 			}, {
 				id: 3,
-				title: 'Other Big Procedure Name',
+				title: 'ERCP Stenting',
 				desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget odio vel sem volutpat lacinia non quis lorem.',
 			}, {
 				id: 4,
@@ -172,19 +172,19 @@ var content = [
 		color_icons: '#281f24'
 	},
 	{
-		id: 6,
+		id: 6, // PANCREAS
 		items: [
 			{
 				id: 1,
-				title: 'Other Big Procedure Name',
+				title: 'ERCP Pancreatic Endotherapy',
 				desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget odio vel sem volutpat lacinia non quis lorem.',
 			}, {
 				id: 2,
-				title: 'Other Big Procedure Name',
+				title: 'EUS  Pancreatic Cysts',
 				desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget odio vel sem volutpat lacinia non quis lorem.',
 			}, {
 				id: 3,
-				title: 'Other Big Procedure Name',
+				title: 'EUS Tissue Acquistion',
 				desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget odio vel sem volutpat lacinia non quis lorem.',
 			}, {
 				id: 4,
