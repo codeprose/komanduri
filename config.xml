@@ -4,7 +4,7 @@
     xmlns:gap="http://phonegap.com/ns/1.0"
     id="com.codeprose.komanduri"
     versionCode="100"
-    version="0.1.0.23">
+    version="0.1.0.24">
 
   <name>EndoscopyNow</name>
 
@@ -27,6 +27,10 @@
   <preference name="OpenAllWhitelistURLsInWebView" value="true" />
 
   <preference name="StatusBarOverlaysWebView" value="false" />
+
+  <feature name="InAppBrowser">
+    <param name="ios-package" value="CDVInAppBrowser" />
+  </feature>
 
   <access origin="*" />
 
