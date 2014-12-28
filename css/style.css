@@ -1642,7 +1642,7 @@ section.settings {
 	
 	/* --- videos --- */
 	section.content-main-info > div.container > div.content-procedure > div.panel div.panel-body .video {
-		height: 230px;
+		/*height: 230px;*/
 	}
 	section.content-main-info > div.container > div.content-procedure > div.panel div.panel-body > div.thumbnails-videos > ul,
 	section.content-main-info > div.container > div.content-procedure > div.panel div.panel-body > div.thumbnails-videos > ul > li > button {
@@ -2069,7 +2069,7 @@ section.settings {
 	
 	/* --- videos --- */
 	section.content-main-info > div.container > div.content-procedure > div.panel div.panel-body .video {
-		height: 290px;
+		/*height: 290px;*/
 	}
 	section.content-main-info > div.container > div.content-procedure > div.panel div.panel-body > div.thumbnails-videos > ul,
 	section.content-main-info > div.container > div.content-procedure > div.panel div.panel-body > div.thumbnails-videos > ul > li > button {
