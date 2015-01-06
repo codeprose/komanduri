@@ -75,8 +75,8 @@
                                     </object>
 								</div>
                                 
-								<div class="thumbnails-videos">
-									<ul data-bind="foreach: selectedProcedure().videos">
+								<div class="thumbnails-videos" data-bind="with: selectedProcedure">
+									<ul data-bind="foreach: videos">
 										<li class="col-xs-4">
 											<button class="icon-play" data-bind="attr: { id: $data }">
 											   <img class="img-responsive" data-bind="attr: { src: 'http://img.youtube.com/vi/' + $data + '/default.jpg' }" alt="">
