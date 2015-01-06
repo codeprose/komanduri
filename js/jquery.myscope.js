@@ -1,11 +1,15 @@
-var Application = Application || {};
-Application.selectedCategory = ko.observable({});
-Application.selectedProcedure = ko.observable({});
+function setVideo(id) {
+//    $("#video-movie").attr("value", "https://www.youtube.com/v/" + id + "&hl=en_US&feature=player_embedded&version=3");
+//    $("#video-embed").attr("src", "https://www.youtube.com/v/" + id + "?suggestedQuality=medium&hl=en_US&feature=player_embedded&version=3");
 
-$(document).on('click', 'ul.content-items > li', function(click) {
-    var procedureId = $(click.currentTarget).attr('id');
-    console.log('Procedure clicked: ' + procedureId);
-});
+    $("#youtube-video").empty().append(
+        '<param name="movie" value="https://www.youtube.com/v/' + id + '&hl=en_US&feature=player_embedded&version=3" id="video-movie"></param>' +
+        '<param name="allowFullScreen" value="true"></param>' +
+        '<param name="allowScriptAccess" value="always"></param>' +
+        '<embed id="video-embed" style="width: 100%" src="https://www.youtube.com/v/' + id + '?suggestedQuality=medium&hl=en_US&feature=player_embedded&version=3" type="application/x-shockwave-flash" allowfullscreen="true" allowScriptAccess="always"></embed>');
+
+    console.log('video set to ' + id);
+}
 
 /* variable: menu
  * List menu items. */
