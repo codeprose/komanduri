@@ -707,29 +707,6 @@ var app, myScope = {
 				
 				app.settings.content_main.parent().parent().addClass('content');
 				
-				//app.settings.content_main
-////				$.each(content, function(key, value) {
-////					if($(element).attr('id') == value.id) {
-////						$.each(value.items, function(key_item, key_value) {
-////							app.procedure_method(key_value.id, key_value, value.css_style, value.color_icons);
-////							
-////							if(key_item == value.items.length-1) {
-////								setTimeout(function() {
-////									$('#menu').addClass('min');
-////								}, 1000);
-////							}
-////						});
-////						
-////						$('.content.active').scrollTop = 0;
-////						
-////						//color icons
-////						color_main = value.css_style; color_sec = value.color_icons;
-////						
-////						//apply event listener click
-////						app.content_items_listener(element);
-////					}
-////				});
-
 			    var categoryContent = EndoscopyNow.categories[$(element).attr('id')];
                 if (categoryContent) {
 					$.each(categoryContent.procedures, function(key_item, key_value) {
