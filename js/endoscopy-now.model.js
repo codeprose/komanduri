@@ -20,6 +20,8 @@ $(document).on('click', 'ul.content-items > li', function (click) {
     EndoscopyNow.viewModel.selectedProcedure(selectedProcedure);
     if (selectedProcedure.videos.length > 0) {
         EndoscopyNow.viewModel.selectedVideo(selectedProcedure.videos[0]);
+
+        $('#video-container').empty().html($('#video-binder').html());
     } else {
         EndoscopyNow.viewModel.selectedVideo('');
     }
@@ -35,6 +37,8 @@ $(document).on('click', 'button.icon-play', function(click) {
     var videoId = $(click.currentTarget).attr('id');
     console.log('Video selected: ' + videoId);
     EndoscopyNow.viewModel.selectedVideo(videoId);
+
+    $('#video-container').empty().html($('#video-binder').html());
 });
 
 $(document).on('click', 'a.open-pdf-link', function(click) {

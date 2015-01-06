@@ -64,62 +64,65 @@
 							</a>
 						</div>
 						<div id="content-procedure-videos" class="panel-collapse collapse">
-							<div class="panel-body">
-								<div class="video">
+						    <div class="panel-body">
+								<div id="video-binder" class="video" style="display: none">
 									<!--<img src="img/video.png" alt="">-->
-                                    <object id="youtube-video" data-bind="with: selectedVideo">
-                                        <param name="movie" id="video-movie" data-bind="attr: { value: 'https://www.youtube.com/v/' + $data + '&hl=en_US&feature=player_embedded&version=3' }"></param>
+                                    <object id="Object1" data-bind="with: selectedVideo">
+                                        <param name="movie" id="Param1" data-bind="attr: { value: 'https://www.youtube.com/v/' + $data + '&hl=en_US&feature=player_embedded&version=3' }"></param>
                                         <param name="allowFullScreen" value="true"></param>
                                         <param name="allowScriptAccess" value="always"></param>
                                         <embed id="video-embed" style="width: 100%" data-bind="attr: { src: 'https://www.youtube.com/v/' + $data + '?suggestedQuality=medium&hl=en_US&feature=player_embedded&version=3' }" type="application/x-shockwave-flash" allowfullscreen="true" allowScriptAccess="always"></embed>
                                     </object>
-								</div>
+								</div>						        
+						        <div class="video" id="video-container">
+						            
+						        </div>
                                 
-								<div class="thumbnails-videos" data-bind="with: selectedProcedure">
-									<ul data-bind="foreach: videos">
-										<li class="col-xs-4">
-											<button class="icon-play" data-bind="attr: { id: $data }">
-											   <img class="img-responsive" data-bind="attr: { src: 'http://img.youtube.com/vi/' + $data + '/default.jpg' }" alt="">
-											</button>
-										</li>
-									</ul>
-								</div>                                
+						        <div class="thumbnails-videos" data-bind="with: selectedProcedure">
+						            <ul data-bind="foreach: videos">
+						                <li class="col-xs-4">
+						                    <button class="icon-play" data-bind="attr: { id: $data }">
+						                        <img class="img-responsive" data-bind="attr: { src: 'http://img.youtube.com/vi/' + $data + '/default.jpg' }" alt="">
+						                    </button>
+						                </li>
+						            </ul>
+						        </div>                                
 
-<!--								<div class="thumbnails-videos">
-									<ul>
-										<li class="col-xs-4">
-											<button class="icon-play" onclick="setVideo('zuxZ0Ar35TA');">
-											   <img class="img-responsive" src="http://img.youtube.com/vi/zuxZ0Ar35TA/default.jpg" alt="">
-											</button>
-										</li>
-										<li class="col-xs-4">
-											<button class="icon-play" onclick="setVideo('wYws_gqdoKU');">
-												<img class="img-responsive" src="http://img.youtube.com/vi/wYws_gqdoKU/default.jpg" alt="">
-											</button>
-										</li>
-										<li class="col-xs-4">
-											<button class="icon-play" onclick="setVideo('rE5oOm42v_U');">
-												<img class="img-responsive" src="http://img.youtube.com/vi/rE5oOm42v_U/default.jpg" alt="">
-											</button>
-										</li>
-										<li class="col-xs-4">
-											<button class="icon-play" onclick="setVideo('iT8vEmiKLQE');">
-												<img class="img-responsive" src="http://img.youtube.com/vi/iT8vEmiKLQE/default.jpg" alt="">
-											</button>
-										</li>
-										<li class="col-xs-4">
-											<button class="icon-play" onclick="setVideo('uVy60srxGxs');">
-												<img class="img-responsive" src="http://img.youtube.com/vi/uVy60srxGxs/default.jpg" alt="">
-											</button>
-										</li>
-										<li class="col-xs-4">
-											<button class="icon-play" onclick="setVideo('gGZ9KC-C1Fg');">
-												<img class="img-responsive" src="http://img.youtube.com/vi/gGZ9KC-C1Fg/default.jpg" alt="">
-											</button>
-										</li>
-									</ul>
-								</div>-->
-							</div>
+						        <!--								<div class="thumbnails-videos">
+						            								    <ul>
+						            								        <li class="col-xs-4">
+						            								            <button class="icon-play" onclick="setVideo('zuxZ0Ar35TA');">
+						            								                <img class="img-responsive" src="http://img.youtube.com/vi/zuxZ0Ar35TA/default.jpg" alt="">
+						            								            </button>
+						            								        </li>
+						            								        <li class="col-xs-4">
+						            								            <button class="icon-play" onclick="setVideo('wYws_gqdoKU');">
+						            								                <img class="img-responsive" src="http://img.youtube.com/vi/wYws_gqdoKU/default.jpg" alt="">
+						            								            </button>
+						            								        </li>
+						            								        <li class="col-xs-4">
+						            								            <button class="icon-play" onclick="setVideo('rE5oOm42v_U');">
+						            								                <img class="img-responsive" src="http://img.youtube.com/vi/rE5oOm42v_U/default.jpg" alt="">
+						            								            </button>
+						            								        </li>
+						            								        <li class="col-xs-4">
+						            								            <button class="icon-play" onclick="setVideo('iT8vEmiKLQE');">
+						            								                <img class="img-responsive" src="http://img.youtube.com/vi/iT8vEmiKLQE/default.jpg" alt="">
+						            								            </button>
+						            								        </li>
+						            								        <li class="col-xs-4">
+						            								            <button class="icon-play" onclick="setVideo('uVy60srxGxs');">
+						            								                <img class="img-responsive" src="http://img.youtube.com/vi/uVy60srxGxs/default.jpg" alt="">
+						            								            </button>
+						            								        </li>
+						            								        <li class="col-xs-4">
+						            								            <button class="icon-play" onclick="setVideo('gGZ9KC-C1Fg');">
+						            								                <img class="img-responsive" src="http://img.youtube.com/vi/gGZ9KC-C1Fg/default.jpg" alt="">
+						            								            </button>
+						            								        </li>
+						            								    </ul>
+						            								</div>-->
+						    </div>
 						</div>
 					</div>
 					<div class="panel panel-default">
