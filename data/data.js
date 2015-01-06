@@ -1,7 +1,8 @@
 ﻿var EndoscopyNow = EndoscopyNow || {};
 
 EndoscopyNow.categories = EndoscopyNow.categories || {};
-EndoscopyNow.categories['Esophagus'] = {
+EndoscopyNow.categories[1] = {
+    id: 1,
 	css_style: '#00b0ea',
 	color_icons: '#002e55',
     name: 'Esophagus',
@@ -40,7 +41,8 @@ EndoscopyNow.categories['Esophagus'] = {
     }
 };
 
-EndoscopyNow.categories['Stomach'] = {
+EndoscopyNow.categories[2] = {
+    id: 2,
 	css_style: '#f3edd8',
 	color_icons: '#9b9182',
     name: 'Esophagus',
@@ -67,28 +69,32 @@ EndoscopyNow.categories['Stomach'] = {
     }
 };
 
-EndoscopyNow.categories['Intestine'] = {
+EndoscopyNow.categories[3] = {
+    id: 3,
 	css_style: '#f2f1c8',
 	color_icons: '#8a833a ',
     name: 'Intestine',
     procedures: {}
 };
 
-EndoscopyNow.categories['Colon'] = {
+EndoscopyNow.categories[4] = {
+    id: 4,
 	css_style: '#e00109',
 	color_icons: '#6b0003 ',
     name: 'Colon',
     procedures: {}
 };
 
-EndoscopyNow.categories['Biliary'] = {
+EndoscopyNow.categories[5] = {
+    id: 5,
 	css_style: '#c08daa',
 	color_icons: '#281f24',
     name: 'Biliary',
     procedures: {}
 };
 
-EndoscopyNow.categories['Pancreas'] = {
+EndoscopyNow.categories[6] = {
+    id: 6,
 	css_style: '#a86258',
 	color_icons: '#79443e',
     name: 'Pancreas',

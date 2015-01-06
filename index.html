@@ -224,8 +224,8 @@ iaculis.
 
 				<!-- ui btn previus -->
 				<div class="col-xs-12 content-ui-prev">
-					<div class="title">
-						<h2 id="#title" class="">RFA for Barrett´s</h2>
+					<div class="title" data-bind="with: selectedProcedure">
+						<h2 id="#title" class="" data-bind="text: title"></h2>
 						<button data-toggle="modal" data-target="#modal-share">
 							<span class="icon-share"></span>
 						</button>

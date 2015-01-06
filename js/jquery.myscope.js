@@ -15,27 +15,33 @@ function setVideo(id) {
  * List menu items. */
 var menu = [
 	{
-		id: 'Esophagus',
+        id: 1,
+		key: 'Esophagus',
 		text: "ESOPHAGUS",
 		src: "img/icons/menu-esoph"
 	}, {
-		id: 'Stomach',
+        id: 2,
+		key: 'Stomach',
 		text: "STOMACH",
 		src: "img/icons/menu-stomach"
 	}, {
-		id: 'Intestine',
+        id: 3,
+		key: 'Intestine',
 		text: "INTESTINE",
 		src: "img/icons/menu-intestine"
 	}, {
-		id: 'Colon',
+        id: 4,
+		key: 'Colon',
 		text: "COLON",
 		src: "img/icons/menu-colon"
 	}, {
-		id: 'Biliary',
+        id: 5,
+		key: 'Biliary',
 		text: "BILIARY",
 		src: "img/icons/menu-biliary"
 	}, {
-		id: 'Pancreas',
+        id: 6,
+		key: 'Pancreas',
 		text: "PANCREAS",
 		src: "img/icons/menu-pancreas"
 	}
