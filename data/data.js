@@ -17,6 +17,25 @@ EndoscopyNow.categories[1] = {
                 'uVy60srxGxs',
                 'gGZ9KC-C1Fg'
             ],
+            references: [
+                {
+                    title: 'Wani practice patterns EET',
+                    link: 'https://dl.dropboxusercontent.com/s/et7nvcofna9ialn/Wani%20practice%20patterns%20EET.pdf',
+                    desc: 'The Association of Breast Surgery &#38; British Association of Plastic, Reconstructive and Aesthetic Surgeons have produced joint guidelines on the use of Acellular Dermal Matrix (ADM), which were published in the European Journal of Surgical Oncology (EJSO 39 (2013) 425 - 429).'
+                }, {
+                    title: 'Long Term EMR',
+                    link: 'https://dl.dropboxusercontent.com/s/wfy7vypu555eyi2/Long%20Term%20EMR.pdf',
+                    desc: 'The Association of Breast Surgery &#38; British Association of Plastic, Reconstructive and Aesthetic Surgeons have produced joint guidelines on the use of Acellular Dermal Matrix (ADM), which were published in the European Journal of Surgical Oncology (EJSO 39 (2013) 425 - 429).'                    
+                }, {
+                    title: 'EET vs Surgery GIE meta',
+                    link: 'https://dl.dropboxusercontent.com/s/qeuy8rncjnio0il/EET%20vs%20Surgery%20GIE%20meta.pdf',
+                    desc: 'The Association of Breast Surgery &#38; British Association of Plastic, Reconstructive and Aesthetic Surgeons have produced joint guidelines on the use of Acellular Dermal Matrix (ADM), which were published in the European Journal of Surgical Oncology (EJSO 39 (2013) 425 - 429).'                    
+                }, {
+                    title: 'Barrett Esophagus and Risk of Esophageal Cancer',
+                    link: 'https://dl.dropboxusercontent.com/s/815mhend0b57odd/Spechler%20JAMA%20rev.pdf',
+                    desc: 'The Association of Breast Surgery &#38; British Association of Plastic, Reconstructive and Aesthetic Surgeons have produced joint guidelines on the use of Acellular Dermal Matrix (ADM), which were published in the European Journal of Surgical Oncology (EJSO 39 (2013) 425 - 429).'                    
+                }
+            ],
             desc: '',
             order: 0
         },
@@ -26,6 +45,17 @@ EndoscopyNow.categories[1] = {
                 'uVy60srxGxs',
                 'gGZ9KC-C1Fg'
             ],
+            references: [
+                {
+                    title: 'EET vs Surgery GIE meta',
+                    link: 'https://dl.dropboxusercontent.com/s/qeuy8rncjnio0il/EET%20vs%20Surgery%20GIE%20meta.pdf',
+                    desc: 'The Association of Breast Surgery &#38; British Association of Plastic, Reconstructive and Aesthetic Surgeons have produced joint guidelines on the use of Acellular Dermal Matrix (ADM), which were published in the European Journal of Surgical Oncology (EJSO 39 (2013) 425 - 429).'                    
+                }, {
+                    title: 'Barrett Esophagus and Risk of Esophageal Cancer',
+                    link: 'https://dl.dropboxusercontent.com/s/815mhend0b57odd/Spechler%20JAMA%20rev.pdf',
+                    desc: 'The Association of Breast Surgery &#38; British Association of Plastic, Reconstructive and Aesthetic Surgeons have produced joint guidelines on the use of Acellular Dermal Matrix (ADM), which were published in the European Journal of Surgical Oncology (EJSO 39 (2013) 425 - 429).'                    
+                }            
+            ],
             desc: '',
             order: 1            
         },
@@ -34,6 +64,13 @@ EndoscopyNow.categories[1] = {
             videos: [
                 'gGZ9KC-C1Fg',
                 'uVy60srxGxs'
+            ],
+            references: [
+                {
+                    title: 'Barrett Esophagus and Risk of Esophageal Cancer',
+                    link: 'https://dl.dropboxusercontent.com/s/815mhend0b57odd/Spechler%20JAMA%20rev.pdf',
+                    desc: 'The Association of Breast Surgery &#38; British Association of Plastic, Reconstructive and Aesthetic Surgeons have produced joint guidelines on the use of Acellular Dermal Matrix (ADM), which were published in the European Journal of Surgical Oncology (EJSO 39 (2013) 425 - 429).'                    
+                }             
             ],
             desc: '',
             order: 2             
@@ -54,6 +91,17 @@ EndoscopyNow.categories[2] = {
                 'iT8vEmiKLQE',
                 'uVy60srxGxs'
             ],
+            references: [
+                {
+                    title: 'Barrett Esophagus and Risk of Esophageal Cancer',
+                    link: 'https://dl.dropboxusercontent.com/s/815mhend0b57odd/Spechler%20JAMA%20rev.pdf',
+                    desc: 'The Association of Breast Surgery &#38; British Association of Plastic, Reconstructive and Aesthetic Surgeons have produced joint guidelines on the use of Acellular Dermal Matrix (ADM), which were published in the European Journal of Surgical Oncology (EJSO 39 (2013) 425 - 429).'
+                }, {
+                    title: 'Barrett Esophagus and Risk of Esophageal Cancer',
+                    link: 'https://dl.dropboxusercontent.com/s/815mhend0b57odd/Spechler%20JAMA%20rev.pdf',
+                    desc: 'Another'                    
+                }
+            ],
             desc: '',
             order: 0
         },
@@ -62,6 +110,25 @@ EndoscopyNow.categories[2] = {
             videos: [
                 'uVy60srxGxs',
                 'gGZ9KC-C1Fg'
+            ],
+            references: [
+                {
+                    title: 'Barrett Esophagus and Risk of Esophageal Cancer',
+                    link: 'https://dl.dropboxusercontent.com/s/815mhend0b57odd/Spechler%20JAMA%20rev.pdf',
+                    desc: 'Another'
+                }, {
+                    title: 'Barrett Esophagus and Risk of Esophageal Cancer',
+                    link: 'https://dl.dropboxusercontent.com/s/815mhend0b57odd/Spechler%20JAMA%20rev.pdf',
+                    desc: 'Another'  
+                }, {
+                    title: 'Barrett Esophagus and Risk of Esophageal Cancer',
+                    link: 'https://dl.dropboxusercontent.com/s/815mhend0b57odd/Spechler%20JAMA%20rev.pdf',
+                    desc: 'Another'
+                }, {
+                    title: 'Barrett Esophagus and Risk of Esophageal Cancer',
+                    link: 'https://dl.dropboxusercontent.com/s/815mhend0b57odd/Spechler%20JAMA%20rev.pdf',
+                    desc: 'Another' 
+                }
             ],
             desc: '',
             order: 1

@@ -186,16 +186,16 @@ iaculis.
 							</a>
 						</div>
 						<div id="content-procedure-references" class="panel-collapse collapse">
-							<div class="panel-body">
-								<ul class="content-references-list">
+							<div class="panel-body" data-bind="with: selectedProcedure">
+								<ul class="content-references-list" data-bind="foreach: references">
 									<li>
 										<div class="col-xs-12">
 											<span class=""></span>
-											<h3><a href="#" onclick="window.open('https://dl.dropboxusercontent.com/s/et7nvcofna9ialn/Wani%20practice%20patterns%20EET.pdf?dl=0', '_blank', 'location=no,closebuttoncaption=Done');">Wani practice patterns EET</a></h3>
-											<p>The Association of Breast Surgery &#38; British Association of Plastic, Reconstructive and Aesthetic Surgeons have produced joint guidelines on the use of Acellular Dermal Matrix (ADM), which were published in the European Journal of Surgical Oncology (EJSO 39 (2013) 425 - 429).</p>
+											<h3><a href="#" class="open-pdf-link" data-bind="attr: { 'data-url': link }, text: title"></a></h3>
+											<p data-bind="text: desc"></p>
 										</div>
 									</li>
-									<li>
+<!--									<li>
 										<div class="col-xs-12">
 											<span class=""></span>
 											<h3><a href="#" onclick="window.open('https://dl.dropboxusercontent.com/s/wfy7vypu555eyi2/Long%20Term%20EMR.pdf?dl=0', '_blank', 'location=no,closebuttoncaption=Done');">Long Term EMR</a></h3>
@@ -215,7 +215,7 @@ iaculis.
 											<h3><a href="#" onclick="window.open('https://dl.dropboxusercontent.com/s/815mhend0b57odd/Spechler%20JAMA%20rev.pdf?dl=0', '_blank', 'location=no,closebuttoncaption=Done');">Barrett Esophagus and Risk of Esophageal Cancer</a></h3>
 											<p>The Association of Breast Surgery &#38; British Association of Plastic, Reconstructive and Aesthetic Surgeons have produced joint guidelines on the use of Acellular Dermal Matrix (ADM), which were published in the European Journal of Surgical Oncology (EJSO 39 (2013) 425 - 429).</p>
 										</div>
-									</li>
+									</li>-->
 								</ul>
 							</div>
 						</div>

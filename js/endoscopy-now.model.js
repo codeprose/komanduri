@@ -36,3 +36,8 @@ $(document).on('click', 'button.icon-play', function(click) {
     console.log('Video selected: ' + videoId);
     EndoscopyNow.viewModel.selectedVideo(videoId);
 });
+
+$(document).on('click', 'a.open-pdf-link', function(click) {
+    var url = $(click.currentTarget).attr('data-url');
+    window.open(url + '?dl=0', '_blank', 'location=no,closebuttoncaption=Done');
+});
