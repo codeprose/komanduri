@@ -1,7 +1,3 @@
-var Application = Application || {};
-Application.selectedCategory = ko.observable({});
-Application.selectedProcedure = ko.observable({});
-
 function init() {
 	$('.content').find('li').off('click').on('click', function(event) {
 		event.preventDefault();

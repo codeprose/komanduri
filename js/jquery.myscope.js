@@ -1,3 +1,12 @@
+var Application = Application || {};
+Application.selectedCategory = ko.observable({});
+Application.selectedProcedure = ko.observable({});
+
+$(document).on('click', 'ul.content-items > li', function(click) {
+    var procedureId = $(click.currentTarget).attr('id');
+    console.log('Procedure clicked: ' + procedureId);
+});
+
 /* variable: menu
  * List menu items. */
 var menu = [
@@ -208,8 +217,6 @@ var content = [
 		color_icons: '#79443e'
 	}
 ];
-
-
 
 /* function: myScope
 */
