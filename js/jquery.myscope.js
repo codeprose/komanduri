@@ -15,27 +15,27 @@ function setVideo(id) {
  * List menu items. */
 var menu = [
 	{
-		id: 1,//'Esophagus',
+		id: 'Esophagus',
 		text: "ESOPHAGUS",
 		src: "img/icons/menu-esoph"
 	}, {
-		id: 2,//'Stomach',
+		id: 'Stomach',
 		text: "STOMACH",
 		src: "img/icons/menu-stomach"
 	}, {
-		id: 3,//'Intestine',
+		id: 'Intestine',
 		text: "INTESTINE",
 		src: "img/icons/menu-intestine"
 	}, {
-		id: 4,//'Colon',
+		id: 'Colon',
 		text: "COLON",
 		src: "img/icons/menu-colon"
 	}, {
-		id: 5,//'Biliary',
+		id: 'Biliary',
 		text: "BILIARY",
 		src: "img/icons/menu-biliary"
 	}, {
-		id: 6,//'Pancreas',
+		id: 'Pancreas',
 		text: "PANCREAS",
 		src: "img/icons/menu-pancreas"
 	}
@@ -702,48 +702,48 @@ var app, myScope = {
 				app.settings.content_main.parent().parent().addClass('content');
 				
 				//app.settings.content_main
-				$.each(content, function(key, value) {
-					if($(element).attr('id') == value.id) {
-						$.each(value.items, function(key_item, key_value) {
-							app.procedure_method(key_value.id, key_value, value.css_style, value.color_icons);
-							
-							if(key_item == value.items.length-1) {
-								setTimeout(function() {
-									$('#menu').addClass('min');
-								}, 1000);
-							}
-						});
-						
-						$('.content.active').scrollTop = 0;
-						
-						//color icons
-						color_main = value.css_style; color_sec = value.color_icons;
-						
-						//apply event listener click
-						app.content_items_listener(element);
-					}
-				});
+////				$.each(content, function(key, value) {
+////					if($(element).attr('id') == value.id) {
+////						$.each(value.items, function(key_item, key_value) {
+////							app.procedure_method(key_value.id, key_value, value.css_style, value.color_icons);
+////							
+////							if(key_item == value.items.length-1) {
+////								setTimeout(function() {
+////									$('#menu').addClass('min');
+////								}, 1000);
+////							}
+////						});
+////						
+////						$('.content.active').scrollTop = 0;
+////						
+////						//color icons
+////						color_main = value.css_style; color_sec = value.color_icons;
+////						
+////						//apply event listener click
+////						app.content_items_listener(element);
+////					}
+////				});
 
-//			    var categoryContent = EndoscopyNow.categories[$(element).attr('id')];
-//                if (categoryContent) {
-//					$.each(categoryContent.procedures, function(key_item, key_value) {
-//						app.procedure_method(categoryContent.name, key_value, categoryContent.css_style, categoryContent.color_icons);
+			    var categoryContent = EndoscopyNow.categories[$(element).attr('id')];
+                if (categoryContent) {
+					$.each(categoryContent.procedures, function(key_item, key_value) {
+						app.procedure_method(key_item, key_value, categoryContent.css_style, categoryContent.color_icons);
 
-//						if(key_value.order == Object.keys(categoryContent.procedures).length-1) {
-//							setTimeout(function() {
-//								$('#menu').addClass('min');
-//							}, 1000);
-//						}
-//					});
-//						
-//					$('.content.active').scrollTop = 0;
-//						
-//					//color icons
-//					color_main = categoryContent.css_style; color_sec = categoryContent.color_icons;
-//						
-//					//apply event listener click
-//					app.content_items_listener(element);                    
-//                }
+						if(key_value.order == Object.keys(categoryContent.procedures).length-1) {
+							setTimeout(function() {
+								$('#menu').addClass('min');
+							}, 1000);
+						}
+					});
+						
+					$('.content.active').scrollTop = 0;
+						
+					//color icons
+					color_main = categoryContent.css_style; color_sec = categoryContent.color_icons;
+						
+					//apply event listener click
+					app.content_items_listener(element);                    
+                }
 
 				
 				//apply color UI and event listener back
