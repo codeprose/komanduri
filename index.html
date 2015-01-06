@@ -67,15 +67,25 @@
 							<div class="panel-body">
 								<div class="video">
 									<!--<img src="img/video.png" alt="">-->
-                                    <object id="youtube-video">
-                                        <param name="movie" value="https://www.youtube.com/v/TOfC9LfR3PI&hl=en_US&feature=player_embedded&version=3" id="video-movie"></param>
+                                    <object id="youtube-video" data-bind="with: selectedVideo">
+                                        <param name="movie" id="video-movie" data-bind="attr: { value: 'https://www.youtube.com/v/' + $data + '&hl=en_US&feature=player_embedded&version=3' }"></param>
                                         <param name="allowFullScreen" value="true"></param>
                                         <param name="allowScriptAccess" value="always"></param>
-                                        <embed id="video-embed" style="width: 100%" src="https://www.youtube.com/v/TOfC9LfR3PI?suggestedQuality=medium&hl=en_US&feature=player_embedded&version=3" type="application/x-shockwave-flash" allowfullscreen="true" allowScriptAccess="always"></embed>
+                                        <embed id="video-embed" style="width: 100%" data-bind="attr: { src: 'https://www.youtube.com/v/' + $data + '?suggestedQuality=medium&hl=en_US&feature=player_embedded&version=3' }" type="application/x-shockwave-flash" allowfullscreen="true" allowScriptAccess="always"></embed>
                                     </object>
 								</div>
-
+                                
 								<div class="thumbnails-videos">
+									<ul data-bind="foreach: selectedProcedure().videos">
+										<li class="col-xs-4">
+											<button class="icon-play" data-bind="attr: { id: $data }">
+											   <img class="img-responsive" data-bind="attr: { src: 'http://img.youtube.com/vi/' + $data + '/default.jpg' }" alt="">
+											</button>
+										</li>
+									</ul>
+								</div>                                
+
+<!--								<div class="thumbnails-videos">
 									<ul>
 										<li class="col-xs-4">
 											<button class="icon-play" onclick="setVideo('zuxZ0Ar35TA');">
@@ -108,7 +118,7 @@
 											</button>
 										</li>
 									</ul>
-								</div>
+								</div>-->
 							</div>
 						</div>
 					</div>
@@ -337,12 +347,14 @@ iaculis.
     </div>
     <script type="text/javascript" src="cordova.js"></script>
     <!-- jQuery -->
-    <script src="js/jquery-1.11.0.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/knockout-3.2.0.js"></script>
+    <script type="text/javascript" src="data/data.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/knockout-3.2.0.js"></script>
+    <script type="text/javascript" src="js/endoscopy-now.model.js"></script>
     <!-- jQuery Mobile -->
-    <script src="js/jquery.mobile.custom.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile.custom.js"></script>
     <!-- APP -->
-    <script src="js/jquery.myscope.js"></script>
+    <script type="text/javascript" src="js/jquery.myscope.js"></script>
 </body>
 </html>

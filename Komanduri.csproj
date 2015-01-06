@@ -58,6 +58,7 @@
     <Content Include="css\jquery.mobile.custom.structure.min.css" />
     <Content Include="css\jquery.mobile.custom.theme.css" />
     <Content Include="css\jquery.mobile.custom.theme.min.css" />
+    <Content Include="data\data.js" />
     <Content Include="favorites.html" />
     <Content Include="fonts\icomoon.svg" />
     <Content Include="img\bg-home-btn.png" />
@@ -116,6 +117,7 @@
     <Content Include="img\icons\menu-stomach-min.png" />
     <Content Include="img\icons\menu-stomach.png" />
     <Content Include="img\video.png" />
+    <Content Include="js\endoscopy-now.model.js" />
     <Content Include="js\jquery.mobile.custom.js" />
     <Content Include="js\jquery.mobile.custom.min.js" />
     <Content Include="js\jquery.myscope.js" />

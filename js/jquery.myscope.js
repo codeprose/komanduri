@@ -15,27 +15,27 @@ function setVideo(id) {
  * List menu items. */
 var menu = [
 	{
-		id: 1,
+		id: 1,//'Esophagus',
 		text: "ESOPHAGUS",
 		src: "img/icons/menu-esoph"
 	}, {
-		id: 2,
+		id: 2,//'Stomach',
 		text: "STOMACH",
 		src: "img/icons/menu-stomach"
 	}, {
-		id: 3,
+		id: 3,//'Intestine',
 		text: "INTESTINE",
 		src: "img/icons/menu-intestine"
 	}, {
-		id: 4,
+		id: 4,//'Colon',
 		text: "COLON",
 		src: "img/icons/menu-colon"
 	}, {
-		id: 5,
+		id: 5,//'Biliary',
 		text: "BILIARY",
 		src: "img/icons/menu-biliary"
 	}, {
-		id: 6,
+		id: 6,//'Pancreas',
 		text: "PANCREAS",
 		src: "img/icons/menu-pancreas"
 	}
@@ -723,6 +723,28 @@ var app, myScope = {
 						app.content_items_listener(element);
 					}
 				});
+
+//			    var categoryContent = EndoscopyNow.categories[$(element).attr('id')];
+//                if (categoryContent) {
+//					$.each(categoryContent.procedures, function(key_item, key_value) {
+//						app.procedure_method(categoryContent.name, key_value, categoryContent.css_style, categoryContent.color_icons);
+
+//						if(key_value.order == Object.keys(categoryContent.procedures).length-1) {
+//							setTimeout(function() {
+//								$('#menu').addClass('min');
+//							}, 1000);
+//						}
+//					});
+//						
+//					$('.content.active').scrollTop = 0;
+//						
+//					//color icons
+//					color_main = categoryContent.css_style; color_sec = categoryContent.color_icons;
+//						
+//					//apply event listener click
+//					app.content_items_listener(element);                    
+//                }
+
 				
 				//apply color UI and event listener back
 				app.ui_prev(color_main, color_sec, element);

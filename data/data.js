@@ -1,11 +1,96 @@
 ﻿var EndoscopyNow = EndoscopyNow || {};
 
-EndoscopyNow.Categories = EndoscopyNow.Categories || {};
-EndoscopyNow.Procedures = EndoscopyNow.Procedures || {};
+EndoscopyNow.categories = EndoscopyNow.categories || {};
+EndoscopyNow.categories['Esophagus'] = {
+	css_style: '#00b0ea',
+	color_icons: '#002e55',
+    name: 'Esophagus',
+    procedures: {
+        "EET for Barrett's Esophagus": {
+            title: "EET for Barrett's Esophagus",
+            videos: [
+                'zuxZ0Ar35TA',
+                'wYws_gqdoKU',
+                'rE5oOm42v_U',
+                'iT8vEmiKLQE',
+                'uVy60srxGxs',
+                'gGZ9KC-C1Fg'
+            ],
+            desc: '',
+            order: 0
+        },
+        "Esophageal Stricture Dilation": {
+            title: "Esophageal Stricture Dilation",
+            videos: [
+                'uVy60srxGxs',
+                'gGZ9KC-C1Fg'
+            ],
+            desc: '',
+            order: 1            
+        },
+        "Esophageal Stenting": {
+            title: "Esophageal Stenting",
+            videos: [
+                'gGZ9KC-C1Fg',
+                'uVy60srxGxs'
+            ],
+            desc: '',
+            order: 2             
+        }
+    }
+};
 
-EndoscopyNow.Procedures['biliary']          = [{ 'title': 'Difficult ERCP', 'procedure-id': 'ercp' }];
-EndoscopyNow.Procedures['colon']            = [{ 'title': 'EMR for Complex Polyps', 'procedure-id': 'polyps'}];
-EndoscopyNow.Procedures['esophagus']        = [];
-EndoscopyNow.Procedures['pancreas']         = [];
-EndoscopyNow.Procedures['small-intestine']  = [];
-EndoscopyNow.Procedures['stomach']          = [];
+EndoscopyNow.categories['Stomach'] = {
+	css_style: '#f3edd8',
+	color_icons: '#9b9182',
+    name: 'Esophagus',
+    procedures: {
+        "GI Bleed": {
+            title: "GI Bleed",
+            videos: [
+                'rE5oOm42v_U',
+                'iT8vEmiKLQE',
+                'uVy60srxGxs'
+            ],
+            desc: '',
+            order: 0
+        },
+        "Management of GAVE": {
+            title: "Management of GAVE",
+            videos: [
+                'uVy60srxGxs',
+                'gGZ9KC-C1Fg'
+            ],
+            desc: '',
+            order: 1
+        }
+    }
+};
+
+EndoscopyNow.categories['Intestine'] = {
+	css_style: '#f2f1c8',
+	color_icons: '#8a833a ',
+    name: 'Intestine',
+    procedures: {}
+};
+
+EndoscopyNow.categories['Colon'] = {
+	css_style: '#e00109',
+	color_icons: '#6b0003 ',
+    name: 'Colon',
+    procedures: {}
+};
+
+EndoscopyNow.categories['Biliary'] = {
+	css_style: '#c08daa',
+	color_icons: '#281f24',
+    name: 'Biliary',
+    procedures: {}
+};
+
+EndoscopyNow.categories['Pancreas'] = {
+	css_style: '#a86258',
+	color_icons: '#79443e',
+    name: 'Pancreas',
+    procedures: {}
+};
