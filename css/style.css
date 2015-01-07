@@ -203,7 +203,7 @@ input[type=checkbox] {
 	width: 40px;
 }
 .icon-file {
-	background: url(../img/icons/icon-guideline.png) center no-repeat;
+	/*background: url(../img/icons/icon-guideline.png) center no-repeat;*/
 	display: inline-block;
 	height: 20px;
 	width: 100%;
@@ -1072,7 +1072,7 @@ section.content-main-info {
                                 position: relative;
                             }
                                 section.content-main-info > div.container > div.content-procedure > div.panel div.panel-body > div.thumbnails-guidelines > ul > li > button {
-                                    background: url(../img/icons/icon-guidelines-medical.png) center no-repeat;
+                                    /*background: url(../img/icons/icon-guidelines-medical.png) center no-repeat;*/
                                     border: none;
                                     display: inline-block;
                                     float: left;

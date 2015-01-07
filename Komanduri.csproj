@@ -93,6 +93,7 @@
     <Content Include="img\icons\icon-house-b.png" />
     <Content Include="img\icons\icon-list.png" />
     <Content Include="img\icons\icon-list.svg" />
+    <Content Include="img\icons\icon-pdf-lg.png" />
     <Content Include="img\icons\icon-pdf.png" />
     <Content Include="img\icons\icon-play.png" />
     <Content Include="img\icons\icon-record.png" />

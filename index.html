@@ -119,25 +119,12 @@ iaculis.
 									</div>
 								</div>
 
-								<div class="thumbnails-guidelines">
-									<ul>
+								<div class="thumbnails-guidelines" data-bind="with: selectedProcedure">
+									<ul data-bind="foreach: guidelines">
 										<li class="col-xs-4">
-											<button class="icon-file"></button>
-										</li>
-										<li class="col-xs-4">
-											<button class="icon-file"></button>
-										</li>
-										<li class="col-xs-4">
-											<button class="icon-file"></button>
-										</li>
-										<li class="col-xs-4">
-											<button class="icon-file"></button>
-										</li>
-										<li class="col-xs-4">
-											<button class="icon-file"></button>
-										</li>
-										<li class="col-xs-4">
-											<button class="icon-file"></button>
+											<button class="icon-file">
+                                                <a href="#" class="open-pdf-link" data-bind="attr: { 'data-url': link }"><img src="img/icons/icon-pdf-lg.png" alt="Guideline" /></a>
+                                            </button>
 										</li>
 									</ul>
 								</div>
