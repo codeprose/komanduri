@@ -100,47 +100,16 @@
 							</a>
 						</div>
 						<div id="content-procedure-guidelines" class="panel-collapse collapse">
-							<div class="panel-body">
-								<div class="guideline-file">
-									<div class="col-xs-12 title">
-										<img src="img/icons/icon-guidelines-medical-lg.png" alt="Guidelines">
-									</div>
-									
-									<div class="col-xs-12 desc">
-										<p class="col-xs-10">
-											Lorem ipsum dolor sit amet, curabitur tempor ornare eleifend nisl. In lectus. Ut at massa risus nisl, a ligula molestie conubia ac ultrices, velit, nisl nullam nec erat, in vivamus maecenas 
-iaculis.
-										</p>
-										<span class="col-xs-2">
-											<a href="#" class="pull-right">
-												<img src="img/icons/icon-guideline-right-arrow.png" alt="Next">
-											</a>
-										</span>
-									</div>
-								</div>
-
-								<div class="thumbnails-guidelines">
-									<ul>
-										<li class="col-xs-4">
-											<button class="icon-file"></button>
-										</li>
-										<li class="col-xs-4">
-											<button class="icon-file"></button>
-										</li>
-										<li class="col-xs-4">
-											<button class="icon-file"></button>
-										</li>
-										<li class="col-xs-4">
-											<button class="icon-file"></button>
-										</li>
-										<li class="col-xs-4">
-											<button class="icon-file"></button>
-										</li>
-										<li class="col-xs-4">
-											<button class="icon-file"></button>
-										</li>
-									</ul>
-								</div>
+							<div class="panel-body" data-bind="with: selectedProcedure">
+								<ul class="content-references-list" data-bind="foreach: references">
+									<li>
+										<div class="col-xs-12">
+											<span class=""></span>
+											<h3><a href="#" class="open-pdf-link" data-bind="attr: { 'data-url': link }, text: title"></a></h3>
+											<p data-bind="text: desc"></p>
+										</div>
+									</li>
+								</ul>
 							</div>
 						</div>
 					</div>
