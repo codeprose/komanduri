@@ -787,24 +787,24 @@ var app, myScope = {
 	*/
 	scroll_thumbs: function() {
 		//videos
-        var elements_totals = $('.thumbnails-videos > ul').find('li');
+////        var elements_totals = $('.thumbnails-videos > ul').find('li');
+////		
+////        var width_content = app.remove_caracters($('body').css('width'), 'px') / 3;
+////		$.each(elements_totals, function(key, value) {
+////			$(value).css({ 'width': width_content });
+////		});
+////		
+////        $('.thumbnails-videos > ul').css('width', width_content * elements_totals.length);
 		
-        var width_content = app.remove_caracters($('body').css('width'), 'px') / 3;
-		$.each(elements_totals, function(key, value) {
-			$(value).css({ 'width': width_content });
-		});
-		
-        $('.thumbnails-videos > ul').css('width', width_content * elements_totals.length);
-		
-		//guidelines
-		var elements_totals = $('.thumbnails-guidelines > ul').find('li');
-		
-        var width_content = app.remove_caracters($('body').css('width'), 'px') / 3;
-		$.each(elements_totals, function(key, value) {
-			$(value).css({ 'width': width_content });
-		});
-		
-        $('.thumbnails-guidelines > ul').css('width', width_content * elements_totals.length);
+////		//guidelines
+////		var elements_totals = $('.thumbnails-guidelines > ul').find('li');
+////		
+////        var width_content = app.remove_caracters($('body').css('width'), 'px') / 3;
+////		$.each(elements_totals, function(key, value) {
+////			$(value).css({ 'width': width_content });
+////		});
+////		
+////        $('.thumbnails-guidelines > ul').css('width', width_content * elements_totals.length);
     },
     /* function: remove_caracters
         Remove caracters for string.

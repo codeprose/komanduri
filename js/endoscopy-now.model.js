@@ -8,6 +8,22 @@
     };
 
     ko.applyBindings(EndoscopyNow.viewModel);
+
+    EndoscopyNow.viewModel.selectedProcedure.subscribe(function (newValue) {
+        var recalc = function($scrollingList) {
+            var elements_totals = $scrollingList.find('li');
+
+            var width_content = app.remove_caracters($('body').css('width'), 'px') / 3;
+            $.each(elements_totals, function (key, value) {
+                $(value).css({ 'width': width_content });
+            });
+
+            $scrollingList.css('width', width_content * elements_totals.length);
+        };
+
+        recalc($('.thumbnails-videos > ul'));
+        recalc($('.thumbnails-guidelines > ul'));
+    });
 })();
 
 $(document).on('click', 'ul.content-items > li', function (click) {
@@ -45,3 +61,4 @@ $(document).on('click', 'a.open-pdf-link', function(click) {
     var url = $(click.currentTarget).attr('data-url');
     window.open(url + '?dl=0', '_blank', 'location=no,closebuttoncaption=Done');
 });
+
