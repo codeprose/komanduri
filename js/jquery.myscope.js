@@ -437,9 +437,11 @@ var app, myScope = {
             void.
     */
 	swipe_left_handler: function(event) {
-		var element = $(event.currentTarget).parent().find('#' + $(event.currentTarget).attr('id'));
-		var content_animate = element.find('#controller-options-' + $(event.currentTarget).attr('id'));
-		
+		//var element = $(event.currentTarget).parent().find('#' + $(event.currentTarget).attr('id'));
+		//var content_animate = element.find('#controller-options-' + $(event.currentTarget).attr('id'));
+
+	    var content_animate = $(event.currentTarget).find('.controller-options');
+
  		content_animate.animate({ 'left' : '15%', 'margin-left' : 15 }, 500, function() {
 			$(event.currentTarget).on('swiperight', app.swipe_right_handler);
 		});
