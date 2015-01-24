@@ -3,8 +3,8 @@
         selectedCategory: ko.observable(
             EndoscopyNow.categories[1]
         ),
-        selectedProcedure: ko.observable(EndoscopyNow.categories[1].procedures["EET for Barrett's Esophagus"]),
-        selectedVideo: ko.observable(EndoscopyNow.categories[1].procedures["EET for Barrett's Esophagus"].videos[0])
+        selectedProcedure: ko.observable(EndoscopyNow.categories[1].procedures["Endoscopic Therapy for Barrett's Esophagus"]),
+        selectedVideo: ko.observable(EndoscopyNow.categories[1].procedures["Endoscopic Therapy for Barrett's Esophagus"].videos[0])
     };
 
     ko.applyBindings(EndoscopyNow.viewModel);
