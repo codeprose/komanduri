@@ -4,7 +4,7 @@
     xmlns:gap="http://phonegap.com/ns/1.0"
     id="com.codeprose.komanduri"
     versionCode="100"
-    version="0.1.40">
+    version="0.1.41">
 
   <name>EndoscopyNow</name>
 
@@ -17,7 +17,7 @@
   </author>
 
   <preference name="phonegap-version" value="3.6.3" />
-  <!--<preference name="orientation" value="portrait" />-->
+  <preference name="orientation" value="portrait" />
   <preference name="target-device" value="handset" />
   <preference name="auto-hide-splash-screen" value="false" />
   <preference name="permissions" value="none"/>
@@ -37,8 +37,8 @@
   <icon src="icon.png"  gap:platform="android" gap:density="xhdpi" />
 
   <!-- iPhone icons -->
-  <icon src="icon.png"  gap:platform="ios" width="57" height="57" />
-  <icon src="icon.png" gap:platform="ios" width="114" height="114" />
+  <icon src="res/icon/ios/icon.png"  gap:platform="ios" width="57" height="57" />
+  <icon src="res/icon/ios/icon.png" gap:platform="ios" width="114" height="114" />
 
   <!-- Android splashes -->
   <gap:splash src="splash.png"  gap:platform="android" gap:density="ldpi" />
@@ -47,11 +47,13 @@
   <gap:splash src="splash.png" gap:platform="android" gap:density="xhdpi" />
 
   <!-- iPhone splashes -->
-  <gap:splash src="splash.png" gap:platform="ios" width="320" height="480" />
-  <gap:splash src="splash.png" gap:platform="ios" width="640" height="960" />
-  <gap:splash src="splash.png" gap:platform="ios" width="640" height="1136" />
-  <gap:splash src="splash.png" gap:platform="ios" width="768" height="1024" />
-  <gap:splash src="splash.png" gap:platform="ios" width="1024" height="768" />
+  <gap:splash src="res/screen/ios/splash.png" gap:platform="ios" width="320" height="480" />
+  <gap:splash src="res/screen/ios/splash.png" gap:platform="ios" width="640" height="960" />
+  <gap:splash src="res/screen/ios/splash.png" gap:platform="ios" width="640" height="1136" />
+  <gap:splash src="res/screen/ios/splash.png" gap:platform="ios" width="768" height="1024" />
+  <gap:splash src="res/screen/ios/splash.png" gap:platform="ios" width="1024" height="768" />
+  <gap:splash src="res/screen/ios/screen-iphone-portrait-568h.png" gap:platform="ios" width="320" height="568" />
+  <gap:splash src="res/screen/ios/screen-iphone-portrait-568h-2x.png" gap:platform="ios" width="640" height="1136" />
 
   <!-- plugins -->
   <!--<gap:plugin name="com.kernix.pdfviewer" version="1.1.0" source="pgb" />-->
