@@ -59,6 +59,6 @@ $(document).on('click', 'button.icon-play', function(click) {
 
 $(document).on('click', 'a.open-pdf-link', function(click) {
     var url = $(click.currentTarget).attr('data-url');
-    window.open(url + '?dl=0', '_blank', 'location=no,closebuttoncaption=Done');
+    window.open(url + '?dl=0', '_blank', 'location=no,closebuttoncaption=Done,enableviewportscale=yes');
 });
 
